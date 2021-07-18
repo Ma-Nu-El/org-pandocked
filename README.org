@@ -1,0 +1,5 @@
+#+TITLE: README
+
+The files contained in this directory are files of various sources
+converted to org mode format using
+~pandoc -o <your_file>.org <your_original_file.<format>>~
