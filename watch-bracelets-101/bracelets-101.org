@@ -1,0 +1,403 @@
+#+TITLE: [Guide] The lengthy bracelet, band and watch strap primer
+#+SUBTITLE: /orgmode adaptation via/ =pandoc -o output.org index.html=
+#+OPTIONS: toc:4
+
+* TOC :TOC_4:noexport:
+- [[#about][About]]
+- [[#guide-the-lengthy-bracelet-band-and-watch-strap-primer][[Guide] The lengthy bracelet, band and watch strap primer]]
+  - [[#bracelet-styles][Bracelet Styles]]
+    - [[#link-style-bracelets-oyster-president-jubilee-][Link-style bracelets (Oyster, President, Jubilee, ...)]]
+  - [[#mesh-shark-mesh-milanaise][Mesh, Shark Mesh, Milanaise]]
+  - [[#expansionelasticflex-bracelet][Expansion/Elastic/Flex Bracelet]]
+  - [[#bracelet-links][Bracelet Links]]
+  - [[#quality][Quality]]
+  - [[#sizing][Sizing]]
+  - [[#straps-and-bands][Straps and Bands]]
+    - [[#leather][Leather]]
+    - [[#exotic-leathers][Exotic Leathers]]
+    - [[#synthetic-rubber-plastic-caoutchouc-silicone][Synthetic (Rubber, plastic, caoutchouc, silicone...)]]
+      - [[#famous-examples][Famous examples:]]
+    - [[#canvas-nato-zulu][Canvas, Nato, Zulu]]
+      - [[#the-bond-strap][The "Bond" strap]]
+    - [[#attachment-and-endlinks][Attachment and Endlinks]]
+      - [[#sizing-and-swapping][Sizing and Swapping]]
+      - [[#buckles-and-clasps][Buckles and clasps]]
+- [[#conclusion][Conclusion]]
+
+* About
+- Original post published in February 2015 by user 'nephros':
+  + [[https://www.reddit.com/r/Watches/comments/2vbc6w/guide_the_lengthy_bracelet_band_and_watch_strap/]]
+- Transcript made in August 2021 by:
+  + [[mailto:manuel.fuica.morales@gmail.com][manuel.fuica.morales@gmail.com]]
+* [Guide] The lengthy bracelet, band and watch strap primer
+  :PROPERTIES:
+  :CUSTOM_ID: guide-the-lengthy-bracelet-band-and-watch-strap-primer-1
+  :CLASS: _eYtD2XCVieq6emjKBH3m
+  :END:
+
+** Bracelet Styles
+*** Link-style bracelets (Oyster, President, Jubilee, ...)
+
+Named after the Rolex models they most commonly appear on, these three
+are by far the most common styles of bracelet:
+
+- [[http://www.luxurytyme.com/Daydate/ss-catalog3.jpg][Oyster]]
+
+- [[http://www.luxurytyme.com/Daydate/clasp1.jpg][President]]
+
+- [[http://www.watchcentre.com/lg_images/04081101%5B2%5D.jpg][Jubilee]]
+
+Other common bracelet constructions:
+
+- [[http://imgur.com/NA0ckk5][H-style]], an Oyster variant (or the other
+  way around)
+
+- [[http://www.ofrei.com/images/020ST3010000.jpg][Beads-of-Rice]], a
+  variant of the jubilee with rice-shaped center links
+
+- [[http://imgur.com/GU9kQ1M][(Super) Engineer]] a chunky,
+  checkerboard-like construction
+
+All these may be ornamented using different variants of polishing,
+plating or varying materials, creating two-tone, brushed-and-mirror
+finish etc. looks to match the watch case.
+
+** Mesh, Shark Mesh, Milanaise
+
+Mesh bracelets are made of small ring-like components weaved together in
+a mesh of varying degrees of tightness.\\
+This can make them look and feel more like a canvas strap rather than a
+link bracelet.\\
+The finer mesh look is a bit dated today, but that can be fitting
+depending on the watch (for example mid-20th century gold dress watches,
+and many ladies watches).
+
+A "shark mesh" uses relatively large rings and is named after the
+chainmail "sharksuit" used in diving. To be a "true" shark mesh the
+rings go directly onto the springbar, but many have a tube-like end for
+the springbar.
+
+A "Milanaise" bracelet is strictly speaking as a mesh weave so tight it
+will not lay flat on a surface, but is commonly used to mean any type of
+finer mesh.
+
+- [[http://imgur.com/TiwUiST][Mesh]]
+
+- [[http://imgur.com/gBndWKI][Shark Mesh]]
+
+- [[http://imgur.com/V3lOhKH][Fine mesh]]
+
+- [[http://imgur.com/ZFAHPwc][Milanaise]]
+
+** Expansion/Elastic/Flex Bracelet
+
+A once-popular utilitarian generic replacement bracelet, a claspless
+metal bracelet held together by small springs. Horribly out of date
+today, they should be replaced whenever encountered. They also get
+disgustingly filthy with use and are impossible to clean.
+
+[[http://imgur.com/2MZJku3][Example]]
+
+** Bracelet Links
+
+These can be either folded or solid. The former is created by folding in
+a sheet of metal and cut/mill to size. These are cheaper, lighter but
+can have undesirable qualities such as ringing or rattling when moved,
+or catching arm hair. Therefore solid links, which are cut/milled from a
+solid piece of metal are generally preferred, but more expensive.
+
+- [[http://imgur.com/lFbHeUl][folded link]]
+
+Links, and the bars that hold them together wear out with time causing
+the bracelet to be looser, louder and possibly less comfortable (and
+eventually break).
+
+** Quality
+
+Can range from the absolute bottom level
+shouldn't-even-touch-your-wrist-once ([[http://imgur.com/rmM2zbX][Vostok]]) to unbelievable attention to
+detail ([[https://www.youtube.com/watch?v=Bh1Xww576Yc][AP RO]]).
+
+In the middle ground, there's not a huge difference in /comfort/ and
+practicality between, say, the bracelet of a $400 Seiko diver or a $1k
+Rolex oyster bracelet, however the finish will be noticeably higher
+quality with more expensive ones. Also, the clasps can be all kinds of
+nifty, see below.
+
+** Sizing
+
+If you're not going to do it often, getting your bracelet adjusted at
+some local shop will probably the most hassle free option. But if you
+want to do it yourself, here's some hints:
+
+Bracelets are in general a bit trickier to fit to your wrist than straps
+because you have to remove links from the bracelet. When adjusting the
+size, keep in mind that your wrist circumference will change throughout
+use, depending on climate, temperature, diet and other factors.
+
+The details for adjusting depend on how the bracelet is made.
+[[http://www.esslinger.com/howtoremovewatchbandlinks-2.aspx][This
+guide]] should cover the gist of it. You don't strictly /need/ a
+[[http://imgur.com/fJ3AVmn][pin-pushing tool]] for this, but this
+author's (literally) bloody experience recommends using one.
+
+Mesh bracelets may also have [[http://imgur.com/IQkffSB][removable
+segments]], but most come with either [[http://imgur.com/iF48BmH][holes
+and a tang buckle]], or a clasp that [[http://imgur.com/F5R4uIE][can be
+moved along the bracelet]] itself to change the size.
+
+Expansion bracelets are more or less one-size-fits all, but in case you
+need to adjust one [[http://www.thewatchprince.com/Link-Removal-Instructions-Expansion][here's how]].
+
+** Straps and Bands
+*** Leather
+
+The most common straps are leather straps. They come in many shapes and
+colours, and materials - usually calf leather, but other, more exotic
+animal skins are used as well (horse, lizard, snake, stingray,
+crocodile, alligator, ostrich are common). Many include stitching to add
+some ornament/colour/character to the strap.
+
+- Textured leather: cattle skin that has been treated to look like
+  other, more exotic animal skin
+
+- Shell Cordovan leather: a specially procured type of horse leather
+  famed for it's toughness and longevity
+
+- other types of leather are a bit beyond scope of this guide, but
+  [[http://en.wikipedia.org/wiki/Leather][Wikipedia has more]]
+
+Here also, quality can vary a lot, from $2 GENIUNE LEATHER to
+four-figure hand-crafted pieces of art. A $20-$60 genuine leather strap
+appears to suit most people and watches though, $100-$300 for fine
+specimen.
+
+*** Exotic Leathers
+
+This is a matter of personal choice, but yours truly
+would like to submit than except in rare cases, printed textured leather
+should be preferred to genuine exotics. You don't have to be a vegan or
+PETA member to show some respect for animals and their treatment and,
+like with shoes, jackets, or handbags, genuine exotic animal skins are
+problematic.
+
+*** Synthetic (Rubber, plastic, caoutchouc, silicone...)
+
+Most often seen with dive or other tool watches, but also common on more
+stylish designs and even high-end luxury sometimes come on rubber.
+Advantages include resistance to elements, easy cleaning and durability.
+Rubber is also cheaper than bracelets or leather, so if you intend to
+change the strap anyway, get it on rubber.\\
+Other than that there's not much difference to leather straps.
+
+**** Famous examples:
+
+- [[http://imgur.com/PONIOrX][Citizen ND table]]
+
+- [[http://imgur.com/m3iI9bE][Seiko Waffle]]
+
+- [[http://imgur.com/mkGpfAR][ISOfrane diver strap]]
+
+- [[http://imgur.com/JPfXFVN][Tropic]]
+
+- [[http://www.sinn.de/en/bilder/Technikabc/einsatzzeitmesser.jpg][Sinn]]
+
+- [[http://imgur.com/1aK9Q8h][AP]]
+
+*** Canvas, Nato, Zulu
+
+Straps made from woven fabric (originally, leather variants exist) .
+They are more durable than leather, can be used with fixed lugs, and are
+available in a variety of colours. Water resistance of course, making
+them popular with divers. They will also keep the watch on the wrist
+even if one of the springbars fails, and can be exchanged rather quickly
+which has lead to their popularity with people who like to vary the
+appearance of their watch.
+
+- [[http://imgur.com/0SdNzZK][Basic canvas strap]]: functions much like
+  normal leather straps.
+
+- [[http://imgur.com/ZwI1XB1][RAF]] or
+  [[http://imgur.com/YLxa2OE][Perlon]] slip-through strap: the most
+  basic military attachment, it's a simple nylon strap with a buckle.
+
+- [[http://imgur.com/Gb2b33O][3-ring "NATO" strap]]: the modernized
+  version of the slip-through, it
+  [[http://natozulu.com/content/9-nato-strap-instructions][attaches]] in
+  a special way. Much could be said about this, but for more detailed
+  information about NATO straps see the
+  [[/r/watchescirclejerk][dedicated sub]].
+
+- [[http://imgur.com/wWlcnva][5-ring "Zulu" strap]]: a more hefty
+  variant of the NATO, it
+  [[http://www.natozulu.com/content/12-zulu-5-ring-strap-instructions][attaches a bit differently]]
+
+Keep an eye on quality when shopping, lower-grade ones tend to be rather
+thin (not always a drawback) and may fray easily. The buckle can also be
+quite horrible, especially on the Perlon type.
+
+**** The "Bond" strap
+
+One of the reasons the NATO strap has become so popular recently is the
+way James bond wore his watch in the movie Goldfinger. The real James
+Bond strap has 9 stripes of navy blue, olive green and bordeaux (there
+are black-and-gray straps often marketed as "Bond").\\
+It's also not a NATO strap - the NATO was introduced in the 80s, much
+later than the movie. It's rather a slip-through Perlon strap, and it's
+not narrower than the lugs would allow on purpose, rather there were no
+straps of that width available at the time.
+
+[[http://imgur.com/WBoGBiP][Bund/Cuff-link strap]]
+
+A leather variant of the Perlon/slip-through strap which adds a pad of
+leather between the watch and the wrist.
+
+*** Attachment and Endlinks
+**** Sizing and Swapping
+
+[[http://www.esslinger.com/howtochangewatchbands.aspx][Here's]] a good guide on how to attach and detach watch bands.
+
+The most important measurement here is the lug width: the space between
+the lugs that must fit the spring bar and the band or bracelet endlinks.
+This is measured in millimetres and standard sizes are even numbers.
+Odd-sized are out there but rarer.\\
+As a rule of thumb, odd-sized lug widths can accommodate one size larger
+straps if they're soft enough (leather, rubber, canvas), or the strap
+can be cut to size. Bracelet endlinks must fit exactly though.
+
+For bands which taper towards the buckle, a second measurement is given
+which must match the buckle or clasp width.
+
+***** Spring bars
+
+Spring bars are by far the most common method of fixing both bands and
+bracelets to watch cases. [[http://www.ofrei.com/page475.html][They come
+in many shapes]], and more importantly many sizes.
+
+To remove and replace a spring bar a [[http://imgur.com/h3hmf13][Spring
+bar tool]] is the preferred way of working with these (it's not required
+though, for one-off jobs small screwdrivers or knives can be used). If
+you intend to change straps often, get a tool though, they're cheap and
+handy.
+
+Make sure the springbar fits as firmly as possible (size up the bar if
+in doubt), dropping mechanical watches is not fun.
+
+***** Endlinks and shaped strap ends
+
+If you want your bracelet to fit snugly around the case, you will have
+to find the correct endlinks. [[http://imgur.com/ZyeO06N][This]] is an
+example of a generic attachment without endlinks fitted to the case. It
+does fit, but there is a gap between the end of the bracelet and the
+case. Curved endlinks will bridge that gap and it will look
+[[http://imgur.com/HWNA4uX][like this]].
+
+- [[http://imgur.com/ZjRT5DA][hollow endlink]]: The cheap and common
+  version, it's a piece of sheet metal in the right shape to hug the
+  case, accept the spring bar and attach to the last link of the
+  bracelet. The main advantage is the price, as it is much cheaper than
+  the solid version. The drawback is generally a more loose connection,
+  and rattling can occur.
+
+- [[http://imgur.com/jKAW04i][solid endlink]]: The more desirable
+  version, usually found in more expensive watches and bracelets, and
+  custom pieces. A bit heavier, but also longer lasting.
+
+Finding the correct endlink for a random bracelet and watch can be a
+challenge, so endlinks should be bought together with the bracelet and
+must fit the case and lug shape.
+
+Rubber or leather straps also sometimes are shaped to hug the case or
+lugs. This is a form of "proprietary" attachment and has the same
+problems, as mentioned below.
+
+***** Fixed/soldered lugs
+
+These are usually found on older (pre-1950s) watches, often military
+style but also many dress or trench watches. They consist of a simple
+loop of wire soldered to the case or between the lugs.
+
+There are special leather straps available which can be fixed to these
+watches. They come either as an open loop that's slipped around the wire
+and then glued, or have a clip of metal inside to fix the loop ends
+together.
+
+Slip-through straps like NATO/ZULU, canvas slip-through or Bund style
+can also be used with these.
+
+***** non-standard/proprietary/integrated band attachments
+
+Some watch models and brands do not have a standard way of attaching
+their straps and bracelets. This is most common with fashion watches,
+but almost all manufacturers have models which do this.
+
+- [[http://imgur.com/p9KvO8h][Swatch band]]
+
+- [[http://cdn2.globalmediapro.com/att/a/2/d/5/a2d5m5/skagen_331xlslb.jpg][Skagen band]]
+
+- [[http://www.hindablog.com/storage/Citizen%20Men's%20Black%20Dial.jpg][Citizen bracelet]]
+
+- [[http://imgur.com/8i8cSoR][Royal Oak]]
+
+These straps can be problematic because replacement depends on
+availability. For some versions, straps can be cut to size or adapters
+are available. For others, one must buy from the original manufacturer.
+
+**** Buckles and clasps
+***** Tang Buckle
+[[http://imgur.com/hVLvKNQ][Tang Buckle]]
+
+By far the most common for leather, rubber and canvas straps, not much
+to be said about it, it works just like a belt buckle. They should match
+the watch case in metal colour, and are usually attached using smaller
+versions of spring bars (depending on the taper of the strap).
+
+***** Sliding clasp
+[[http://www.esslinger.com/ProductImages/watches/80.242.jpg][Sliding clasp]]
+
+One of the possibilities to close a mesh bracelet. One end hooks into
+the other and is secured by a flap that closes over it. It can slide
+along the rest of the strap to adjust bracelet length. Sometimes seen on
+leather as well.
+
+***** Fold-over clasps
+[[http://www.esslinger.com/images/products/display/80.431photo3.jpg][Fold-over clasps]]
+
+The most common closing mechanism for bracelets. Fold-over clasps are a
+three-piece construction that close under the wearer's wrist. Some have
+a push button and/or and additional flap securing the closed clasp
+against accidental opening.
+
+***** Butterfly and deployant/deployment clasps
+[[http://www.canong3.co.uk/sinnu1/pic22.jpg][Butterfly]] and [[http://imgur.com/e84MPmZ][Deployant/Deployment]] clasps
+
+The version of the fold-over clasp for leather straps. It is normally
+seen on higher-end straps because the lack of holes and tang puts less
+strain on the band. The Butterfly is a double-sided version of the
+deployant.
+
+Again, push buttons are common to secure the closed clasp.
+
+There are regular discussions about whether it's called a deployant or
+deployment clasp, the latter is likely an erroneous anglicization of the
+French /deployer/ (unfold). For practical purposes: both are used.
+
+Depending on the details of the clasp, regular straps can be used, or
+they may have to be cut to fit.
+
+***** Other features
+
+A [[http://imgur.com/czK2GRz][diver's extension]] expands the bracelet
+quickly for use with diving suits. A
+[[http://imgur.com/2gmX5XE][racheting clasp]] has a similar function but
+allows finer adjustment.
+
+* Conclusion
+
+And that's all folks, hope you find this useful, or at least useful
+enough to point someone here.
+
+If you want to contribute, how about some comments on how to change
+straps, adjust bracelets and affix clasps and such? Non-springbar
+attachments? Cleaning/maintenance advice and so on is also missing here.
+
