@@ -1,3 +1,6 @@
+:PROPERTIES:
+:ID:       921cda55-8769-409c-81e5-813b6e95ac1b
+:END:
 #+TITLE: [Guide] The lengthy bracelet, band and watch strap primer
 #+SUBTITLE: /orgmode adaptation via/ =pandoc -o output.org index.html=
 #+OPTIONS: toc:4
@@ -7,8 +10,8 @@
 - [[#guide-the-lengthy-bracelet-band-and-watch-strap-primer][[Guide] The lengthy bracelet, band and watch strap primer]]
   - [[#bracelet-styles][Bracelet Styles]]
     - [[#link-style-bracelets-oyster-president-jubilee-][Link-style bracelets (Oyster, President, Jubilee, ...)]]
-  - [[#mesh-shark-mesh-milanaise][Mesh, Shark Mesh, Milanaise]]
-  - [[#expansionelasticflex-bracelet][Expansion/Elastic/Flex Bracelet]]
+    - [[#mesh-shark-mesh-milanaise][Mesh, Shark Mesh, Milanaise]]
+    - [[#expansionelasticflex-bracelet][Expansion/Elastic/Flex Bracelet]]
   - [[#bracelet-links][Bracelet Links]]
   - [[#quality][Quality]]
   - [[#sizing][Sizing]]
@@ -49,25 +52,22 @@ are by far the most common styles of bracelet:
 
 Other common bracelet constructions:
 
-- [[http://imgur.com/NA0ckk5][H-style]], an Oyster variant (or the other
-  way around)
+- [[http://imgur.com/NA0ckk5][H-style]], an Oyster variant (or the other way around)
 
-- [[http://www.ofrei.com/images/020ST3010000.jpg][Beads-of-Rice]], a
-  variant of the jubilee with rice-shaped center links
+- [[http://www.ofrei.com/images/020ST3010000.jpg][Beads-of-Rice]], a variant of the jubilee with rice-shaped center links
 
-- [[http://imgur.com/GU9kQ1M][(Super) Engineer]] a chunky,
-  checkerboard-like construction
+- [[http://imgur.com/GU9kQ1M][(Super) Engineer]] a chunky, checkerboard-like construction
 
 All these may be ornamented using different variants of polishing,
 plating or varying materials, creating two-tone, brushed-and-mirror
 finish etc. looks to match the watch case.
 
-** Mesh, Shark Mesh, Milanaise
+*** Mesh, Shark Mesh, Milanaise
 
 Mesh bracelets are made of small ring-like components weaved together in
-a mesh of varying degrees of tightness.\\
+a mesh of varying degrees of tightness.
 This can make them look and feel more like a canvas strap rather than a
-link bracelet.\\
+link bracelet.
 The finer mesh look is a bit dated today, but that can be fitting
 depending on the watch (for example mid-20th century gold dress watches,
 and many ladies watches).
@@ -89,7 +89,7 @@ finer mesh.
 
 - [[http://imgur.com/ZFAHPwc][Milanaise]]
 
-** Expansion/Elastic/Flex Bracelet
+*** Expansion/Elastic/Flex Bracelet
 
 A once-popular utilitarian generic replacement bracelet, a claspless
 metal bracelet held together by small springs. Horribly out of date
@@ -136,15 +136,13 @@ size, keep in mind that your wrist circumference will change throughout
 use, depending on climate, temperature, diet and other factors.
 
 The details for adjusting depend on how the bracelet is made.
-[[http://www.esslinger.com/howtoremovewatchbandlinks-2.aspx][This
-guide]] should cover the gist of it. You don't strictly /need/ a
-[[http://imgur.com/fJ3AVmn][pin-pushing tool]] for this, but this
-author's (literally) bloody experience recommends using one.
+[[http://www.esslinger.com/howtoremovewatchbandlinks-2.aspx][This guide]] should cover the gist of it. You don't strictly /need/ a
+[[http://imgur.com/fJ3AVmn][pin-pushing tool]] for this, but this author's (literally) bloody
+experience recommends using one.
 
-Mesh bracelets may also have [[http://imgur.com/IQkffSB][removable
-segments]], but most come with either [[http://imgur.com/iF48BmH][holes
-and a tang buckle]], or a clasp that [[http://imgur.com/F5R4uIE][can be
-moved along the bracelet]] itself to change the size.
+Mesh bracelets may also have [[http://imgur.com/IQkffSB][removable segments]], but most come with
+either [[http://imgur.com/iF48BmH][holes and a tang buckle]], or a clasp that [[http://imgur.com/F5R4uIE][can be moved along the bracelet]]
+itself to change the size.
 
 Expansion bracelets are more or less one-size-fits all, but in case you
 need to adjust one [[http://www.thewatchprince.com/Link-Removal-Instructions-Expansion][here's how]].
@@ -206,7 +204,7 @@ Other than that there's not much difference to leather straps.
 
 *** Canvas, Nato, Zulu
 
-Straps made from woven fabric (originally, leather variants exist) .
+Straps made from woven fabric (originally, leather variants exist).
 They are more durable than leather, can be used with fixed lugs, and are
 available in a variety of colours. Water resistance of course, making
 them popular with divers. They will also keep the watch on the wrist
@@ -214,22 +212,16 @@ even if one of the springbars fails, and can be exchanged rather quickly
 which has lead to their popularity with people who like to vary the
 appearance of their watch.
 
-- [[http://imgur.com/0SdNzZK][Basic canvas strap]]: functions much like
-  normal leather straps.
+- [[http://imgur.com/0SdNzZK][Basic canvas strap]]: functions much like normal leather straps.
 
-- [[http://imgur.com/ZwI1XB1][RAF]] or
-  [[http://imgur.com/YLxa2OE][Perlon]] slip-through strap: the most
-  basic military attachment, it's a simple nylon strap with a buckle.
+- [[http://imgur.com/ZwI1XB1][RAF]] or [[http://imgur.com/YLxa2OE][Perlon]] slip-through strap: the most basic military attachment,
+  it's a simple nylon strap with a buckle.
 
-- [[http://imgur.com/Gb2b33O][3-ring "NATO" strap]]: the modernized
-  version of the slip-through, it
-  [[http://natozulu.com/content/9-nato-strap-instructions][attaches]] in
-  a special way. Much could be said about this, but for more detailed
-  information about NATO straps see the
-  [[/r/watchescirclejerk][dedicated sub]].
+- [[http://imgur.com/Gb2b33O][3-ring "NATO" strap]]: the modernized version of the slip-through, it
+  [[http://natozulu.com/content/9-nato-strap-instructions][attaches]] in a special way. Much could be said about this, but for
+  more detailed information about NATO straps see the [[/r/watchescirclejerk][dedicated sub]].
 
-- [[http://imgur.com/wWlcnva][5-ring "Zulu" strap]]: a more hefty
-  variant of the NATO, it
+- [[http://imgur.com/wWlcnva][5-ring "Zulu" strap]]: a more hefty variant of the NATO, it
   [[http://www.natozulu.com/content/12-zulu-5-ring-strap-instructions][attaches a bit differently]]
 
 Keep an eye on quality when shopping, lower-grade ones tend to be rather
