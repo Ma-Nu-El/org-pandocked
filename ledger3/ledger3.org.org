@@ -1,5 +1,8 @@
 # Created 2021-07-21 Wed 22:27
-#+TITLE: 
+:PROPERTIES:
+:ID:       8d5c95de-132b-4bed-bca4-07a0437d5299
+:END:
+#+TITLE: Ledger 3 Manual
 #+AUTHOR: Manuel Fuica Morales
 * Ledger: Command-Line Accounting
 <<SEC_Contents>>
