@@ -26,6 +26,7 @@
 - [[#appendix-b-miscellaneous-notes][Appendix B Miscellaneous Notes]]
 - [[#concepts-index][Concepts Index]]
 - [[#commands--options-index][Commands & Options Index]]
+- [[#footnotes][Footnotes]]
 
 * Overview
 
@@ -169,7 +170,7 @@ Enter the beauty of computerized accounting. The purpose of the Ledger
 program is to make general journal accounting simple, by keeping track
 of the balances for you. Your only job is to enter the postings. If an
 individual posting does not balance, Ledger displays an error and
-indicates the incorrect posting.[[#FOOT1][^{1}]]
+indicates the incorrect posting.
 
 In summary, there are two aspects of Ledger use: updating the journal
 data file, and using the Ledger tool to view the summarized result of
@@ -226,15 +227,6 @@ data, not for altering it.
 
 -----
 
-<<Building-the-program>>
-
-Next: [[#Getting-help][Getting help]], Previous:
-[[#Fat_002dfree-Accounting][Fat-free Accounting]], Up:
-[[#Introduction-to-Ledger][Introduction to Ledger]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Building-the-program-1>>
-
 ** 1.2 Building the program
 :PROPERTIES:
 :ID:       3e4788cc-8ee1-415a-b6b9-32728b2711ef
@@ -261,15 +253,6 @@ instructions.
 
 -----
 
-<<Getting-help>>
-
-Next: [[#Third_002dParty-Ledger-Tutorials][Third-Party Ledger
-Tutorials]], Previous: [[#Building-the-program][Building the program]],
-Up: [[#Introduction-to-Ledger][Introduction to Ledger]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Getting-help-1>>
-
 ** 1.3 Getting help
 :PROPERTIES:
 :ID:       d359d543-a40e-4b51-ac88-5ddda7b8e345
@@ -289,14 +272,6 @@ You can also find help in the =#ledger= channel on the IRC server
 =irc.freenode.net=.
 
 -----
-
-<<Third_002dParty-Ledger-Tutorials>>
-
-Previous: [[#Getting-help][Getting help]], Up:
-[[#Introduction-to-Ledger][Introduction to Ledger]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Third_002dParty-Ledger-Tutorials-1>>
 
 ** 1.4 Third-Party Ledger Tutorials
 :PROPERTIES:
@@ -319,15 +294,6 @@ scripts that relate to the aforementioned Ledger setup can be found
 contrib/non-profit-audit-reports/ in Ledger's own source repository.)
 
 -----
-
-<<Ledger-Tutorial>>
-
-Next: [[#Principles-of-Accounting-with-Ledger][Principles of Accounting
-with Ledger]], Previous: [[#Introduction-to-Ledger][Introduction to
-Ledger]], Up: [[#Top][Top]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Ledger-Tutorial-1>>
 
 * 2 Ledger Tutorial
 :PROPERTIES:
@@ -356,14 +322,6 @@ If you would rather start with your own journal right away please see
 
 -----
 
-<<Run-a-Few-Reports>>
-
-Previous: [[#Start-a-Journal-File][Start a Journal File]], Up:
-[[#Ledger-Tutorial][Ledger Tutorial]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Run-a-Few-Reports-1>>
-
 ** 2.2 Run a Few Reports
 :PROPERTIES:
 :ID:       aa170b4d-c19e-474d-985e-91fbba6441c2
@@ -388,7 +346,6 @@ variations between shells to give concrete examples for each.
 :PROPERTIES:
 :ID:       c701a60f-e4be-4bd5-979e-bb41a46edb81
 :END:
-<<index-balance-report>> <<index-balance>>
 
 To find the balances of all of your accounts, run this command:
 
@@ -445,19 +402,10 @@ A more useful report is to show only your Assets and Liabilities:
 
 -----
 
-<<Register-Report>>
-
-Next: [[#Cleared-Report][Cleared Report]], Previous:
-[[#Balance-Report][Balance Report]], Up: [[#Run-a-Few-Reports][Run a Few
-Reports]]   [[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Register-Report-1>>
-
 *** 2.2.2 Register Report
 :PROPERTIES:
 :ID:       482eae23-450c-48ca-8e98-8f53fc69fb35
 :END:
-<<index-register-report>> <<index-register>>
 
 To show all transactions and a running total:
 
@@ -504,8 +452,6 @@ Ledger will generate:
 To limit this to a more useful subset, simply add the accounts you are
 interested in seeing transactions for:
 
-<<index-accounts_002c-limiting-by>> <<index-limiting-by-accounts>>
-
 #+begin_example
     $ ledger -f drewr3.dat register Groceries
 #+end_example
@@ -550,20 +496,10 @@ If you would like to find transaction to only a certain payee use
 
 -----
 
-<<Cleared-Report>>
-
-Next: [[#Using-the-Windows-Command_002dLine][Using the Windows
-Command-Line]], Previous: [[#Register-Report][Register Report]], Up:
-[[#Run-a-Few-Reports][Run a Few Reports]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Cleared-Report-1>>
-
 *** 2.2.3 Cleared Report
 :PROPERTIES:
 :ID:       863a3e42-00b2-4bce-9eb8-c0c280b792d0
 :END:
-<<index-cleared-report>> <<index-cleared>>
 
 A very useful report is to show what your obligations are versus what
 expenditures have actually been recorded. It can take several days for a
@@ -603,34 +539,16 @@ the “cleared” balance.
 
 -----
 
-<<Using-the-Windows-Command_002dLine>>
-
-Previous: [[#Cleared-Report][Cleared Report]], Up:
-[[#Run-a-Few-Reports][Run a Few Reports]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Using-the-Windows-Command_002dLine-1>>
-
 *** 2.2.4 Using the Windows Command-Line
 :PROPERTIES:
 :ID:       e1a77dd0-a2fe-4827-a708-52d80a7cce2b
 :END:
-<<index-windows-cmd_002eexe>>
-<<index-currency-symbol-display-on-windows>>
 
 Using ledger under the windows command shell has one significant
 limitation. CMD.EXE is limited to standard ASCII characters and as such
 cannot display any currency symbols other than dollar signs ‘$'.
 
 -----
-
-<<Principles-of-Accounting-with-Ledger>>
-
-Next: [[#Keeping-a-Journal][Keeping a Journal]], Previous:
-[[#Ledger-Tutorial][Ledger Tutorial]], Up: [[#Top][Top]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Principles-of-Accounting-with-Ledger-1>>
 
 * 3 Principles of Accounting with Ledger
 :PROPERTIES:
@@ -647,21 +565,10 @@ Next: [[#Keeping-a-Journal][Keeping a Journal]], Previous:
 
 -----
 
-<<Accounting-with-Ledger>>
-
-Next: [[#Stating-where-money-goes][Stating where money goes]], Previous:
-[[#Principles-of-Accounting-with-Ledger][Principles of Accounting with
-Ledger]], Up: [[#Principles-of-Accounting-with-Ledger][Principles of
-Accounting with Ledger]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Accounting-with-Ledger-1>>
-
 ** 3.1 Accounting with Ledger
 :PROPERTIES:
 :ID:       0ceba677-d165-4e2c-85c8-e2e257c38cfa
 :END:
-<<index-double_002dentry-accounting>>
 
 Accounting is simply tracking your money. It can range from nothing, and
 just waiting for automatic overdraft protection to kick in, or not, to a
@@ -671,20 +578,10 @@ business's. Double-entry accounting scales.
 
 -----
 
-<<Stating-where-money-goes>>
-
-Next: [[#Assets-and-Liabilities][Assets and Liabilities]], Previous:
-[[#Accounting-with-Ledger][Accounting with Ledger]], Up:
-[[#Principles-of-Accounting-with-Ledger][Principles of Accounting with
-Ledger]]   [[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Stating-where-money-goes-1>>
-
 ** 3.2 Stating where money goes
 :PROPERTIES:
 :ID:       d990379a-bdad-4a5d-8477-de0dbf18fd53
 :END:
-<<index-credits-and-debits>>
 
 Accountants will talk of “credits” and “debits”, but the meaning is
 often different from the layman's understanding. To avoid confusion,
@@ -706,8 +603,6 @@ subtract it from an income account:
         Assets:Checking                           $500.00
         Income:Salary                            $-500.00
 #+end_example
-
-<<index-income-is-negative>> <<index-why-is-income-negative>>
 
 Why is the Income a negative figure? When you look at the balance totals
 for your ledger, you may be surprised to see that Expenses are a
@@ -737,20 +632,10 @@ than when you started your ledger. Make sense?
 
 -----
 
-<<Assets-and-Liabilities>>
-
-Next: [[#Commodities-and-Currencies][Commodities and Currencies]],
-Previous: [[#Stating-where-money-goes][Stating where money goes]], Up:
-[[#Principles-of-Accounting-with-Ledger][Principles of Accounting with
-Ledger]]   [[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Assets-and-Liabilities-1>>
-
 ** 3.3 Assets and Liabilities
 :PROPERTIES:
 :ID:       83a7830a-256e-49d4-ae60-b1cf91d63852
 :END:
-<<index-assets-and-liabilities>> <<index-debts-are-liabilities>>
 
 Assets are money that you have, and Liabilities are money that you owe.
 “Liabilities” is just a more inclusive name for Debts.
@@ -831,20 +716,14 @@ automobile expenses:
 This assumes, of course, that you use account names like
 ‘Expenses:Auto:Gas' and ‘Expenses:Auto:Repair'.
 
-| • [[#Tracking-reimbursable-expenses][Tracking reimbursable expenses]]: |    |   |
+- [[id:a1be6762-7356-452b-beb8-d56b63a1c007][3.3.1 Tracking reimbursable expenses]]
 
 -----
 
-<<Tracking-reimbursable-expenses>>
-
-Previous: [[#Assets-and-Liabilities][Assets and Liabilities]], Up:
-[[#Assets-and-Liabilities][Assets and Liabilities]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Tracking-reimbursable-expenses-1>>
-
 *** 3.3.1 Tracking reimbursable expenses
-<<index-reimbursable-expense-tracking>>
+:PROPERTIES:
+:ID:       a1be6762-7356-452b-beb8-d56b63a1c007
+:END:
 
 Sometimes you will want to spend money on behalf of someone else, which
 will eventually get repaid. Since the money is still /yours/, it is
@@ -1007,15 +886,6 @@ weeks later.
 
 -----
 
-<<Commodities-and-Currencies>>
-
-Next: [[#Accounts-and-Inventories][Accounts and Inventories]], Previous:
-[[#Assets-and-Liabilities][Assets and Liabilities]], Up:
-[[#Principles-of-Accounting-with-Ledger][Principles of Accounting with
-Ledger]]   [[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Commodities-and-Currencies-1>>
-
 ** 3.4 Commodities and Currencies
 :PROPERTIES:
 :ID:       2fbeb880-4374-48e7-9aef-1dedb9bee273
@@ -1073,8 +943,6 @@ file, which might look like this:
     P 2004/06/21 02:18:02 AU $400.00
 #+end_example
 
-<<index-_002d_002dprice_002ddb-FILE>> <<index-_002d_002dmarket>>
-
 Specify the price history to use with the --price-db FILE option, with
 the --market (-V) option to report in terms of current market value:
 
@@ -1109,8 +977,8 @@ the left value's commodity. The result of this command might be:
     14.01 AU  Assets:Checking
 #+end_example
 
-| • [[#Commodity-price-histories][Commodity price histories]]: |    |   |
-| • [[#Commodity-equivalences][Commodity equivalences]]:       |    |   |
+- [[id:3192b78b-0cad-429e-9304-56688d79eb43][3.4.1 Commodity price histories]]
+- [[id:72ecac7b-f09d-43ce-beb5-9f9eed744d26][3.4.2 Commodity equivalences]]
 
 -----
 
@@ -1124,6 +992,9 @@ Next: [[#Commodity-equivalences][Commodity equivalences]], Previous:
 <<Commodity-price-histories-1>>
 
 *** 3.4.1 Commodity price histories
+:PROPERTIES:
+:ID:       3192b78b-0cad-429e-9304-56688d79eb43
+:END:
 Whenever a commodity is purchased using a different commodity (such as a
 share of common stock using dollars), it establishes a price for that
 commodity on that day. It is also possible, by recording price details
@@ -1145,15 +1016,10 @@ enable pricing reports, use one of the commodity reporting options.
 
 -----
 
-<<Commodity-equivalences>>
-
-Previous: [[#Commodity-price-histories][Commodity price histories]], Up:
-[[#Commodities-and-Currencies][Commodities and Currencies]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Commodity-equivalences-1>>
-
 *** 3.4.2 Commodity equivalences
+:PROPERTIES:
+:ID:       72ecac7b-f09d-43ce-beb5-9f9eed744d26
+:END:
 Sometimes a commodity has several forms which are all equivalent. An
 example of this is time. Whether tracked in terms of minutes, hours or
 days, it should be possible to convert between the various forms. Doing
@@ -1185,8 +1051,6 @@ Reporting the balance for this ledger file produces:
                   -50.0m  Project:XYZ
 #+end_example
 
-<<index-C>>
-
 This example works because ledger already knows how to handle seconds,
 minutes and hours, as part of its time tracking support. Defining other
 equivalences is simple. The following is an example that creates data
@@ -1212,15 +1076,6 @@ commodity without resulting to a partial fraction, then the larger
 commodity is used.
 
 -----
-
-<<Accounts-and-Inventories>>
-
-Next: [[#Understanding-Equity][Understanding Equity]], Previous:
-[[#Commodities-and-Currencies][Commodities and Currencies]], Up:
-[[#Principles-of-Accounting-with-Ledger][Principles of Accounting with
-Ledger]]   [[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Accounts-and-Inventories-1>>
 
 ** 3.5 Accounts and Inventories
 :PROPERTIES:
@@ -1273,15 +1128,6 @@ Sturm Brightblade.
 
 -----
 
-<<Understanding-Equity>>
-
-Next: [[#Dealing-with-Petty-Cash][Dealing with Petty Cash]], Previous:
-[[#Accounts-and-Inventories][Accounts and Inventories]], Up:
-[[#Principles-of-Accounting-with-Ledger][Principles of Accounting with
-Ledger]]   [[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Understanding-Equity-1>>
-
 ** 3.6 Understanding Equity
 :PROPERTIES:
 :ID:       07092bee-b69b-4f59-91ed-4c3e1c771067
@@ -1324,16 +1170,6 @@ figure from the total.
 
 -----
 
-<<Dealing-with-Petty-Cash>>
-
-Next: [[#Working-with-multiple-funds-and-accounts][Working with multiple
-funds and accounts]], Previous: [[#Understanding-Equity][Understanding
-Equity]], Up: [[#Principles-of-Accounting-with-Ledger][Principles of
-Accounting with Ledger]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Dealing-with-Petty-Cash-1>>
-
 ** 3.7 Dealing with Petty Cash
 :PROPERTIES:
 :ID:       129ded72-2eca-43a3-996b-a0d20af11257
@@ -1367,14 +1203,6 @@ This way, you can still track large cash expenses, while ignoring all of
 the smaller ones.
 
 -----
-
-<<Working-with-multiple-funds-and-accounts>>
-
-Previous: [[#Dealing-with-Petty-Cash][Dealing with Petty Cash]], Up:
-[[#Principles-of-Accounting-with-Ledger][Principles of Accounting with
-Ledger]]   [[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Working-with-multiple-funds-and-accounts-1>>
 
 ** 3.8 Working with multiple funds and accounts
 :PROPERTIES:
@@ -1454,8 +1282,6 @@ sense:
                 $-500.00  Income:Donations
 #+end_example
 
-<<index-_002d_002dreal>>
-
 If the --real option is used, the report will be in terms of the real
 accounts:
 
@@ -1504,8 +1330,6 @@ Note how the accounts now relate only to the real accounts, and any
 balance or register reports will reflect this. That the transactions
 relate to a particular fund is kept only in the code.
 
-<<index-_002d_002dpayee_003dcode>> <<index-_002d_002dby_002dpayee>>
-
 How does this become a fund report? By using the --payee=code option,
 you can generate a register report where the payee for each posting
 shows the code. Alone, this is not terribly interesting; but when
@@ -1539,15 +1363,6 @@ which is best for your situation.
 
 -----
 
-<<Keeping-a-Journal>>
-
-Next: [[#Transactions][Transactions]], Previous:
-[[#Principles-of-Accounting-with-Ledger][Principles of Accounting with
-Ledger]], Up: [[#Top][Top]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Keeping-a-Journal-1>>
-
 * 4 Keeping a Journal
 :PROPERTIES:
 :ID:       c7460141-3a7f-47e4-848f-4115bb7b376c
@@ -1570,7 +1385,7 @@ nature of your transactions.
 
 For example, you do not need to tell Ledger about the accounts you use.
 Any time Ledger sees a posting involving an account it knows nothing
-about, it will create it[[#FOOT2][^{2}]]. If you use a commodity that is
+about, it will create it. If you use a commodity that is
 new to Ledger, it will create that commodity, and determine its display
 characteristics (placement of the symbol before or after the amount,
 display precision, etc.) based on how you used the commodity in the
@@ -1587,15 +1402,6 @@ posting.
 - [[id:b097bfd7-8c31-4b62-b614-c961ed154d16][4.9 Archiving Previous Years]]
 
 -----
-
-<<The-Most-Basic-Entry>>
-
-Next: [[#Starting-up][Starting up]], Previous:
-[[#Keeping-a-Journal][Keeping a Journal]], Up:
-[[#Keeping-a-Journal][Keeping a Journal]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<The-Most-Basic-Entry-1>>
 
 ** 4.1 The Most Basic Entry
 :PROPERTIES:
@@ -1629,8 +1435,6 @@ Also note the structure of the account entries. There is an implied
 hierarchy established by separating with colons (see
 [[#Structuring-your-Accounts][Structuring your Accounts]]).
 
-<<index-spaces-in-postings>> <<index-posting-format-details>>
-
 *The format is very flexible and it isn't necessary that you indent and
 space out things exactly as shown. The only requirements are that the
 start of the transaction (the date typically) is at the beginning of the
@@ -1643,21 +1447,10 @@ and stop calculating.*
 
 -----
 
-<<Starting-up>>
-
-Next: [[#Structuring-your-Accounts][Structuring your Accounts]],
-Previous: [[#The-Most-Basic-Entry][The Most Basic Entry]], Up:
-[[#Keeping-a-Journal][Keeping a Journal]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Starting-up-1>>
-
 ** 4.2 Starting up
 :PROPERTIES:
 :ID:       f8ea4578-2071-4fac-b4cc-af0013dab0c9
 :END:
-<<index-initial-equity>> <<index-beginning-ledger>>
-<<index-opening-balance>>
 
 Unless you have recently arrived from another planet, you already have a
 financial state. You need to capture that financial state so that Ledger
@@ -1688,20 +1481,10 @@ of the account name, anything convenient that you understand will work.
 
 -----
 
-<<Structuring-your-Accounts>>
-
-Next: [[#Commenting-on-your-Journal][Commenting on your Journal]],
-Previous: [[#Starting-up][Starting up]], Up:
-[[#Keeping-a-Journal][Keeping a Journal]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Structuring-your-Accounts-1>>
-
 ** 4.3 Structuring your Accounts
 :PROPERTIES:
 :ID:       bf0662e1-d6ce-4453-9037-cfaa19ec2cc5
 :END:
-<<index-accounts_002c-naming>> <<index-naming-accounts>>
 
 There really are no requirements for how you do this, but to preserve
 your sanity we suggest some very basic structure to your accounting
@@ -1728,21 +1511,10 @@ spend on burgers and fries, you could have the following:
 
 -----
 
-<<Commenting-on-your-Journal>>
-
-Next: [[#Currency-and-Commodities][Currency and Commodities]], Previous:
-[[#Structuring-your-Accounts][Structuring your Accounts]], Up:
-[[#Keeping-a-Journal][Keeping a Journal]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Commenting-on-your-Journal-1>>
-
 ** 4.4 Commenting on your Journal
 :PROPERTIES:
 :ID:       b5dd99f0-fd5b-4ed5-b205-c843e854efae
 :END:
-<<index-comments_002c-characters>> <<index-block-comments>>
-<<index-comments_002c-block>>
 
 Comments are generally started using a ‘;'. However, in order to
 increase compatibility with other text manipulation programs and
@@ -1785,26 +1557,16 @@ indicates meta-data and tags (see [[#Metadata][Metadata]]).
 
 -----
 
-<<Currency-and-Commodities>>
-
-Next: [[#Keeping-it-Consistent][Keeping it Consistent]], Previous:
-[[#Commenting-on-your-Journal][Commenting on your Journal]], Up:
-[[#Keeping-a-Journal][Keeping a Journal]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Currency-and-Commodities-1>>
-
 ** 4.5 Currency and Commodities
 :PROPERTIES:
 :ID:       f4801054-8bec-4d30-9c3f-714e866f4004
 :END:
-<<index-currency>> <<index-commodity>>
 
 Ledger is agnostic when it comes to how you value your accounts.
 Dollars, Euros, Pounds, Francs, Shares etc. are all just “commodities”.
 Holdings in stocks, bonds, mutual funds and other financial instruments
 can be labeled using whatever is convenient for you (stock ticker
-symbols are suggested for publicly traded assets).[[#FOOT3][^{3}]]
+symbols are suggested for publicly traded assets).
 
 For the rest of this manual, we will only use the word “commodities”
 when referring to the units on a transaction value.
@@ -1859,21 +1621,12 @@ checking account) and €15.00. After spending on dinner I have €15.00 in
 my wallet. The bottom line balances to zero, but is shown in two lines
 since we haven't told ledger to convert commodities.
 
-| • [[#Naming-Commodities][Naming Commodities]]:                                           |    |   |
-| • [[#Buying-and-Selling-Stock][Buying and Selling Stock]]:                               |    |   |
-| • [[#Fixing-Lot-Prices][Fixing Lot Prices]]:                                             |    |   |
-| • [[#Complete-control-over-commodity-pricing][Complete control over commodity pricing]]: |    |   |
+- [[#Naming-Commodities][Naming Commodities]]
+- [[#Buying-and-Selling-Stock][Buying and Selling Stock]]
+- [[#Fixing-Lot-Prices][Fixing Lot Prices]]
+- [[#Complete-control-over-commodity-pricing][Complete control over commodity pricing]]
 
 -----
-
-<<Naming-Commodities>>
-
-Next: [[#Buying-and-Selling-Stock][Buying and Selling Stock]], Previous:
-[[#Currency-and-Commodities][Currency and Commodities]], Up:
-[[#Currency-and-Commodities][Currency and Commodities]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Naming-Commodities-1>>
 
 *** 4.5.1 Naming Commodities
 Commodity names can have any character, including white-space. However,
@@ -1892,17 +1645,7 @@ must be enclosed in double quotes ‘"':
 
 -----
 
-<<Buying-and-Selling-Stock>>
-
-Next: [[#Fixing-Lot-Prices][Fixing Lot Prices]], Previous:
-[[#Naming-Commodities][Naming Commodities]], Up:
-[[#Currency-and-Commodities][Currency and Commodities]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Buying-and-Selling-Stock-1>>
-
 *** 4.5.2 Buying and Selling Stock
-<<index-buying-stock>>
 
 Buying stock is a typical example that many will use that involves
 multiple commodities in the same transaction. The type of the share
@@ -1937,18 +1680,7 @@ price/date and your taxation model is based on longest-held-first.
 
 -----
 
-<<Fixing-Lot-Prices>>
-
-Next: [[#Complete-control-over-commodity-pricing][Complete control over
-commodity pricing]], Previous: [[#Buying-and-Selling-Stock][Buying and
-Selling Stock]], Up: [[#Currency-and-Commodities][Currency and
-Commodities]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Fixing-Lot-Prices-1>>
-
 *** 4.5.3 Fixing Lot Prices
-<<index-fixing-lot-prices>> <<index-consumable-commodity-pricing>>
 
 Commodities that you keep in order to sell at a later time have a
 variable value that fluctuates with the market prices. Commodities that
@@ -2005,16 +1737,7 @@ amount is null.
 
 -----
 
-<<Complete-control-over-commodity-pricing>>
-
-Previous: [[#Fixing-Lot-Prices][Fixing Lot Prices]], Up:
-[[#Currency-and-Commodities][Currency and Commodities]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Complete-control-over-commodity-pricing-1>>
-
 *** 4.5.4 Complete control over commodity pricing
-<<index-_002d_002dmarket-1>> <<index-_002d_002dexchange-COMMODITY>>
 
 Ledger allows you to have very detailed control over how your
 commodities are valued. You can fine tune the results given using the
@@ -2159,20 +1882,10 @@ amount using the ‘(( ))' commodity annotation.
 
 -----
 
-<<Keeping-it-Consistent>>
-
-Next: [[#Journal-Format][Journal Format]], Previous:
-[[#Currency-and-Commodities][Currency and Commodities]], Up:
-[[#Keeping-a-Journal][Keeping a Journal]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Keeping-it-Consistent-1>>
-
 ** 4.6 Keeping it Consistent
 :PROPERTIES:
 :ID:       d140cecb-60d3-46cb-a39a-cdc67a3320ce
 :END:
-<<index-_002d_002dstrict>> <<index-accounts>>
 
 Sometimes Ledger's flexibility can lead to difficulties. Using a
 freeform text editor to enter transactions makes it easy to keep the
@@ -2210,15 +1923,6 @@ of every line.
 
 -----
 
-<<Journal-Format>>
-
-Next: [[#Converting-from-other-formats][Converting from other formats]],
-Previous: [[#Keeping-it-Consistent][Keeping it Consistent]], Up:
-[[#Keeping-a-Journal][Keeping a Journal]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Journal-Format-1>>
-
 ** 4.7 Journal Format
 :PROPERTIES:
 :ID:       cd9acedb-0388-411e-9ef1-a306af369cdf
@@ -2227,18 +1931,10 @@ The ledger file format is quite simple, but also very flexible. It
 supports many options, though typically the user can ignore most of
 them. They are summarized below.
 
-| • [[#Transactions-and-Comments][Transactions and Comments]]: |    |   |
-| • [[#Command-Directives][Command Directives]]:               |    |   |
+- [[#Transactions-and-Comments][Transactions and Comments]]
+- [[#Command-Directives][Command Directives]]
 
 -----
-
-<<Transactions-and-Comments>>
-
-Next: [[#Command-Directives][Command Directives]], Previous:
-[[#Journal-Format][Journal Format]], Up: [[#Journal-Format][Journal
-Format]]   [[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Transactions-and-Comments-1>>
 
 *** 4.7.1 Transactions and Comments
 The initial character of each line determines what the line means, and
@@ -2277,8 +1973,7 @@ how it should be interpreted. Allowable initial characters are:
      =[ACTUAL_DATE=EFFECTIVE_DATE]= (see [[#Virtual-postings][Virtual
      postings]]).
 
-- =P= :: <<index-_002d_002ddownload>> <<index-P>>
-     <<index-historical-prices>>
+- =P= ::
 
      Specifies a historical price for a commodity. These are usually found
      in a pricing history file (see the --download (-Q) option). The syntax
@@ -2288,8 +1983,7 @@ how it should be interpreted. Allowable initial characters are:
            P DATE SYMBOL PRICE
      #+end_example
 
-- === :: <<index-_003d>> <<index-automated-transaction>>
-     <<index-transaction_002c-automated>>
+- === ::
 
      An automated transaction. A value expression must appear after the
      equal sign.
@@ -2300,8 +1994,7 @@ how it should be interpreted. Allowable initial characters are:
      whichever real posting is matched by the value expression (see
      [[#Automated-Transactions][Automated Transactions]]).
 
-- =~= :: <<index-_007e>> <<index-periodic-transaction>>
-     <<index-transaction_002c-periodic>>
+- =~= ::
 
      A periodic transaction. A period expression must appear after the
      tilde.
@@ -2309,13 +2002,13 @@ how it should be interpreted. Allowable initial characters are:
      After this initial line there should be a set of one or more postings,
      just as if it were a normal transaction.
 
-- =; # % | *= :: <<index-comment>> <<index-comments>>
+- =; # % | *= ::
 
      A line beginning with a semicolon, pound, percent, bar or asterisk
      indicates a comment, and is ignored. Comments will not be returned in
      a “print” response.
 
-- =indented ;= :: <<index-tags>>
+- =indented ;= ::
 
      If the semicolon is indented and occurs inside a transaction, it is
      parsed as a persistent note for its preceding category. These notes or
@@ -2324,21 +2017,12 @@ how it should be interpreted. Allowable initial characters are:
 
 -----
 
-<<Command-Directives>>
-
-Previous: [[#Transactions-and-Comments][Transactions and Comments]], Up:
-[[#Journal-Format][Journal Format]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Command-Directives-1>>
-
 *** 4.7.2 Command Directives
-<<index-_002d_002dstrict-1>> <<index-_002d_002dpedantic>>
 
 - =beginning of line= :: Command directives must occur at the beginning
      of a line. Use of ‘!' and ‘@' is deprecated.
 
-- =account= :: <<index-account>> <<index-pre_002ddeclare-account>>
+- =account= ::
 
      Pre-declare valid account names. This only has an effect if --strict
      or --pedantic is used (see below). The =account= directive supports
@@ -2386,7 +2070,7 @@ Previous: [[#Transactions-and-Comments][Transactions and Comments]], Up:
      the “balancing account” for any future transactions that contain only
      a single posting.
 
-- =apply account= :: <<index-apply-account>>
+- =apply account= ::
 
      Sets the root for all accounts following this directive. Ledger
      supports a hierarchical tree of accounts. It may be convenient to keep
@@ -2408,7 +2092,7 @@ Previous: [[#Transactions-and-Comments][Transactions and Comments]], Up:
      and ‘Personal:Assets:Checking' until an ‘end apply account' directive
      was found.
 
-- =apply fixed= :: <<index-fixed>> <<index-fixated-prices>>
+- =apply fixed= ::
 
      A fixed block is used to set fixated prices (see
      [[#Fixated-prices-and-costs][Fixated prices and costs]]) for a series
@@ -2441,7 +2125,7 @@ Previous: [[#Transactions-and-Comments][Transactions and Comments]], Up:
                Expenses:Food            25.75 CAD   {=$0.90}
      #+end_example
 
-- =alias= :: <<index-alias>> <<index-account_002c-alias>>
+- =alias= ::
 
      Define an alias for an account name. If you have a deeply nested tree
      of accounts, it may be convenient to define an alias, for example:
@@ -2492,7 +2176,7 @@ Previous: [[#Transactions-and-Comments][Transactions and Comments]], Up:
      The option --no-aliases completely disables alias expansion. All
      accounts are read verbatim as they are in the ledger file.
 
-- =assert= :: <<index-assert>> <<index-assertions>>
+- =assert= ::
 
      An assertion can throw an error if a condition is not met during
      Ledger's run.
@@ -2501,7 +2185,7 @@ Previous: [[#Transactions-and-Comments][Transactions and Comments]], Up:
            assert <VALUE EXPRESSION BOOLEAN RESULT>
      #+end_example
 
-- =bucket= :: <<bucket>><<index-bucket-1>> <<index-bucket>>
+- =bucket= ::
 
      Defines the default account to use for balancing transactions.
      Normally, each transaction has at least two postings, which must
@@ -2525,7 +2209,7 @@ Previous: [[#Transactions-and-Comments][Transactions and Comments]], Up:
                Assets:Checking:Business            $ 30.00
      #+end_example
 
-- =capture= :: <<index-capture>> <<index-print>> <<index-register-1>>
+- =capture= ::
 
      Directs Ledger to replace any account matching a regex with the given
      account. For example:
@@ -2540,7 +2224,7 @@ Previous: [[#Transactions-and-Comments][Transactions and Comments]], Up:
      Ledger will display the mapped payees in =print= and =register=
      reports.
 
-- =check= :: <<index-check>> <<index-assertions-1>>
+- =check= ::
 
      A check issues a warning if a condition is not met during Ledger's
      run.
@@ -2549,12 +2233,11 @@ Previous: [[#Transactions-and-Comments][Transactions and Comments]], Up:
            check <VALUE EXPRESSION BOOLEAN RESULT>
      #+end_example
 
-- =comment= :: <<index-comment-1>> <<index-comments-1>>
+- =comment= ::
 
      Start a block comment, closed by =end comment=.
 
-- =commodity= :: <<index-commodity-1>>
-     <<index-pre_002ddeclare-commodity>>
+- =commodity= ::
 
      Pre-declare commodity names. This only has an effect if --strict or
      --pedantic is used (see below).
@@ -2593,7 +2276,7 @@ Previous: [[#Transactions-and-Comments][Transactions and Comments]], Up:
 
      The =default= sub-directive marks this as the “default” commodity.
 
-- =define= :: <<index-define>>
+- =define= ::
 
      Allows you to define value expressions for future use. For example:
 
@@ -2607,18 +2290,18 @@ Previous: [[#Transactions-and-Comments][Transactions and Comments]], Up:
 
      The posting will have a cost of $400.
 
-- =end= :: <<index-end>>
+- =end= ::
 
      Closes block commands like =apply= or =comment=.
 
-- =expr= :: <<index-expr>>
-- =include= :: <<index-include>>
+- =expr= ::
+- =include= ::
 
      Include the stated file as if it were part of the current file. The
      file name can contain a wildcard (‘*') to refer to multiple files
      (e.g. ‘bank/*.ledger').
 
-- =payee= :: <<index-payee>> <<index-print-1>> <<index-register-2>>
+- =payee= ::
 
      The =payee= directive supports two optional sub-directives, if they
      immediately follow the payee directive and---if it is on a successive
@@ -2648,7 +2331,7 @@ Previous: [[#Transactions-and-Comments][Transactions and Comments]], Up:
      Ledger will display the mapped payees in =print= and =register=
      reports.
 
-- =apply tag= :: <<index-apply-tag>>
+- =apply tag= ::
 
      Allows you to designate a block of transactions and assign the same
      tag to all. Tags can have values and may be nested.
@@ -2697,7 +2380,7 @@ Previous: [[#Transactions-and-Comments][Transactions and Comments]], Up:
                Income:Sales
      #+end_example
 
-- =tag= :: <<index-tag>> <<index-pre_002ddeclare-tag>>
+- =tag= ::
 
      Pre-declares tag names. This only has an effect if --strict or
      --pedantic is used (see below).
@@ -2724,11 +2407,11 @@ Previous: [[#Transactions-and-Comments][Transactions and Comments]], Up:
      metadata is used!). Such checks or assertions are not called if no
      value is given.
 
-- =test= :: <<index-test>> <<index-comments-2>>
+- =test= ::
 
      This is a synonym for =comment= and must be closed by an =end= tag.
 
-- =year= :: <<index-year>> <<year>>
+- =year= ::
 
      Denotes the year used for all subsequent transactions that give a date
      without a year. The year should appear immediately after the
@@ -2739,15 +2422,15 @@ Previous: [[#Transactions-and-Comments][Transactions and Comments]], Up:
 The following single letter commands may be at the beginning of a line
 alone, for backwards compatibility with older Ledger versions.
 
-- =A= :: <<index-A>> <<index-bucket-2>>
+- =A= ::
 
      See [[#bucket][bucket]].
 
-- =Y= :: <<index-Y>> <<index-year-1>>
+- =Y= ::
 
      See [[#year][year]].
 
-- =N SYMBOL= :: <<index-N>>
+- =N SYMBOL= ::
 
      Indicates that pricing information is to be ignored for a given
      symbol, nor will quotes ever be downloaded for that symbol. Useful
@@ -2759,7 +2442,7 @@ alone, for backwards compatibility with older Ledger versions.
            N SYMBOL
      #+end_example
 
-- =D AMOUNT= :: <<index-xact>> <<index-D>>
+- =D AMOUNT= ::
 
      Specifies the default commodity to use, by specifying an amount in the
      expected format. The =xact= command will use this commodity as the
@@ -2773,7 +2456,7 @@ alone, for backwards compatibility with older Ledger versions.
            D $1,000.00
      #+end_example
 
-- =C AMOUNT1 = AMOUNT2= :: <<index-C-1>>
+- =C AMOUNT1 = AMOUNT2= ::
 
      Specifies a commodity conversion, where the first amount is given to
      be equivalent to the second amount. The first amount should use the
@@ -2783,8 +2466,7 @@ alone, for backwards compatibility with older Ledger versions.
            C 1.00 Kb = 1024 bytes
      #+end_example
 
-- =I, i, O, o, b, h= :: <<index-I>> <<index-i>> <<index-O>> <<index-o>>
-     <<index-b>> <<index-h>>
+- =I, i, O, o, b, h= ::
 
      These four relate to timeclock support, which permits Ledger to read
      timelog files. See timeclock's documentation for more info on the
@@ -2792,19 +2474,10 @@ alone, for backwards compatibility with older Ledger versions.
 
 -----
 
-<<Converting-from-other-formats>>
-
-Next: [[#Archiving-Previous-Years][Archiving Previous Years]], Previous:
-[[#Journal-Format][Journal Format]], Up: [[#Keeping-a-Journal][Keeping a
-Journal]]   [[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Converting-from-other-formats-1>>
-
 ** 4.8 Converting from other formats
 :PROPERTIES:
 :ID:       23989338-a9e8-4eca-b424-7946e431b583
 :END:
-<<index-csv-importing>>
 
 There are numerous tools to help convert various formats to a Ledger
 file. Most banks will generate a comma separated values file that can
@@ -2822,19 +2495,10 @@ function.
 
 -----
 
-<<Archiving-Previous-Years>>
-
-Previous: [[#Converting-from-other-formats][Converting from other
-formats]], Up: [[#Keeping-a-Journal][Keeping a Journal]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Archiving-Previous-Years-1>>
-
 ** 4.9 Archiving Previous Years
 :PROPERTIES:
 :ID:       b097bfd7-8c31-4b62-b614-c961ed154d16
 :END:
-<<index-equity>> <<index-print-2>>
 
 After a while, your journal can get to be pretty large. While this will
 not slow down Ledger---it's designed to process journals very
@@ -2894,14 +2558,6 @@ mind this maxim: Do whatever keeps you doing it.
 
 -----
 
-<<Transactions>>
-
-Next: [[#Building-Reports][Building Reports]], Previous:
-[[#Keeping-a-Journal][Keeping a Journal]], Up: [[#Top][Top]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Transactions-1>>
-
 * 5 Transactions
 :PROPERTIES:
 :ID:       c13ac1c2-00e9-44b7-bd34-ec8f96f100ce
@@ -2931,14 +2587,6 @@ Next: [[#Building-Reports][Building Reports]], Previous:
 
 -----
 
-<<Basic-format>>
-
-Next: [[#Eliding-amounts][Eliding amounts]], Previous:
-[[#Transactions][Transactions]], Up: [[#Transactions][Transactions]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Basic-format-1>>
-
 ** 5.1 Basic format
 :PROPERTIES:
 :ID:       910c021a-aec8-4e36-b4f4-e4dc518edabb
@@ -2965,14 +2613,6 @@ A transaction can have any number of postings:
 #+end_example
 
 -----
-
-<<Eliding-amounts>>
-
-Next: [[#Auxiliary-dates][Auxiliary dates]], Previous:
-[[#Basic-format][Basic format]], Up: [[#Transactions][Transactions]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Eliding-amounts-1>>
 
 ** 5.2 Eliding amounts
 :PROPERTIES:
@@ -3017,19 +2657,10 @@ This transaction is identical to writing:
 
 -----
 
-<<Auxiliary-dates>>
-
-Next: [[#Codes][Codes]], Previous: [[#Eliding-amounts][Eliding
-amounts]], Up: [[#Transactions][Transactions]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Auxiliary-dates-1>>
-
 ** 5.3 Auxiliary dates
 :PROPERTIES:
 :ID:       211efdae-4f70-4dd2-b2fb-1f0232ed1374
 :END:
-<<index-_002d_002daux_002ddate>>
 
 You can associate a second date with a transaction by following the
 primary date with an equals sign:
@@ -3046,15 +2677,6 @@ and calculations (including pricing) will use the auxiliary date as if
 it were the primary date.
 
 -----
-
-<<Codes>>
-
-Next: [[#Transaction-state][Transaction state]], Previous:
-[[#Auxiliary-dates][Auxiliary dates]], Up:
-[[#Transactions][Transactions]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Codes-1>>
 
 ** 5.4 Codes
 :PROPERTIES:
@@ -3073,20 +2695,10 @@ to put those codes:
 
 -----
 
-<<Transaction-state>>
-
-Next: [[#Transaction-notes][Transaction notes]], Previous:
-[[#Codes][Codes]], Up: [[#Transactions][Transactions]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Transaction-state-1>>
-
 ** 5.5 Transaction state
 :PROPERTIES:
 :ID:       15db1379-b9a7-4bc3-bf6e-c23354ed05aa
 :END:
-<<index-_002d_002dcleared>> <<index-_002d_002duncleared>>
-<<index-_002d_002dpending>>
 
 A transaction can have a “state”: cleared, pending, or uncleared. The
 default is uncleared. To mark a transaction cleared, put an asterisk ‘*'
@@ -3142,15 +2754,6 @@ You can mark individual postings as cleared or pending, in case one
 
 -----
 
-<<Transaction-notes>>
-
-Next: [[#Metadata][Metadata]], Previous:
-[[#Transaction-state][Transaction state]], Up:
-[[#Transactions][Transactions]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Transaction-notes-1>>
-
 ** 5.6 Transaction notes
 :PROPERTIES:
 :ID:       853b438f-64de-4e1d-971c-5370d27c7bf8
@@ -3194,15 +2797,6 @@ the amount, or on its own line preceded by whitespace:
 
 -----
 
-<<Metadata>>
-
-Next: [[#Virtual-postings][Virtual postings]], Previous:
-[[#Transaction-notes][Transaction notes]], Up:
-[[#Transactions][Transactions]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Metadata-1>>
-
 ** 5.7 Metadata
 :PROPERTIES:
 :ID:       a1e80df0-609f-4d3c-be3a-9ec992d56e7e
@@ -3219,14 +2813,6 @@ The are two forms of metadata: plain tags, and tag/value pairs.
 - [[#Typed-metadata][Typed metadata]]
 
 -----
-
-<<Metadata-tags>>
-
-Next: [[#Metadata-values][Metadata values]], Previous:
-[[#Metadata][Metadata]], Up: [[#Metadata][Metadata]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Metadata-tags-1>>
 
 *** 5.7.1 Metadata tags
 To tag an item, put any word not containing whitespace between two
@@ -3252,17 +2838,7 @@ You can gang up multiple tags by sharing colons:
 
 -----
 
-<<Payee-metadata-tag>>
-
-Previous: [[#Metadata-tags][Metadata tags]], Up:
-[[#Metadata-tags][Metadata tags]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Payee-metadata-tag-1>>
-
 *** 5.7.1.1 Payee metadata tag
-<<index-Payee-metadata-tag>> <<index-register-3>> <<index-payees>>
-<<index-_002d_002dby_002dpayee-1>>
 
 “Payee” is a special metadata field. If set on a posting, it will be
 used as the payee name for that posting. This affects the =register=
@@ -3308,14 +2884,6 @@ option, due to a bug: [[https://github.com/ledger/ledger/issues/556]].
 
 -----
 
-<<Metadata-values>>
-
-Next: [[#Typed-metadata][Typed metadata]], Previous:
-[[#Metadata-tags][Metadata tags]], Up: [[#Metadata][Metadata]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Metadata-values-1>>
-
 *** 5.7.2 Metadata values
 To associate a value with a tag, use the syntax “Key: Value”, where the
 value can be any string of characters. Whitespace is needed after the
@@ -3329,14 +2897,6 @@ colon, and cannot appear in the Key:
 #+end_example
 
 -----
-
-<<Typed-metadata>>
-
-Previous: [[#Metadata-values][Metadata values]], Up:
-[[#Metadata][Metadata]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Typed-metadata-1>>
 
 *** 5.7.3 Typed metadata
 If a metadata tag ends in ::, its value will be parsed as a value
@@ -3367,19 +2927,10 @@ file, which would let me know right away that it is an invalid date.
 
 -----
 
-<<Virtual-postings>>
-
-Next: [[#Expression-amounts][Expression amounts]], Previous:
-[[#Metadata][Metadata]], Up: [[#Transactions][Transactions]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Virtual-postings-1>>
-
 ** 5.8 Virtual postings
 :PROPERTIES:
 :ID:       c5f0f1e4-9fcb-4c5f-ab67-d8a90f06f474
 :END:
-<<index-_002d_002dreal-1>>
 
 Ordinarily, the amounts of all postings in a transaction must balance to
 zero. This is non-negotiable. It's what double-entry accounting is all
@@ -3414,15 +2965,6 @@ against one or more other virtual postings by using brackets (which look
 
 -----
 
-<<Expression-amounts>>
-
-Next: [[#Balance-verification][Balance verification]], Previous:
-[[#Virtual-postings][Virtual postings]], Up:
-[[#Transactions][Transactions]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Expression-amounts-1>>
-
 ** 5.9 Expression amounts
 :PROPERTIES:
 :ID:       ed35037b-7c14-4fd7-93cd-9d02b25dd46b
@@ -3439,20 +2981,10 @@ parentheses:
 
 -----
 
-<<Balance-verification>>
-
-Next: [[#Posting-cost][Posting cost]], Previous:
-[[#Expression-amounts][Expression amounts]], Up:
-[[#Transactions][Transactions]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Balance-verification-1>>
-
 ** 5.10 Balance verification
 :PROPERTIES:
 :ID:       d9d4393b-c37a-4bab-9dc6-fbc4c2341294
 :END:
-<<index-_002d_002dpermissive>>
 
 - [[id:a81e7085-e172-479a-907b-dca9c205fc30][5.10.1 Balance assertions]]
 - [[id:518ad479-e0db-474a-b40c-9dd3e14759f1][5.10.1.1 Special assertion value 0]]
@@ -3468,15 +3000,6 @@ There are two forms of this features: balance assertions, and balance
 assignments.
 
 -----
-
-<<Balance-assertions>>
-
-Next: [[#Balance-assignments][Balance assignments]], Previous:
-[[#Balance-verification][Balance verification]], Up:
-[[#Balance-verification][Balance verification]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Balance-assertions-1>>
 
 *** 5.10.1 Balance assertions
 :PROPERTIES:
@@ -3511,8 +3034,6 @@ In this case, the amount in USD of cash (which has not changed) is
 validated. Nothing is asserted about the current amount of Canadian
 dollars in ‘Asset:Cash'.
 
-<<Special-assertion-value-0>>
-
 *** 5.10.1.1 Special assertion value 0
 :PROPERTIES:
 :ID:       518ad479-e0db-474a-b40c-9dd3e14759f1
@@ -3540,15 +3061,6 @@ The last transaction will assert that we are out of cash of any sort.
 
 -----
 
-<<Balance-assignments>>
-
-Next: [[#Resetting-a-balance][Resetting a balance]], Previous:
-[[#Balance-assertions][Balance assertions]], Up:
-[[#Balance-verification][Balance verification]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Balance-assignments-1>>
-
 *** 5.10.2 Balance assignments
 :PROPERTIES:
 :ID:       3154fa94-bdf1-4860-bb08-1a9305dc1a6e
@@ -3566,15 +3078,6 @@ be for the total in ‘Assets:Cash' to be $500.00 after the posting. If
 the resulting amount is not $-20.00 in this case, it is an error.
 
 -----
-
-<<Resetting-a-balance>>
-
-Next: [[#Balancing-transactions][Balancing transactions]], Previous:
-[[#Balance-assignments][Balance assignments]], Up:
-[[#Balance-verification][Balance verification]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Resetting-a-balance-1>>
 
 *** 5.10.3 Resetting a balance
 :PROPERTIES:
@@ -3599,16 +3102,7 @@ provided by the balance assignment's value.
 
 -----
 
-<<Balancing-transactions>>
-
-Previous: [[#Resetting-a-balance][Resetting a balance]], Up:
-[[#Balance-verification][Balance verification]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Balancing-transactions-1>>
-
 *** 5.10.4 Balancing transactions
-<<index-_002d_002dempty>>
 
 As a consequence of all the above, consider the following transaction:
 
@@ -3628,15 +3122,6 @@ this is not a “real” transaction. It won't appear in any reports anyway
 (unless you use a register report with --empty).
 
 -----
-
-<<Posting-cost>>
-
-Next: [[#Explicit-posting-costs][Explicit posting costs]], Previous:
-[[#Balance-verification][Balance verification]], Up:
-[[#Transactions][Transactions]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Posting-cost-1>>
 
 ** 5.11 Posting cost
 :PROPERTIES:
@@ -3663,14 +3148,6 @@ The resulting posting's cost is $50.00 per share.
 
 -----
 
-<<Explicit-posting-costs>>
-
-Next: [[#Posting-cost-expressions][Posting cost expressions]], Previous:
-[[#Posting-cost][Posting cost]], Up: [[#Transactions][Transactions]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Explicit-posting-costs-1>>
-
 ** 5.12 Explicit posting costs
 :PROPERTIES:
 :ID:       dcf01f0a-0de4-42f8-935e-e0ead31cce2c
@@ -3693,20 +3170,14 @@ from the first posting's cost, you can elide the other amount:
         Assets:Brokerage:Cash
 #+end_example
 
-| • [[#Primary-and-secondary-commodities][Primary and secondary commodities]]: |    |   |
+- [[id:e8ffcd52-d954-44a9-a5b4-67dac868f9af][5.12.1 Primary and secondary commodities]]
 
 -----
 
-<<Primary-and-secondary-commodities>>
-
-Previous: [[#Explicit-posting-costs][Explicit posting costs]], Up:
-[[#Explicit-posting-costs][Explicit posting costs]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Primary-and-secondary-commodities-1>>
-
 *** 5.12.1 Primary and secondary commodities
-<<index-_002d_002dmarket-2>> <<index-_002d_002dexchange-COMMODITY-1>>
+:PROPERTIES:
+:ID:       e8ffcd52-d954-44a9-a5b4-67dac868f9af
+:END:
 
 It is a general convention within Ledger that the “top” postings in a
 transaction contain the target accounts, while the final posting
@@ -3724,15 +3195,6 @@ will never convert a primary commodity into any other commodity.
 --exchange COMMODITY (-X) still will, however.
 
 -----
-
-<<Posting-cost-expressions>>
-
-Next: [[#Total-posting-costs][Total posting costs]], Previous:
-[[#Explicit-posting-costs][Explicit posting costs]], Up:
-[[#Transactions][Transactions]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Posting-cost-expressions-1>>
 
 ** 5.13 Posting cost expressions
 :PROPERTIES:
@@ -3756,15 +3218,6 @@ You can even have both:
 #+end_example
 
 -----
-
-<<Total-posting-costs>>
-
-Next: [[#Virtual-posting-costs][Virtual posting costs]], Previous:
-[[#Posting-cost-expressions][Posting cost expressions]], Up:
-[[#Transactions][Transactions]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Total-posting-costs-1>>
 
 ** 5.14 Total posting costs
 :PROPERTIES:
@@ -3790,15 +3243,6 @@ Ledger reads this as if you had written:
 
 -----
 
-<<Virtual-posting-costs>>
-
-Next: [[#Commodity-prices][Commodity prices]], Previous:
-[[#Total-posting-costs][Total posting costs]], Up:
-[[#Transactions][Transactions]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Virtual-posting-costs-1>>
-
 ** 5.15 Virtual posting costs
 :PROPERTIES:
 :ID:       4ed26416-1032-452e-bb2d-15f1824b8d9c
@@ -3817,20 +3261,10 @@ parentheses:
 
 -----
 
-<<Commodity-prices>>
-
-Next: [[#Prices-versus-costs][Prices versus costs]], Previous:
-[[#Virtual-posting-costs][Virtual posting costs]], Up:
-[[#Transactions][Transactions]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Commodity-prices-1>>
-
 ** 5.16 Commodity prices
 :PROPERTIES:
 :ID:       66faab8b-271c-415b-947b-fec169d0281c
 :END:
-<<index-_002d_002dlot_002dprices>>
 
 When a transaction occurs that exchanges one commodity for another,
 Ledger records that commodity price not only within its internal price
@@ -3889,19 +3323,14 @@ the price you bought those shares at, and the cost you're selling them
 for, does not match. The lot price also identifies which shares you
 purchased on that prior date.
 
-| • [[#Total-commodity-prices][Total commodity prices]]: |    |   |
+- [[id:c08f91c3-048f-46cd-927c-1eadf4ab18c5][5.16.1 Total commodity prices]]
 
 -----
 
-<<Total-commodity-prices>>
-
-Previous: [[#Commodity-prices][Commodity prices]], Up:
-[[#Commodity-prices][Commodity prices]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Total-commodity-prices-1>>
-
 *** 5.16.1 Total commodity prices
+:PROPERTIES:
+:ID:       c08f91c3-048f-46cd-927c-1eadf4ab18c5
+:END:
 As a shorthand, you can specify the total price instead of the per-share
 price in doubled braces. This goes well with total costs, but is not
 required to be used with them:
@@ -3963,15 +3392,6 @@ caution.
 
 -----
 
-<<Prices-versus-costs>>
-
-Next: [[#Fixated-prices-and-costs][Fixated prices and costs]], Previous:
-[[#Commodity-prices][Commodity prices]], Up:
-[[#Transactions][Transactions]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Prices-versus-costs-1>>
-
 ** 5.17 Prices versus costs
 :PROPERTIES:
 :ID:       0ae9731d-1a74-46f8-bf36-d5bebe9e3bfb
@@ -3995,15 +3415,6 @@ neither the register nor the balance report are sensitive to this
 difference.
 
 -----
-
-<<Fixated-prices-and-costs>>
-
-Next: [[#Lot-dates][Lot dates]], Previous:
-[[#Prices-versus-costs][Prices versus costs]], Up:
-[[#Transactions][Transactions]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Fixated-prices-and-costs-1>>
 
 ** 5.18 Fixated prices and costs
 :PROPERTIES:
@@ -4041,20 +3452,10 @@ found in [[#Prices-versus-costs][Prices versus costs]].
 
 -----
 
-<<Lot-dates>>
-
-Next: [[#Lot-notes][Lot notes]], Previous:
-[[#Fixated-prices-and-costs][Fixated prices and costs]], Up:
-[[#Transactions][Transactions]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Lot-dates-1>>
-
 ** 5.19 Lot dates
 :PROPERTIES:
 :ID:       97125bf9-7f59-482e-8bf4-4af307ee641e
 :END:
-<<index-_002d_002dlot_002ddates>>
 
 In addition to lot prices, you can specify lot dates and reveal them
 with --lot-dates. Other than that, however, they have no special meaning
@@ -4070,19 +3471,10 @@ same way that dates are parsed in value expressions):
 
 -----
 
-<<Lot-notes>>
-
-Next: [[#Lot-value-expressions][Lot value expressions]], Previous:
-[[#Lot-dates][Lot dates]], Up: [[#Transactions][Transactions]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Lot-notes-1>>
-
 ** 5.20 Lot notes
 :PROPERTIES:
 :ID:       8bc30729-9d91-4c5f-aa12-18ac9ae64da0
 :END:
-<<index-_002d_002dlot_002dnotes>> <<index-_002d_002dlots>>
 
 You can also associate arbitrary notes for your own record keeping in
 parentheses, and reveal them with --lot-notes. One caveat is that the
@@ -4103,18 +3495,11 @@ To show all lot information in a report, use --lots.
 
 -----
 
-<<Lot-value-expressions>>
-
-Next: [[#Automated-Transactions][Automated Transactions]], Previous:
-[[#Lot-notes][Lot notes]], Up: [[#Transactions][Transactions]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Lot-value-expressions-1>>
-
 ** 5.21 Lot value expressions
 :PROPERTIES:
 :ID:       d858886c-371e-42ca-9e88-31d876d31652
 :END:
+
 Normally when you ask Ledger to display the values of commodities held,
 it uses a value expression called “market” to determine the most recent
 value from its price database---even downloading prices from the
@@ -4175,18 +3560,11 @@ modifying them to suit your needs.
 
 -----
 
-<<Automated-Transactions>>
-
-Previous: [[#Lot-value-expressions][Lot value expressions]], Up:
-[[#Transactions][Transactions]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Automated-Transactions-1>>
-
 ** 5.22 Automated Transactions
 :PROPERTIES:
 :ID:       31a6f999-1c00-41f9-b5f7-24a093f9e31b
 :END:
+
 An automated transaction is a special kind of transaction which adds its
 postings to other transactions any time one of that other transactions'
 postings matches its predicate. The predicate uses the same query syntax
@@ -4228,29 +3606,23 @@ of the same rules as regular transactions: their postings must balance
 One thing you cannot do, however, is elide amounts in an automated
 transaction.
 
-| • [[#Amount-multipliers][Amount multipliers]]:                                                       |    |   |
-| • [[#Accessing-the-matching-posting_0027s-amount][Accessing the matching posting's amount]]:         |    |   |
-| • [[#Referring-to-the-matching-posting_0027s-account][Referring to the matching posting's account]]: |    |   |
-| • [[#Applying-metadata-to-every-matched-posting][Applying metadata to every matched posting]]:       |    |   |
-| • [[#Applying-metadata-to-the-generated-posting][Applying metadata to the generated posting]]:       |    |   |
-| • [[#State-flags][State flags]]:                                                                     |    |   |
-| • [[#Effective-Dates][Effective Dates]]:                                                             |    |   |
-| • [[#Periodic-Transactions][Periodic Transactions]]:                                                 |    |   |
-| • [[#Concrete-Example-of-Automated-Transactions][Concrete Example of Automated Transactions]]:       |    |   |
+- [[id:aedc275a-36f2-4606-8fb9-de819f56acb4][5.22.1 Amount multipliers]]
+- [[id:4b036715-24b4-4337-ba85-9486bfa8c04d][5.22.2 Accessing the matching posting's amount]]
+- [[id:2b1b15aa-22ca-4c36-8a20-de774d137acb][5.22.3 Referring to the matching posting's account]]
+- [[id:42c8408a-adc0-4cde-8c70-2e22b728caed][5.22.4 Applying metadata to every matched posting]]
+- [[id:9be5c102-5474-4df8-a795-2d0f5c13ba69][5.22.5 Applying metadata to the generated posting]]
+- [[id:339efc69-b233-433d-919c-8a2e8fdd579c][5.22.6 State flags]]
+- [[id:bf01d6e6-7ac1-4f6c-a924-ae4097db9634][5.22.7 Effective Dates]]
+- [[id:07450b67-742a-4a39-80e8-6a6ce0787665][5.22.8 Periodic Transactions]]
+- [[id:660d62c8-07c6-4d8b-b3cc-25ccba817318][5.22.9 Concrete Example of Automated Transactions]]
 
 -----
 
-<<Amount-multipliers>>
-
-Next: [[#Accessing-the-matching-posting_0027s-amount][Accessing the
-matching posting's amount]], Previous:
-[[#Automated-Transactions][Automated Transactions]], Up:
-[[#Automated-Transactions][Automated Transactions]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Amount-multipliers-1>>
-
 *** 5.22.1 Amount multipliers
+:PROPERTIES:
+:ID:       aedc275a-36f2-4606-8fb9-de819f56acb4
+:END:
+
 As a special case, if an automated transaction's posting's amount (phew)
 has no commodity, it is taken as a multiplier upon the matching
 posting's cost. For example:
@@ -4279,17 +3651,10 @@ Then the latter transaction turns into this during parsing:
 
 -----
 
-<<Accessing-the-matching-posting_0027s-amount>>
-
-Next: [[#Referring-to-the-matching-posting_0027s-account][Referring to
-the matching posting's account]], Previous:
-[[#Amount-multipliers][Amount multipliers]], Up:
-[[#Automated-Transactions][Automated Transactions]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Accessing-the-matching-posting_0027s-amount-1>>
-
 *** 5.22.2 Accessing the matching posting's amount
+:PROPERTIES:
+:ID:       4b036715-24b4-4337-ba85-9486bfa8c04d
+:END:
 If you use an amount expression for an automated transaction's posting,
 that expression has access to all the details of the matched posting.
 For example, you can refer to that posting's amount using the “amount”
@@ -4316,18 +3681,10 @@ This becomes:
 
 -----
 
-<<Referring-to-the-matching-posting_0027s-account>>
-
-Next: [[#Applying-metadata-to-every-matched-posting][Applying metadata
-to every matched posting]], Previous:
-[[#Accessing-the-matching-posting_0027s-amount][Accessing the matching
-posting's amount]], Up: [[#Automated-Transactions][Automated
-Transactions]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Referring-to-the-matching-posting_0027s-account-1>>
-
 *** 5.22.3 Referring to the matching posting's account
+:PROPERTIES:
+:ID:       2b1b15aa-22ca-4c36-8a20-de774d137acb
+:END:
 Sometimes you want to refer to the account that was matched in some way
 within the automated transaction itself. This is done by using the
 string ‘$account', anywhere within the account part of the automated
@@ -4360,18 +3717,10 @@ to explicitly define an account ‘$account' to avoid errors.
 
 -----
 
-<<Applying-metadata-to-every-matched-posting>>
-
-Next: [[#Applying-metadata-to-the-generated-posting][Applying metadata
-to the generated posting]], Previous:
-[[#Referring-to-the-matching-posting_0027s-account][Referring to the
-matching posting's account]], Up: [[#Automated-Transactions][Automated
-Transactions]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Applying-metadata-to-every-matched-posting-1>>
-
 *** 5.22.4 Applying metadata to every matched posting
+:PROPERTIES:
+:ID:       42c8408a-adc0-4cde-8c70-2e22b728caed
+:END:
 If the automated transaction has a transaction note, that note is copied
 (along with any metadata) to every posting that matches the predicate:
 
@@ -4397,17 +3746,10 @@ Becomes:
 
 -----
 
-<<Applying-metadata-to-the-generated-posting>>
-
-Next: [[#State-flags][State flags]], Previous:
-[[#Applying-metadata-to-every-matched-posting][Applying metadata to
-every matched posting]], Up: [[#Automated-Transactions][Automated
-Transactions]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Applying-metadata-to-the-generated-posting-1>>
-
 *** 5.22.5 Applying metadata to the generated posting
+:PROPERTIES:
+:ID:       9be5c102-5474-4df8-a795-2d0f5c13ba69
+:END:
 If the automated transaction's posting has a note, that note is carried
 to the generated posting within the matched transaction:
 
@@ -4438,34 +3780,20 @@ matches.
 
 -----
 
-<<State-flags>>
-
-Next: [[#Effective-Dates][Effective Dates]], Previous:
-[[#Applying-metadata-to-the-generated-posting][Applying metadata to the
-generated posting]], Up: [[#Automated-Transactions][Automated
-Transactions]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<State-flags-1>>
-
 *** 5.22.6 State flags
+:PROPERTIES:
+:ID:       339efc69-b233-433d-919c-8a2e8fdd579c
+:END:
 Although you cannot mark an automated transaction as a whole as cleared
 or pending, you can mark its postings with a ‘*' or ‘!' before the
 account name, and that state flag gets carried to the generated posting.
 
 -----
 
-<<Effective-Dates>>
-
-Next: [[#Periodic-Transactions][Periodic Transactions]], Previous:
-[[#State-flags][State flags]], Up: [[#Automated-Transactions][Automated
-Transactions]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Effective-Dates-1>>
-
 *** 5.22.7 Effective Dates
-<<index-effective-dates>> <<index-_002d_002deffective>>
+:PROPERTIES:
+:ID:       bf01d6e6-7ac1-4f6c-a924-ae4097db9634
+:END:
 
 In the real world, transactions do not take place instantaneously.
 Purchases can take several days to post to a bank account. And you may
@@ -4475,7 +3803,6 @@ Ledger you can control every aspect of the timing of a transaction.
 Say you're in business. If you bill a customer, you can enter something
 like
 
-<<index-effective-date-of-invoice>>
 
 #+begin_example
     2008/01/01=2008/01/14 Client invoice  ;  estimated date you'll be paid
@@ -4555,17 +3882,10 @@ the effective dates.
 
 -----
 
-<<Periodic-Transactions>>
-
-Next: [[#Concrete-Example-of-Automated-Transactions][Concrete Example of
-Automated Transactions]], Previous: [[#Effective-Dates][Effective
-Dates]], Up: [[#Automated-Transactions][Automated Transactions]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Periodic-Transactions-1>>
-
 *** 5.22.8 Periodic Transactions
-<<index-_002d_002dbudget>>
+:PROPERTIES:
+:ID:       07450b67-742a-4a39-80e8-6a6ce0787665
+:END:
 
 A periodic transaction starts with a tilde ‘~' followed by a period
 expression (see [[#Period-Expressions][Period Expressions]]). Periodic
@@ -4575,15 +3895,10 @@ see [[#Budgeting-and-Forecasting][Budgeting and Forecasting]].
 
 -----
 
-<<Concrete-Example-of-Automated-Transactions>>
-
-Previous: [[#Periodic-Transactions][Periodic Transactions]], Up:
-[[#Automated-Transactions][Automated Transactions]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Concrete-Example-of-Automated-Transactions-1>>
-
 *** 5.22.9 Concrete Example of Automated Transactions
+:PROPERTIES:
+:ID:       660d62c8-07c6-4d8b-b3cc-25ccba817318
+:END:
 As a Bahá'í, I need to compute Huqúqu'lláh whenever I acquire assets. It
 is similar to tithing for Jews and Christians, or to Zakát for Muslims.
 The exact details of computing Huqúqu'lláh are somewhat complex, but if
@@ -4675,14 +3990,6 @@ excluded from reports by using --real.
 
 -----
 
-<<Building-Reports>>
-
-Next: [[#Reporting-Commands][Reporting Commands]], Previous:
-[[#Transactions][Transactions]], Up: [[#Top][Top]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Building-Reports-1>>
-
 * 6 Building Reports
 :PROPERTIES:
 :ID:       a870d993-7759-46ac-9523-88426355c98b
@@ -4693,15 +4000,6 @@ Next: [[#Reporting-Commands][Reporting Commands]], Previous:
 - [[id:f362ffa8-7892-4fed-a107-2fce1a1f6809][6.4 Advanced Reports]]
 
 -----
-
-<<Introduction>>
-
-Next: [[#Balance-Reports][Balance Reports]], Previous:
-[[#Building-Reports][Building Reports]], Up:
-[[#Building-Reports][Building Reports]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Introduction-1>>
 
 ** 6.1 Introduction
 :PROPERTIES:
@@ -4717,20 +4015,12 @@ options.
 
 -----
 
-<<Balance-Reports>>
-
-Next: [[#Typical-queries][Typical queries]], Previous:
-[[#Introduction][Introduction]], Up: [[#Building-Reports][Building
-Reports]]   [[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Balance-Reports-1>>
-
 ** 6.2 Balance Reports
 :PROPERTIES:
 :ID:       0a19835e-4f96-4f41-9219-1cb66182a1db
 :END:
-- [[#Controlling-the-Accounts-and-Payees][Controlling the Accounts and Payees]]
-- [[#Controlling-Formatting][Controlling Formatting]]
+- [[id:e2625143-3e5a-4efd-b622-e4d0fb3cd452][6.2.1 Controlling the Accounts and Payees]]
+- [[id:f07c97f0-f379-4122-a768-7c1914cc1c5b][6.2.2 Controlling Formatting]]
 
 -----
 
@@ -4743,6 +4033,9 @@ Reports]]   [[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
 <<Controlling-the-Accounts-and-Payees-1>>
 
 *** 6.2.1 Controlling the Accounts and Payees
+:PROPERTIES:
+:ID:       e2625143-3e5a-4efd-b622-e4d0fb3cd452
+:END:
 The balance report is the most commonly used report. The simplest
 invocation is:
 
@@ -4828,8 +4121,6 @@ there are none.
 This second example looks for any account containing ‘Bo', which is
 ‘Expenses:Books'.
 
-<<index-limit-by-payees>> <<index-_002d_002dlimit-EXPR>>
-
 If you want to know exactly how much you have spent in a particular
 account on a particular payee, the following are equivalent:
 
@@ -4855,15 +4146,10 @@ exclude multiple accounts with parentheses:
 
 -----
 
-<<Controlling-Formatting>>
-
-Previous: [[#Controlling-the-Accounts-and-Payees][Controlling the
-Accounts and Payees]], Up: [[#Balance-Reports][Balance Reports]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Controlling-Formatting-1>>
-
 *** 6.2.2 Controlling Formatting
+:PROPERTIES:
+:ID:       f07c97f0-f379-4122-a768-7c1914cc1c5b
+:END:
 These examples all use the default formatting for the balance report.
 Customizing the formatting allows you to see only what you want, or
 interface Ledger with other programs. For examples and details, see
@@ -4871,14 +4157,6 @@ interface Ledger with other programs. For examples and details, see
 Allocation]].
 
 -----
-
-<<Typical-queries>>
-
-Next: [[#Advanced-Reports][Advanced Reports]], Previous:
-[[#Balance-Reports][Balance Reports]], Up: [[#Building-Reports][Building
-Reports]]   [[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Typical-queries-1>>
 
 ** 6.3 Typical queries
 :PROPERTIES:
@@ -4895,22 +4173,14 @@ From left to right the options mean: Show transactions since last
 October; sort by the absolute value of the total; and report the balance
 for all accounts that begin with ‘expenses'.
 
-| • [[#Reporting-monthly-expenses][Reporting monthly expenses]]: |    |   |
+- [[id:83261075-19cb-4fcd-a464-5b9049f32d25][6.3.1 Reporting monthly expenses]]
 
 -----
 
-<<Reporting-monthly-expenses>>
-
-Previous: [[#Typical-queries][Typical queries]], Up:
-[[#Typical-queries][Typical queries]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Reporting-monthly-expenses-1>>
-
 *** 6.3.1 Reporting monthly expenses
-<<index-_002d_002dmonthly>> <<index-_002d_002ddisplay-EXPR>>
-<<index-_002d_002dperiod_002dsort-VEXPR>> <<index-_002d_002drelated>>
-<<index-_002d_002dsubtotal>>
+:PROPERTIES:
+:ID:       83261075-19cb-4fcd-a464-5b9049f32d25
+:END:
 
 The following query makes it easy to see monthly expenses, with each
 month's expenses sorted by the amount:
@@ -4953,14 +4223,6 @@ however, since a display expression is being used.
 
 -----
 
-<<Advanced-Reports>>
-
-Previous: [[#Typical-queries][Typical queries]], Up:
-[[#Building-Reports][Building Reports]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Advanced-Reports-1>>
-
 ** 6.4 Advanced Reports
 :PROPERTIES:
 :ID:       f362ffa8-7892-4fed-a107-2fce1a1f6809
@@ -4969,15 +4231,6 @@ Previous: [[#Typical-queries][Typical queries]], Up:
 - [[id:8f25ba07-910d-46d8-ad7c-b210646f7f93][6.4.2 Visualizing with Gnuplot]]
 
 -----
-
-<<Asset-Allocation>>
-
-Next: [[#Visualizing-with-Gnuplot][Visualizing with Gnuplot]], Previous:
-[[#Advanced-Reports][Advanced Reports]], Up:
-[[#Advanced-Reports][Advanced Reports]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Asset-Allocation-1>>
 
 *** 6.4.1 Asset Allocation
 :PROPERTIES:
@@ -5089,9 +4342,6 @@ split into lines for clarity. The first line is very vanilla Ledger
 asking for the current balances of the account in the “Allocation” tree,
 using a special formatter.
 
-<<index-depth_005fspacer>> <<index-display_005ftotal>>
-<<index-parent_002etotal>>
-
 The magic is in the formatter. The second line simply tells Ledger to
 print the partial account name indented by its depth in the tree. The
 third line is where we calculate and display the percentages. The
@@ -5104,21 +4354,10 @@ for the last line, in this case, nothing.
 
 -----
 
-<<Visualizing-with-Gnuplot>>
-
-Previous: [[#Asset-Allocation][Asset Allocation]], Up:
-[[#Advanced-Reports][Advanced Reports]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Visualizing-with-Gnuplot-1>>
-
 *** 6.4.2 Visualizing with Gnuplot
 :PROPERTIES:
 :ID:       8f25ba07-910d-46d8-ad7c-b210646f7f93
 :END:
-<<index-plotting>> <<index-Gnuplot>> <<index-_002d_002damount_002ddata>>
-<<index-_002d_002dtotal_002ddata>> <<index-_002d_002dlimit-EXPR-1>>
-<<index-_002d_002ddisplay-EXPR-1>>
 
 If you have the “Gnuplot” program installed, you can graph any of the
 above register reports. The script to do this is included in the ledger
@@ -5165,14 +4404,6 @@ computed as part of the balance.
 
 -----
 
-<<Reporting-Commands>>
-
-Next: [[#Command_002dLine-Syntax][Command-Line Syntax]], Previous:
-[[#Building-Reports][Building Reports]], Up: [[#Top][Top]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Reporting-Commands-1>>
-
 * 7 Reporting Commands
 :PROPERTIES:
 :ID:       cc09abeb-fa7a-4f1a-857d-89542eca4790
@@ -5182,15 +4413,6 @@ Next: [[#Command_002dLine-Syntax][Command-Line Syntax]], Previous:
 - [[id:bb000c9e-5e3b-4217-bba5-786d787ec960][7.3 Reports about your Journals]]
 
 -----
-
-<<Primary-Financial-Reports>>
-
-Next: [[#Reports-in-other-Formats][Reports in other Formats]], Previous:
-[[#Reporting-Commands][Reporting Commands]], Up:
-[[#Reporting-Commands][Reporting Commands]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Primary-Financial-Reports-1>>
 
 ** 7.1 Primary Financial Reports
 :PROPERTIES:
@@ -5203,20 +4425,10 @@ Next: [[#Reports-in-other-Formats][Reports in other Formats]], Previous:
 
 -----
 
-<<The-balance-command>>
-
-Next: [[#The-equity-command][The =equity= command]], Previous:
-[[#Primary-Financial-Reports][Primary Financial Reports]], Up:
-[[#Primary-Financial-Reports][Primary Financial Reports]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<The-balance-command-1>>
-
 *** 7.1.1 The =balance= command
 :PROPERTIES:
 :ID:       4852e67a-02bf-44c5-b12c-95b35482646f
 :END:
-<<index-balance-1>>
 
 The =balance= command reports the current balance of all accounts. It
 accepts a list of optional regexes, which confine the balance report to
@@ -5225,20 +4437,10 @@ commodities, each commodity's total is reported separately.
 
 -----
 
-<<The-equity-command>>
-
-Next: [[#The-register-command][The =register= command]], Previous:
-[[#The-balance-command][The =balance= command]], Up:
-[[#Primary-Financial-Reports][Primary Financial Reports]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<The-equity-command-1>>
-
 *** 7.1.2 The =equity= command
 :PROPERTIES:
 :ID:       81fa60ae-70c9-46db-9b0e-09d9388ce335
 :END:
-<<index-equity-1>>
 
 The =equity= command prints out account balances as if they were
 transactions. This makes it easy to establish the starting balances for
@@ -5247,21 +4449,10 @@ Years]].
 
 -----
 
-<<The-register-command>>
-
-Next: [[#The-print-command][The =print= command]], Previous:
-[[#The-equity-command][The =equity= command]], Up:
-[[#Primary-Financial-Reports][Primary Financial Reports]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<The-register-command-1>>
-
 *** 7.1.3 The =register= command
 :PROPERTIES:
 :ID:       9ec70fa9-2091-43da-bd83-675abe5759b0
 :END:
-<<index-register-4>> <<index-_002d_002damount_002ddata-1>>
-<<index-_002d_002dtotal_002ddata-1>>
 
 The =register= command displays all the postings occurring in a single
 account, line by line. The account regex must be specified as the only
@@ -5282,19 +4473,10 @@ order to plot either the amount or total column, respectively.
 
 -----
 
-<<The-print-command>>
-
-Previous: [[#The-register-command][The =register= command]], Up:
-[[#Primary-Financial-Reports][Primary Financial Reports]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<The-print-command-1>>
-
 *** 7.1.4 The =print= command
 :PROPERTIES:
 :ID:       3a39c0f2-d93a-4510-b818-2b83d6256d70
 :END:
-<<index-print-3>>
 
 The =print= command prints out ledger transactions in a textual format
 that can be parsed by Ledger. They will be properly formatted, and
@@ -5306,15 +4488,6 @@ The =print= command can be a handy way to clean up a ledger file whose
 formatting has gotten out of hand.
 
 -----
-
-<<Reports-in-other-Formats>>
-
-Next: [[#Reports-about-your-Journals][Reports about your Journals]],
-Previous: [[#Primary-Financial-Reports][Primary Financial Reports]], Up:
-[[#Reporting-Commands][Reporting Commands]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Reports-in-other-Formats-1>>
 
 ** 7.2 Reports in other Formats
 :PROPERTIES:
@@ -5330,15 +4503,6 @@ Previous: [[#Primary-Financial-Reports][Primary Financial Reports]], Up:
 
 -----
 
-<<Comma-Separated-Values-files>>
-
-Next: [[#The-lisp-command][The =lisp= command]], Previous:
-[[#Reports-in-other-Formats][Reports in other Formats]], Up:
-[[#Reports-in-other-Formats][Reports in other Formats]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Comma-Separated-Values-files-1>>
-
 *** 7.2.1 Comma Separated Values files
 :PROPERTIES:
 :ID:       2eda340d-3cac-45ef-9589-31dd89c228da
@@ -5348,20 +4512,10 @@ Next: [[#The-lisp-command][The =lisp= command]], Previous:
 
 -----
 
-<<The-csv-command>>
-
-Next: [[#The-convert-command][The =convert= command]], Previous:
-[[#Comma-Separated-Values-files][Comma Separated Values files]], Up:
-[[#Comma-Separated-Values-files][Comma Separated Values files]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<The-csv-command-1>>
-
 *** 7.2.1.1 The =csv= command
 :PROPERTIES:
 :ID:       3cc29d20-1080-4fe6-bd96-e1c9c4e5b028
 :END:
-<<index-csv>>
 
 The =csv= command prints the desired ledger transactions in a csv format
 suitable for importing into other programs. You can specify the
@@ -5370,21 +4524,10 @@ functions.
 
 -----
 
-<<The-convert-command>>
-
-Previous: [[#The-csv-command][The =csv= command]], Up:
-[[#Comma-Separated-Values-files][Comma Separated Values files]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<The-convert-command-1>>
-
 *** 7.2.1.2 The =convert= command
 :PROPERTIES:
 :ID:       0f24cebd-7ef1-47c6-93eb-82bdae79108d
 :END:
-<<index-csv-importing-1>>
-<<index-comma-separated-variable-file-reading>> <<index-convert>>
-<<index-_002d_002dinput_002ddate_002dformat-DATE_005fFORMAT>>
 
 The =convert= command parses a comma separated value (csv) file and
 prints Ledger transactions. Many banks offer csv file downloads.
@@ -5449,9 +4592,6 @@ occurs in the first column of the data use:
 
 Ledger will include ‘; transid: 767718' in the first transaction from
 the file above.
-
-<<index-_002d_002dinvert>> <<index-_002d_002dauto_002dmatch>>
-<<index-_002d_002daccount-STR>> <<index-_002d_002drich_002ddata>>
 
 The =convert= command accepts four options. They are --invert which
 inverts the amount field, --auto-match which automatically matches an
@@ -5524,20 +4664,10 @@ payee name as specified in the csv data seems to be used.
 
 -----
 
-<<The-lisp-command>>
-
-Next: [[#Emacs-org-Mode][Emacs =org= Mode]], Previous:
-[[#Comma-Separated-Values-files][Comma Separated Values files]], Up:
-[[#Reports-in-other-Formats][Reports in other Formats]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<The-lisp-command-1>>
-
 *** 7.2.2 The =lisp= command
 :PROPERTIES:
 :ID:       c4f6498d-e7eb-4f4a-aa32-422f3eac7856
 :END:
-<<index-lisp>> <<index-emacs>>
 
 The =lisp= command prints results in a form that can be read directly by
 Emacs Lisp. The format of the =sexp= is:
@@ -5552,20 +4682,10 @@ Emacs Lisp. The format of the =sexp= is:
 
 -----
 
-<<Emacs-org-Mode>>
-
-Next: [[#Org-mode-with-Babel][Org mode with Babel]], Previous:
-[[#The-lisp-command][The =lisp= command]], Up:
-[[#Reports-in-other-Formats][Reports in other Formats]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Emacs-org-Mode-1>>
-
 *** 7.2.3 Emacs =org= Mode
 :PROPERTIES:
 :ID:       31807fb2-109d-46b7-ad4e-9ddd3b3a5395
 :END:
-<<index-org>>
 
 Org mode has a sub-system known as Babel which allows for literate
 programming. This allows you to mix text and code within the same
@@ -5619,15 +4739,6 @@ do all kinds of other wonderful things with Babel (and Org mode).
 
 -----
 
-<<Org-mode-with-Babel>>
-
-Next: [[#The-pricemap-command][The =pricemap= command]], Previous:
-[[#Emacs-org-Mode][Emacs =org= Mode]], Up:
-[[#Reports-in-other-Formats][Reports in other Formats]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Org-mode-with-Babel-1>>
-
 *** 7.2.4 Org mode with Babel
 :PROPERTIES:
 :ID:       bba7e10a-c1d3-4423-b804-68121aa91226
@@ -5664,25 +4775,16 @@ which these can be included:
 
 The first two are described in more detail in this short tutorial.
 
-| • [[#Embedded-Ledger-example-with-single-source-block][Embedded Ledger example with single source block]]: |    |   |
-| • [[#Multiple-Ledger-source-blocks-with-noweb][Multiple Ledger source blocks with =noweb=]]:               |    |   |
-| • [[#Income-Entries][Income Entries]]:                                                                     |    |   |
-| • [[#Expenses][Expenses]]:                                                                                 |    |   |
-| • [[#Financial-Summaries][Financial Summaries]]:                                                           |    |   |
-| • [[#An-overall-balance-summary][An overall balance summary]]:                                             |    |   |
-| • [[#Generating-a-monthly-register][Generating a monthly register]]:                                       |    |   |
-| • [[#Summary][Summary]]:                                                                                   |    |   |
+- [[#Embedded-Ledger-example-with-single-source-block][Embedded Ledger example with single source block]]
+- [[#Multiple-Ledger-source-blocks-with-noweb][Multiple Ledger source blocks with =noweb=]]
+- [[#Income-Entries][Income Entries]]
+- [[#Expenses][Expenses]]
+- [[#Financial-Summaries][Financial Summaries]]
+- [[#An-overall-balance-summary][An overall balance summary]]
+- [[#Generating-a-monthly-register][Generating a monthly register]]
+- [[#Summary][Summary]]
 
 -----
-
-<<Embedded-Ledger-example-with-single-source-block>>
-
-Next: [[#Multiple-Ledger-source-blocks-with-noweb][Multiple Ledger
-source blocks with =noweb=]], Previous: [[#Org-mode-with-Babel][Org mode
-with Babel]], Up: [[#Org-mode-with-Babel][Org mode with Babel]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Embedded-Ledger-example-with-single-source-block-1>>
 
 *** 7.2.4.1 Embedded Ledger example with single source block
 :PROPERTIES:
@@ -5761,15 +4863,6 @@ implemented by the =noweb= features of Babel, to help us.
 
 -----
 
-<<Multiple-Ledger-source-blocks-with-noweb>>
-
-Next: [[#Income-Entries][Income Entries]], Previous:
-[[#Embedded-Ledger-example-with-single-source-block][Embedded Ledger
-example with single source block]], Up: [[#Org-mode-with-Babel][Org mode
-with Babel]]   [[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Multiple-Ledger-source-blocks-with-noweb-1>>
-
 *** 7.2.4.2 Multiple Ledger source blocks with =noweb=
 The =noweb= feature of Babel allows us to expand references to other
 code blocks within a code block. For Ledger, this can be used to group
@@ -5780,15 +4873,6 @@ Using the same transactions used above, we could consider splitting
 these into expenses and income, as follows:
 
 -----
-
-<<Income-Entries>>
-
-Next: [[#Expenses][Expenses]], Previous:
-[[#Multiple-Ledger-source-blocks-with-noweb][Multiple Ledger source
-blocks with =noweb=]], Up: [[#Org-mode-with-Babel][Org mode with Babel]]
-  [[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Income-Entries-1>>
 
 *** 7.2.4.3 Income Entries
 The first set of entries relates to income, either monthly pay or
@@ -5820,15 +4904,6 @@ have the =:noweb yes= header argument specified.
 
 -----
 
-<<Expenses>>
-
-Next: [[#Financial-Summaries][Financial Summaries]], Previous:
-[[#Income-Entries][Income Entries]], Up: [[#Org-mode-with-Babel][Org
-mode with Babel]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Expenses-1>>
-
 *** 7.2.4.4 Expenses
 The following entries relate to personal expenses, such as rent and
 food. Again, these have all been placed in a single =src= block but
@@ -5848,14 +4923,6 @@ could have been done individually.
 
 -----
 
-<<Financial-Summaries>>
-
-Next: [[#An-overall-balance-summary][An overall balance summary]],
-Previous: [[#Expenses][Expenses]], Up: [[#Org-mode-with-Babel][Org mode
-with Babel]]   [[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Financial-Summaries-1>>
-
 *** 7.2.4.5 Financial Summaries
 Given the ledger entries defined above in the income and expenses code
 blocks, we can now refer to these using the noweb expansion directives,
@@ -5866,17 +4933,7 @@ transactions.
 
 -----
 
-<<An-overall-balance-summary>>
-
-Next: [[#Generating-a-monthly-register][Generating a monthly register]],
-Previous: [[#Financial-Summaries][Financial Summaries]], Up:
-[[#Org-mode-with-Babel][Org mode with Babel]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<An-overall-balance-summary-1>>
-
 *** 7.2.4.6 An overall balance summary
-<<index-_002d_002dsubtotal-1>>
 
 The overall balance of your account and expenditure with a breakdown
 according to category is specified by passing the =:cmdline bal=
@@ -5922,16 +4979,7 @@ to exclude sub-accounts in the report.
 
 -----
 
-<<Generating-a-monthly-register>>
-
-Next: [[#Summary][Summary]], Previous: [[#An-overall-balance-summary][An
-overall balance summary]], Up: [[#Org-mode-with-Babel][Org mode with
-Babel]]   [[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Generating-a-monthly-register-1>>
-
 *** 7.2.4.7 Generating a monthly register
-<<index-register-5>> <<index-_002d_002dmonthly-1>>
 
 You can also generate a monthly register (the =reg= command) by
 executing the following =src= block. This presents a summary of
@@ -5979,14 +5027,6 @@ the running total of the assets in our ledger.
 
 -----
 
-<<Summary>>
-
-Previous: [[#Generating-a-monthly-register][Generating a monthly
-register]], Up: [[#Org-mode-with-Babel][Org mode with Babel]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Summary-1>>
-
 *** 7.2.4.8 Summary
 This short tutorial shows how Ledger entries can be embedded in an org
 file and manipulated using Babel. However, only simple Ledger features
@@ -5995,17 +5035,7 @@ examples of more complex operations on a ledger.
 
 -----
 
-<<The-pricemap-command>>
-
-Next: [[#The-xml-command][The =xml= command]], Previous:
-[[#Org-mode-with-Babel][Org mode with Babel]], Up:
-[[#Reports-in-other-Formats][Reports in other Formats]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<The-pricemap-command-1>>
-
 *** 7.2.5 The =pricemap= command
-<<index-pricemap>>
 
 If you have the graphviz graph visualization package installed, ledger
 can generate a graph of the relationship between your various
@@ -6017,17 +5047,7 @@ currencies and multiple investments valued in those currencies.
 
 -----
 
-<<The-xml-command>>
-
-Next: [[#prices-and-pricedb-commands][=prices= and =pricedb= commands]],
-Previous: [[#The-pricemap-command][The =pricemap= command]], Up:
-[[#Reports-in-other-Formats][Reports in other Formats]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<The-xml-command-1>>
-
 *** 7.2.6 The =xml= command
-<<index-xml>>
 
 By default, Ledger uses a human-readable data format, and displays its
 reports in a manner meant to be read on screen. For the purpose of
@@ -6171,16 +5191,7 @@ such data if the =xml= command is used, and can read the same data.
 
 -----
 
-<<prices-and-pricedb-commands>>
-
-Previous: [[#The-xml-command][The =xml= command]], Up:
-[[#Reports-in-other-Formats][Reports in other Formats]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<prices-and-pricedb-commands-1>>
-
 *** 7.2.7 =prices= and =pricedb= commands
-<<index-prices>> <<index-pricedb>> <<index-_002d_002daverage>>
 
 The =prices= command displays the price history for matching
 commodities. The --average (-A) option is useful with this report, to
@@ -6193,19 +5204,10 @@ useful for generating and tidying up pricedb database files.
 
 -----
 
-<<Reports-about-your-Journals>>
-
-Previous: [[#Reports-in-other-Formats][Reports in other Formats]], Up:
-[[#Reporting-Commands][Reporting Commands]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Reports-about-your-Journals-1>>
-
 ** 7.3 Reports about your Journals
 :PROPERTIES:
 :ID:       bb000c9e-5e3b-4217-bba5-786d787ec960
 :END:
-<<index-_002d_002dcount>>
 
 - [[id:ee710d94-110c-4c10-b9c4-5dd3ebf7a565][7.3.1 =accounts=]]
 - [[id:8e777009-363c-4308-80ce-a08dcc368afa][7.3.2 =payees=]]
@@ -6217,20 +5219,10 @@ Previous: [[#Reports-in-other-Formats][Reports in other Formats]], Up:
 
 -----
 
-<<accounts>>
-
-Next: [[#payees][=payees=]], Previous:
-[[#Reports-about-your-Journals][Reports about your Journals]], Up:
-[[#Reports-about-your-Journals][Reports about your Journals]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<accounts-1>>
-
 *** 7.3.1 =accounts=
 :PROPERTIES:
 :ID:       ee710d94-110c-4c10-b9c4-5dd3ebf7a565
 :END:
-<<index-accounts-1>>
 
 The =accounts= command reports all of the accounts in the journal.
 Following the command with a regular expression will limit the output to
@@ -6239,20 +5231,10 @@ accounts matching the regex. The output is sorted by name. Using the
 
 -----
 
-<<payees>>
-
-Next: [[#commodities][=commodities=]], Previous:
-[[#accounts][=accounts=]], Up: [[#Reports-about-your-Journals][Reports
-about your Journals]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<payees-1>>
-
 *** 7.3.2 =payees=
 :PROPERTIES:
 :ID:       8e777009-363c-4308-80ce-a08dcc368afa
 :END:
-<<index-payees-1>>
 
 The =payees= command reports all of the unique payees in the journal.
 Using the --count option will tell you how many entries use each payee.
@@ -6271,19 +5253,10 @@ To filter the payees displayed you must use the prefix @:
 
 -----
 
-<<commodities>>
-
-Next: [[#tags][=tags=]], Previous: [[#payees][=payees=]], Up:
-[[#Reports-about-your-Journals][Reports about your Journals]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<commodities-1>>
-
 *** 7.3.3 =commodities=
 :PROPERTIES:
 :ID:       32b1fe60-2dba-45bb-8964-4420d6b3d841
 :END:
-<<index-commodities>>
 
 Report all commodities present in the journals under consideration. The
 output is sorted by name. Using the --count option will tell you how
@@ -6291,19 +5264,10 @@ many entries use each commodity.
 
 -----
 
-<<tags>>
-
-Next: [[#xact][=xact=]], Previous: [[#commodities][=commodities=]], Up:
-[[#Reports-about-your-Journals][Reports about your Journals]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<tags-1>>
-
 *** 7.3.4 =tags=
 :PROPERTIES:
 :ID:       d93ba50e-499c-4818-8967-0a4d69f577ee
 :END:
-<<index-tags-1>> <<index-_002d_002dvalues>>
 
 The =tags= command reports all of the tags in the journal. The output is
 sorted by name. Using the --count option will tell you how many entries
@@ -6312,19 +5276,10 @@ each tag.
 
 -----
 
-<<xact>>
-
-Next: [[#stats][=stats=]], Previous: [[#tags][=tags=]], Up:
-[[#Reports-about-your-Journals][Reports about your Journals]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<xact-1>>
-
 *** 7.3.5 =xact=
 :PROPERTIES:
 :ID:       939b8423-c6dc-4de1-85da-09f9641a77a2
 :END:
-<<index-draft>> <<index-entry>> <<index-xact-1>>
 
 The =xact= command simplifies the creation of new transactions. It works
 on the principle that 80% of all postings are variants of earlier
@@ -6379,51 +5334,25 @@ backwards compatibility with Ledger 2.X.
 
 -----
 
-<<stats>>
-
-Next: [[#select][=select=]], Previous: [[#xact][=xact=]], Up:
-[[#Reports-about-your-Journals][Reports about your Journals]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<stats-1>>
-
 *** 7.3.6 =stats=
 :PROPERTIES:
 :ID:       58febed1-c1c9-40c1-9d48-ce6ef65a4012
 :END:
-<<index-stats>> <<index-stat>>
 
 UNDOCUMENTED! Please help by contributing documentation for this
 feature.
 
 -----
-
-<<select>>
-
-Previous: [[#stats][=stats=]], Up:
-[[#Reports-about-your-Journals][Reports about your Journals]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<select-1>>
 
 *** 7.3.7 =select=
 :PROPERTIES:
 :ID:       e2e053a7-9ed3-476d-8161-cebfbcadc1de
 :END:
-<<index-select>>
 
 UNDOCUMENTED! Please help by contributing documentation for this
 feature.
 
 -----
-
-<<Command_002dLine-Syntax>>
-
-Next: [[#Budgeting-and-Forecasting][Budgeting and Forecasting]],
-Previous: [[#Reporting-Commands][Reporting Commands]], Up: [[#Top][Top]]
-  [[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Command_002dLine-Syntax-1>>
 
 * 8 Command-Line Syntax
 :PROPERTIES:
@@ -6435,15 +5364,6 @@ Previous: [[#Reporting-Commands][Reporting Commands]], Up: [[#Top][Top]]
 - [[id:73810141-094a-4ad2-990a-ba228320e4d7][8.4 Period Expressions]]
 
 -----
-
-<<Basic-Usage>>
-
-Next: [[#Command_002dLine-Quick-Reference][Command-Line Quick
-Reference]], Previous: [[#Command_002dLine-Syntax][Command-Line
-Syntax]], Up: [[#Command_002dLine-Syntax][Command-Line Syntax]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Basic-Usage-1>>
 
 ** 8.1 Basic Usage
 :PROPERTIES:
@@ -6491,15 +5411,6 @@ to use the basic reporting commands.
 
 -----
 
-<<Command_002dLine-Quick-Reference>>
-
-Next: [[#Detailed-Option-Description][Detailed Option Description]],
-Previous: [[#Basic-Usage][Basic Usage]], Up:
-[[#Command_002dLine-Syntax][Command-Line Syntax]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Command_002dLine-Quick-Reference-1>>
-
 ** 8.2 Command-Line Quick Reference
 :PROPERTIES:
 :ID:       96a3c72d-6a7e-4cb9-8e6b-33911b46f849
@@ -6513,15 +5424,6 @@ Previous: [[#Basic-Usage][Basic Usage]], Up:
 - [[id:5cd71e8d-a848-4fd5-b6c3-a41378affd1f][8.2.7 Commodity Reporting]]
 
 -----
-
-<<Basic-Reporting-Commands>>
-
-Next: [[#Basic-Options][Basic Options]], Previous:
-[[#Command_002dLine-Quick-Reference][Command-Line Quick Reference]], Up:
-[[#Command_002dLine-Quick-Reference][Command-Line Quick Reference]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Basic-Reporting-Commands-1>>
 
 *** 8.2.1 Basic Reporting Commands
 :PROPERTIES:
@@ -6560,15 +5462,6 @@ Next: [[#Basic-Options][Basic Options]], Previous:
 
 -----
 
-<<Basic-Options>>
-
-Next: [[#Report-Filtering][Report Filtering]], Previous:
-[[#Basic-Reporting-Commands][Basic Reporting Commands]], Up:
-[[#Command_002dLine-Quick-Reference][Command-Line Quick Reference]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Basic-Options-1>>
-
 *** 8.2.2 Basic Options
 :PROPERTIES:
 :ID:       fd8e8a77-3e80-46d0-8802-aa1f2e26d13f
@@ -6596,15 +5489,6 @@ Next: [[#Report-Filtering][Report Filtering]], Previous:
   file postings.
 
 -----
-
-<<Report-Filtering>>
-
-Next: [[#Error-Checking-and-Calculation-Options][Error Checking and
-Calculation Options]], Previous: [[#Basic-Options][Basic Options]], Up:
-[[#Command_002dLine-Quick-Reference][Command-Line Quick Reference]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Report-Filtering-1>>
 
 *** 8.2.3 Report Filtering
 :PROPERTIES:
@@ -6676,15 +5560,6 @@ Calculation Options]], Previous: [[#Basic-Options][Basic Options]], Up:
 
 -----
 
-<<Error-Checking-and-Calculation-Options>>
-
-Next: [[#Output-Customization][Output Customization]], Previous:
-[[#Report-Filtering][Report Filtering]], Up:
-[[#Command_002dLine-Quick-Reference][Command-Line Quick Reference]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Error-Checking-and-Calculation-Options-1>>
-
 *** 8.2.4 Error Checking and Calculation Options
 :PROPERTIES:
 :ID:       6b5bb7d9-612d-485b-9b88-7d576cf3da86
@@ -6703,16 +5578,6 @@ Next: [[#Output-Customization][Output Customization]], Previous:
      evaluate calculations immediately rather than lazily.
 
 -----
-
-<<Output-Customization>>
-
-Next: [[#Grouping-Options][Grouping Options]], Previous:
-[[#Error-Checking-and-Calculation-Options][Error Checking and
-Calculation Options]], Up:
-[[#Command_002dLine-Quick-Reference][Command-Line Quick Reference]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Output-Customization-1>>
 
 *** 8.2.5 Output Customization
 :PROPERTIES:
@@ -6814,15 +5679,6 @@ Calculation Options]], Up:
 
 -----
 
-<<Grouping-Options>>
-
-Next: [[#Commodity-Reporting][Commodity Reporting]], Previous:
-[[#Output-Customization][Output Customization]], Up:
-[[#Command_002dLine-Quick-Reference][Command-Line Quick Reference]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Grouping-Options-1>>
-
 *** 8.2.6 Grouping Options
 :PROPERTIES:
 :ID:       0f0977ed-b054-40f4-9bb7-2b1302a3a9c2
@@ -6852,14 +5708,6 @@ Next: [[#Commodity-Reporting][Commodity Reporting]], Previous:
   balance report.
 
 -----
-
-<<Commodity-Reporting>>
-
-Previous: [[#Grouping-Options][Grouping Options]], Up:
-[[#Command_002dLine-Quick-Reference][Command-Line Quick Reference]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Commodity-Reporting-1>>
 
 *** 8.2.7 Commodity Reporting
 :PROPERTIES:
@@ -6892,15 +5740,6 @@ Previous: [[#Grouping-Options][Grouping Options]], Up:
 
 -----
 
-<<Detailed-Option-Description>>
-
-Next: [[#Period-Expressions][Period Expressions]], Previous:
-[[#Command_002dLine-Quick-Reference][Command-Line Quick Reference]], Up:
-[[#Command_002dLine-Syntax][Command-Line Syntax]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Detailed-Option-Description-1>>
-
 ** 8.3 Detailed Option Description
 :PROPERTIES:
 :ID:       23fa3ab9-6080-4a85-87d0-d23398c2e78d
@@ -6915,15 +5754,6 @@ Next: [[#Period-Expressions][Period Expressions]], Previous:
 - [[id:8df3800b-b1c8-49fa-92a8-ad272d7ed20d][8.3.8 Environment variables]]
 
 -----
-
-<<Global-Options>>
-
-Next: [[#Session-Options][Session Options]], Previous:
-[[#Detailed-Option-Description][Detailed Option Description]], Up:
-[[#Detailed-Option-Description][Detailed Option Description]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Global-Options-1>>
 
 *** 8.3.1 Global Options
 :PROPERTIES:
@@ -7011,15 +5841,6 @@ reports per session.
      and exit.
 
 -----
-
-<<Session-Options>>
-
-Next: [[#Report-Options][Report Options]], Previous:
-[[#Global-Options][Global Options]], Up:
-[[#Detailed-Option-Description][Detailed Option Description]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Session-Options-1>>
 
 *** 8.3.2 Session Options
 :PROPERTIES:
@@ -7136,15 +5957,6 @@ reports per session.
      global value expression annotation.
 
 -----
-
-<<Report-Options>>
-
-Next: [[#Basic-options][Basic options]], Previous:
-[[#Session-Options][Session Options]], Up:
-[[#Detailed-Option-Description][Detailed Option Description]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Report-Options-1>>
 
 *** 8.3.3 Report Options
 :PROPERTIES:
@@ -7685,41 +6497,36 @@ reports per session.
      See [[#Metadata-values][Metadata values]].
 
 - --plot-amount-format FORMAT_STRING
-  <<index-_002d_002dplot_002damount_002dformat-FORMAT_005fSTRING-1>>
    :: Define the output format for an amount data plot. See
   [[#Visualizing-with-Gnuplot][Visualizing with Gnuplot]].
 
 - --plot-total-format FORMAT_STRING
-  <<index-_002d_002dplot_002dtotal_002dformat-FORMAT_005fSTRING-1>>
    :: Define the output format for a total data plot. See
   [[#Visualizing-with-Gnuplot][Visualizing with Gnuplot]].
 
 - --prepend-format FORMAT_STRING
-  <<index-_002d_002dprepend_002dformat-FORMAT_005fSTRING>>  :: Prepend
   STR to every line of the output.
 
-- --prepend-width INT <<index-_002d_002dprepend_002dwidth-INT>>
+- --prepend-width INT
   :: Reserve INT spaces at the beginning of each line of the output.
 
-- --price <<index-_002d_002dprice>>\\
-  -I <<index-_002dI>>  :: Use the price of the commodity purchase for
+- --price \\
+  -I  :: Use the price of the commodity purchase for
   performing calculations.
 
 - --pricedb-format FORMAT_STRING
-  <<index-_002d_002dpricedb_002dformat-FORMAT_005fSTRING>>  :: Set the
-  format expected for the historical price file.
+  :: Set the format expected for the historical price file.
 
-- --prices-format FORMAT_STRING
-  <<index-_002d_002dprices_002dformat-FORMAT_005fSTRING-1>>  :: Set the
+- --prices-format FORMAT_STRING :: Set the
   format for the =prices= report.
 
-- --primary-date <<index-_002d_002dprimary_002ddate>>\\
-  --actual-dates <<index-_002d_002dactual_002ddates>>  :: Show primary
+- --primary-date \\
+  --actual-dates  :: Show primary
   dates for all calculations (see [[#Effective-Dates][Effective
   Dates]]).
 
-- --quantity <<index-_002d_002dquantity-1>>\\
-  -O <<index-_002dO-1>>  :: Report commodity totals (this is the
+- --quantity \\
+  -O  :: Report commodity totals (this is the
   default).
 
 - --quarterly <<index-_002d_002dquarterly-2>>  :: Synonym for ‘--period
@@ -7730,12 +6537,12 @@ reports per session.
      their data file. Don't do any massaging or interpreting. This can be
      useful for minor cleanups, like just aligning amounts.
 
-- --real <<index-_002d_002dreal-3>>\\
-  -R <<index-_002dR-1>>  :: Account using only real transactions
+- --real \\
+  -R :: Account using only real transactions
   ignoring virtual and automatic transactions.
 
 - --register-format FORMAT_STRING
-  <<index-_002d_002dregister_002dformat-FORMAT_005fSTRING-1>>  :: Define
+   :: Define
   the output format for the =register= report.
 
 - --related <<index-_002d_002drelated-2>>  :: In a =register= report
@@ -7752,110 +6559,101 @@ reports per session.
 - --revalued-only <<index-_002d_002drevalued_002donly>>  :: Show only
      =<Revalued>= postings.
 
-- --revalued-total FIXME <<index-_002d_002drevalued_002dtotal-FIXME>>
+- --revalued-total FIXME
    :: Display the sum of the revalued postings as the running total,
   which serves to show unrealized capital in a gain/losses report.
 
-- --rich-data <<index-_002d_002drich_002ddata-1>>\\
-  --detail <<index-_002d_002ddetail>>  :: When generating a ledger
+- --rich-data \\
+  --detail :: When generating a ledger
   transaction from a CSV file using the =convert= command, add CSV,
   Imported, and UUID metadata.
 
-- --seed INT <<index-_002d_002dseed-INT>>  :: Set the random seed to INT
+- --seed INT :: Set the random seed to INT
      for the =generate= command. Used as part of development testing.
 
-- --sort VEXPR <<index-_002d_002dsort-VEXPR-1>>\\
-  -S VEXPR <<index-_002dS-VEXPR-1>>  :: Sort the =register= report based
+- --sort VEXPR \\
+  -S VEXPR  :: Sort the =register= report based
   on the value expression given to sort.
 
-- --sort-all FIXME <<index-_002d_002dsort_002dall-FIXME>>
+- --sort-all FIXME
    :: UNDOCUMENTED! Please help by contributing documentation for this
   feature.
 
-- --sort-xacts VEXPR <<index-_002d_002dsort_002dxacts-VEXPR>>\\
-  --period-sort VEXPR <<index-_002d_002dperiod_002dsort-VEXPR-2>>
+- --sort-xacts VEXPR \\
+  --period-sort VEXPR
    :: Sort the postings within transactions using the given value
   expression.
 
-- --start-of-week INT <<index-_002d_002dstart_002dof_002dweek-INT>>
+- --start-of-week INT
    :: Tell ledger to use a particular day of the week to start its
   “weekly” summary. ‘--start-of-week=1' specifies Monday as the start of
   the week.
 
-- --subtotal <<index-_002d_002dsubtotal-4>>\\
-  -s <<index-_002ds-2>>  :: Cause all transactions in a =register=
+- --subtotal \\
+  -s  :: Cause all transactions in a =register=
   report to be collapsed into a single, subtotaled transaction.
 
-- --tail INT <<index-_002d_002dtail-INT-1>>\\
-  --last INT <<index-_002d_002dlast-INT>>  :: Report only the last INT
+- --tail INT \\
+  --last INT :: Report only the last INT
   entries. Only useful in a =register= report.
 
-- --time-report <<index-_002d_002dtime_002dreport>>  :: Add two columns
+- --time-report :: Add two columns
      to the balance report to show the earliest checkin and checkout times
      for timelog entries.
 
-- --total VEXPR <<index-_002d_002dtotal-VEXPR-1>>\\
-  -T VEXPR <<index-_002dT-VEXPR-1>>  :: Define a value expression used
+- --total VEXPR \\
+  -T VEXPR  :: Define a value expression used
   to calculate the total in reports.
 
-- --total-data <<index-_002d_002dtotal_002ddata-3>>\\
-  -J <<index-_002dJ-1>>  :: Show only dates and totals to format the
+- --total-data \\
+  -J  :: Show only dates and totals to format the
   output for plots.
 
-- --total-width INT <<index-_002d_002dtotal_002dwidth-INT>>  :: Set the
+- --total-width INT :: Set the
      width of the total field in the register report.
 
-- --truncate CODE <<index-_002d_002dtruncate-CODE>>  :: Indicates how
+- --truncate CODE :: Indicates how
      truncation should happen when the contents of columns exceed their
      width. Valid arguments are ‘leading', ‘middle', and ‘trailing'. The
      default is smarter than any of these three, as it considers sub-names
      within the account name (that style is called “abbreviate”).
 
-- --unbudgeted <<index-_002d_002dunbudgeted-1>>  :: Show only unbudgeted
+- --unbudgeted :: Show only unbudgeted
      postings.
 
-- --uncleared <<index-_002d_002duncleared-2>>\\
-  -U <<index-_002dU-1>>  :: Use only uncleared transactions in
+- --uncleared \\
+  -U :: Use only uncleared transactions in
   calculations and reports.
 
-- --unrealized <<index-_002d_002dunrealized>>  :: Show generated
+- --unrealized  :: Show generated
      unrealized gain and loss accounts in the balance report.
 
-- --unrealized-gains STR <<index-_002d_002dunrealized_002dgains-STR>>
+- --unrealized-gains STR
    :: Allow the user to specify what account name should be used for
   unrealized gains. Defaults to ‘"Equity:Unrealized Gains"'. Often set
   in one's ~/.ledgerrc file to change the default.
 
-- --unrealized-losses STR <<index-_002d_002dunrealized_002dlosses-STR>>
+- --unrealized-losses STR
    :: Allow the user to specify what account name should be used for
   unrealized losses. Defaults to ‘"Equity:Unrealized Losses"'. Often set
   in one's ~/.ledgerrc file to change the default.
 
-- --unround <<index-_002d_002dunround>>  :: Perform all calculations
+- --unround  :: Perform all calculations
      without rounding and display results to full precision.
 
-- --values <<index-_002d_002dvalues-1>>  :: Shows the values used by
+- --values  :: Shows the values used by
      each tag when used in combination with the =tags= command.
 
-- --weekly <<index-_002d_002dweekly-2>>\\
-  -W <<index-_002dW-2>>  :: Synonym for ‘--period "weekly"'.
+- --weekly \\
+  -W :: Synonym for ‘--period "weekly"'.
 
-- --wide <<index-_002d_002dwide-1>>  :: Let the register report use 132
+- --wide :: Let the register report use 132
      columns instead of 80 (the default). Identical to ‘--columns "132"'.
 
-- --yearly <<index-_002d_002dyearly-2>>\\
-  -Y <<index-_002dY-2>>  :: Synonym for ‘--period "yearly"'.
+- --yearly \\
+  -Y  :: Synonym for ‘--period "yearly"'.
 
 -----
-
-<<Basic-options>>
-
-Next: [[#Report-filtering][Report filtering]], Previous:
-[[#Report-Options][Report Options]], Up:
-[[#Detailed-Option-Description][Detailed Option Description]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Basic-options-1>>
 
 *** 8.3.4 Basic options
 :PROPERTIES:
@@ -7866,25 +6664,25 @@ want to set them using environment variables (see
 [[#Environment-variables][Environment variables]]), instead of using
 actual command-line options:
 
-- --help <<index-_002d_002dhelp-2>>\\
-  -h <<index-_002dh-2>>  :: Display the man page for ledger.
+- --help \\
+  -h  :: Display the man page for ledger.
 
-- --version <<index-_002d_002dversion-2>>  :: Print the current version
+- --version  :: Print the current version
      of ledger and exits. This is useful for sending bug reports, to let
      the author know which version of ledger you are using.
 
-- --file FILE <<index-_002d_002dfile-FILE-2>>\\
-  -f FILE <<index-_002df-FILE-2>>  :: Read FILE as a ledger file. FILE
+- --file FILE \\
+  -f FILE :: Read FILE as a ledger file. FILE
   can be ‘-' which is a synonym for ‘/dev/stdin'. This command may be
   used multiple times. Typically, the environment variable =LEDGER_FILE=
   is set, rather than using this command-line option.
 
-- --output FILE <<index-_002d_002doutput-FILE-2>>\\
-  -o FILE <<index-_002do-FILE-1>>  :: Redirect output from any command
+- --output FILE \\
+  -o FILE  :: Redirect output from any command
   to FILE. By default, all output goes to standard output.
 
-- --init-file FILE <<index-_002d_002dinit_002dfile-FILE-2>>\\
-  -i FILE <<index-_002di-FILE-1>>  :: Causes FILE to be read by ledger
+- --init-file FILE \\
+  -i FILE :: Causes FILE to be read by ledger
   before any other ledger file. This file may not contain any postings,
   but it may contain option settings. To specify options in the init
   file, use the same syntax as on the command-line, but put each option
@@ -7899,20 +6697,11 @@ actual command-line options:
   Option settings on the command-line or in the environment always take
   precedence over settings in the init file.
 
-- --account STR <<index-_002d_002daccount-STR-3>>\\
-  -a STR <<index-_002da-STR-1>>  :: Specify the default account which
+- --account STR \\
+  -a STR  :: Specify the default account which
   QIF file postings are assumed to relate to.
 
 -----
-
-<<Report-filtering>>
-
-Next: [[#Output-customization][Output customization]], Previous:
-[[#Basic-options][Basic options]], Up:
-[[#Detailed-Option-Description][Detailed Option Description]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Report-filtering-1>>
 
 *** 8.3.5 Report filtering
 :PROPERTIES:
@@ -7921,25 +6710,25 @@ Next: [[#Output-customization][Output customization]], Previous:
 These options change which postings affect the outcome of a report, in
 ways other than just using regular expressions:
 
-- --current <<index-_002d_002dcurrent-2>>\\
-  -c <<index-_002dc-1>>  :: Display only transactions occurring on or
+- --current \\
+  -c :: Display only transactions occurring on or
   before the current date.
 
-- --begin DATE <<index-_002d_002dbegin-DATE-2>>\\
-  -b DATE <<index-_002db-DATE-1>>  :: Constrain the report to
+- --begin DATE \\
+  -b DATE :: Constrain the report to
   transactions on or after DATE. Only transactions after that date will
   be calculated, which means that the running total in the balance
   report will always start at zero with the first matching transaction.
   (Note: This is different from using --display EXPR to constrain what
   is displayed).
 
-- --end DATE <<index-_002d_002dend-DATE-2>>\\
-  -e DATE <<index-_002de-DATE-1>>  :: Constrain the report so that
+- --end DATE \\
+  -e DATE   :: Constrain the report so that
   transactions on or after DATE are not considered.
 
 - --period PERIOD_EXPRESSION
-  <<index-_002d_002dperiod-PERIOD_005fEXPRESSION-2>>\\
-  -p PERIOD_EXPRESSION <<index-_002dp-PERIOD_005fEXPRESSION-1>>  :: Set
+  \\
+  -p PERIOD_EXPRESSION   :: Set
   the reporting period to STR. This will subtotal all matching
   transactions within each period separately, making it easy to see
   weekly, monthly, quarterly, etc., posting totals. A period string can
@@ -7947,7 +6736,7 @@ ways other than just using regular expressions:
   terms like ‘last June' or ‘next month'. For more details on period
   expressions, see [[#Period-Expressions][Period Expressions]].
 
-- --period-sort VEXPR <<index-_002d_002dperiod_002dsort-VEXPR-3>>
+- --period-sort VEXPR
    :: Sort the postings within each reporting period using the value
   expression EXPR. This is most often useful when reporting monthly
   expenses, in order to view the highest expense categories at the top
@@ -7957,24 +6746,24 @@ ways other than just using regular expressions:
         $ ledger -M --period-sort total reg ^Expenses
   #+end_example
 
-- --cleared <<index-_002d_002dcleared-3>>\\
-  -C <<index-_002dC-2>>  :: Display only postings whose transaction has
+- --cleared \\
+  -C  :: Display only postings whose transaction has
   been marked “cleared” (by placing an asterisk to the right of the
   date).
 
-- --uncleared <<index-_002d_002duncleared-3>>\\
-  -U <<index-_002dU-2>>  :: Display only postings whose transaction has
+- --uncleared \\
+  -U  :: Display only postings whose transaction has
   not been marked “cleared” (i.e., if there is no asterisk to the right
   of the date).
 
-- --real <<index-_002d_002dreal-4>>\\
-  -R <<index-_002dR-2>>  :: Display only real postings, not virtual. (A
+- --real \\
+  -R   :: Display only real postings, not virtual. (A
   virtual posting is indicated by surrounding the account name with
   parentheses or brackets; see [[#Virtual-postings][Virtual postings]]
   for more information).
 
-- --actual <<index-_002d_002dactual-2>>\\
-  -L <<index-_002dL-2>>  :: Display only actual postings, and not those
+- --actual \\
+  -L   :: Display only actual postings, and not those
   created by automated transactions.
 
 - --related <<index-_002d_002drelated-3>>\\
@@ -16442,6 +15231,7 @@ Y
 
 -----
 
+* Footnotes
 ** [[#DOCF1][(1)]]
 In some special cases, it automatically balances this transaction for
 you.
