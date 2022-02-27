@@ -170,7 +170,7 @@ Enter the beauty of computerized accounting. The purpose of the Ledger
 program is to make general journal accounting simple, by keeping track
 of the balances for you. Your only job is to enter the postings. If an
 individual posting does not balance, Ledger displays an error and
-indicates the incorrect posting.
+indicates the incorrect posting[fn:1].
 
 In summary, there are two aspects of Ledger use: updating the journal
 data file, and using the Ledger tool to view the summarized result of
@@ -1385,7 +1385,7 @@ nature of your transactions.
 
 For example, you do not need to tell Ledger about the accounts you use.
 Any time Ledger sees a posting involving an account it knows nothing
-about, it will create it. If you use a commodity that is
+about, it will create it[fn:2]. If you use a commodity that is
 new to Ledger, it will create that commodity, and determine its display
 characteristics (placement of the symbol before or after the amount,
 display precision, etc.) based on how you used the commodity in the
@@ -1566,7 +1566,7 @@ Ledger is agnostic when it comes to how you value your accounts.
 Dollars, Euros, Pounds, Francs, Shares etc. are all just “commodities”.
 Holdings in stocks, bonds, mutual funds and other financial instruments
 can be labeled using whatever is convenient for you (stock ticker
-symbols are suggested for publicly traded assets).
+symbols are suggested for publicly traded assets).[fn:3]
 
 For the rest of this manual, we will only use the word “commodities”
 when referring to the units on a transaction value.
@@ -15232,18 +15232,18 @@ Y
 -----
 
 * Footnotes
-** [[#DOCF1][(1)]]
-In some special cases, it automatically balances this transaction for
-you.
 
-** [[#DOCF2][(2)]]
-This also means if you misspell an account it will end up getting
-counted separately from what you intended. An Emacs major mode
-[[https://github.com/ledger/ledger-mode/][ledger-mode]] provides tab
-completion for automatically filling in account names.
+[fn:1] In some special cases, it automatically
+balances this transaction for you.
 
-** [[#DOCF3][(3)]]
-You can track /anything/, even time or distance traveled. As long as it
-cannot be created or destroyed inside your accounting system.
+[fn:2] This also means if you misspell an account
+it will end up getting counted separately from what
+you intended. An Emacs major mode [[https://github.com/ledger/ledger-mode/][ledger-mode]] provides
+tab completion for automatically filling in account
+names.
+
+[fn:3] You can track /anything/, even time or distance
+traveled. As long as it cannot be created or
+destroyed inside your accounting system.
 
 -----
