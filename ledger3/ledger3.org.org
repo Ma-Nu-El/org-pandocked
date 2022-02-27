@@ -4,6 +4,111 @@
 :END:
 #+TITLE: Ledger 3 Manual
 #+AUTHOR: Manuel Fuica Morales
+
+* TOC :TOC_3:noexport:
+- [[#ledger-command-line-accounting][Ledger: Command-Line Accounting]]
+  - [[#table-of-contents][Table of Contents]]
+- [[#overview][Overview]]
+  - [[#1-introduction-to-ledger][1 Introduction to Ledger]]
+    - [[#11-fat-free-accounting][1.1 Fat-free Accounting]]
+    - [[#12-building-the-program][1.2 Building the program]]
+    - [[#13-getting-help][1.3 Getting help]]
+    - [[#14-third-party-ledger-tutorials][1.4 Third-Party Ledger Tutorials]]
+  - [[#2-ledger-tutorial][2 Ledger Tutorial]]
+    - [[#21-start-a-journal-file][2.1 Start a Journal File]]
+    - [[#22-run-a-few-reports][2.2 Run a Few Reports]]
+  - [[#3-principles-of-accounting-with-ledger][3 Principles of Accounting with Ledger]]
+    - [[#31-accounting-with-ledger][3.1 Accounting with Ledger]]
+    - [[#32-stating-where-money-goes][3.2 Stating where money goes]]
+    - [[#33-assets-and-liabilities][3.3 Assets and Liabilities]]
+    - [[#34-commodities-and-currencies][3.4 Commodities and Currencies]]
+    - [[#35-accounts-and-inventories][3.5 Accounts and Inventories]]
+    - [[#36-understanding-equity][3.6 Understanding Equity]]
+    - [[#37-dealing-with-petty-cash][3.7 Dealing with Petty Cash]]
+    - [[#38-working-with-multiple-funds-and-accounts][3.8 Working with multiple funds and accounts]]
+  - [[#4-keeping-a-journal][4 Keeping a Journal]]
+    - [[#41-the-most-basic-entry][4.1 The Most Basic Entry]]
+    - [[#42-starting-up][4.2 Starting up]]
+    - [[#43-structuring-your-accounts][4.3 Structuring your Accounts]]
+    - [[#44-commenting-on-your-journal][4.4 Commenting on your Journal]]
+    - [[#45-currency-and-commodities][4.5 Currency and Commodities]]
+    - [[#46-keeping-it-consistent][4.6 Keeping it Consistent]]
+    - [[#47-journal-format][4.7 Journal Format]]
+    - [[#48-converting-from-other-formats][4.8 Converting from other formats]]
+    - [[#49-archiving-previous-years][4.9 Archiving Previous Years]]
+  - [[#5-transactions][5 Transactions]]
+    - [[#51-basic-format][5.1 Basic format]]
+    - [[#52-eliding-amounts][5.2 Eliding amounts]]
+    - [[#53-auxiliary-dates][5.3 Auxiliary dates]]
+    - [[#54-codes][5.4 Codes]]
+    - [[#55-transaction-state][5.5 Transaction state]]
+    - [[#56-transaction-notes][5.6 Transaction notes]]
+    - [[#57-metadata][5.7 Metadata]]
+    - [[#58-virtual-postings][5.8 Virtual postings]]
+    - [[#59-expression-amounts][5.9 Expression amounts]]
+    - [[#510-balance-verification][5.10 Balance verification]]
+    - [[#511-posting-cost][5.11 Posting cost]]
+    - [[#512-explicit-posting-costs][5.12 Explicit posting costs]]
+    - [[#513-posting-cost-expressions][5.13 Posting cost expressions]]
+    - [[#514-total-posting-costs][5.14 Total posting costs]]
+    - [[#515-virtual-posting-costs][5.15 Virtual posting costs]]
+    - [[#516-commodity-prices][5.16 Commodity prices]]
+    - [[#517-prices-versus-costs][5.17 Prices versus costs]]
+    - [[#518-fixated-prices-and-costs][5.18 Fixated prices and costs]]
+    - [[#519-lot-dates][5.19 Lot dates]]
+    - [[#520-lot-notes][5.20 Lot notes]]
+    - [[#521-lot-value-expressions][5.21 Lot value expressions]]
+    - [[#522-automated-transactions][5.22 Automated Transactions]]
+  - [[#6-building-reports][6 Building Reports]]
+    - [[#61-introduction][6.1 Introduction]]
+    - [[#62-balance-reports][6.2 Balance Reports]]
+    - [[#63-typical-queries][6.3 Typical queries]]
+    - [[#64-advanced-reports][6.4 Advanced Reports]]
+  - [[#7-reporting-commands][7 Reporting Commands]]
+    - [[#71-primary-financial-reports][7.1 Primary Financial Reports]]
+    - [[#72-reports-in-other-formats][7.2 Reports in other Formats]]
+    - [[#73-reports-about-your-journals][7.3 Reports about your Journals]]
+  - [[#8-command-line-syntax][8 Command-Line Syntax]]
+    - [[#81-basic-usage][8.1 Basic Usage]]
+    - [[#82-command-line-quick-reference][8.2 Command-Line Quick Reference]]
+    - [[#83-detailed-option-description][8.3 Detailed Option Description]]
+    - [[#84-period-expressions][8.4 Period Expressions]]
+  - [[#9-budgeting-and-forecasting][9 Budgeting and Forecasting]]
+    - [[#91-budgeting][9.1 Budgeting]]
+    - [[#92-forecasting][9.2 Forecasting]]
+  - [[#10-time-keeping][10 Time Keeping]]
+  - [[#11-value-expressions][11 Value Expressions]]
+    - [[#111-variables][11.1 Variables]]
+    - [[#112-functions][11.2 Functions]]
+    - [[#113-operators][11.3 Operators]]
+    - [[#114-complex-expressions][11.4 Complex expressions]]
+  - [[#12-format-strings][12 Format Strings]]
+    - [[#121-format-string-basics][12.1 Format String Basics]]
+    - [[#122-format-string-structure][12.2 Format String Structure]]
+    - [[#123-format-expressions][12.3 Format Expressions]]
+    - [[#124-balance-format][12.4 Balance format]]
+    - [[#125-formatting-functions-and-codes][12.5 Formatting Functions and Codes]]
+  - [[#13-extending-with-python][13 Extending with Python]]
+    - [[#131-basic-data-traversal][13.1 Basic data traversal]]
+    - [[#132-raw-versus-cooked][13.2 Raw versus Cooked]]
+    - [[#133-queries][13.3 Queries]]
+    - [[#134-embedded-python][13.4 Embedded Python]]
+    - [[#135-amounts][13.5 Amounts]]
+  - [[#14-ledger-for-developers][14 Ledger for Developers]]
+    - [[#141-internal-design][14.1 Internal Design]]
+    - [[#142-journal-file-format-for-developers][14.2 Journal File Format for Developers]]
+    - [[#143-developer-commands][14.3 Developer Commands]]
+    - [[#144-ledger-development-environment][14.4 Ledger Development Environment]]
+  - [[#15-major-changes-from-version-26][15 Major Changes from version 2.6]]
+  - [[#appendix-a-example-journal-file][Appendix A Example Journal File]]
+  - [[#appendix-b-miscellaneous-notes][Appendix B Miscellaneous Notes]]
+    - [[#b1-cookbook][B.1 Cookbook]]
+  - [[#concepts-index][Concepts Index]]
+  - [[#commands--options-index][Commands & Options Index]]
+    - [[#1][(1)]]
+    - [[#2][(2)]]
+    - [[#3][(3)]]
+
 * Ledger: Command-Line Accounting
 <<SEC_Contents>>
 
@@ -24,8 +129,7 @@
     - [[#Balance-Report][2.2.1 Balance Report]]
     - [[#Register-Report][2.2.2 Register Report]]
     - [[#Cleared-Report][2.2.3 Cleared Report]]
-    - [[#Using-the-Windows-Command_002dLine][2.2.4 Using the Windows
-      Command-Line]]
+    - [[#Using-the-Windows-Command_002dLine][2.2.4 Using the Windows Command-Line]]
 
 - [[#Principles-of-Accounting-with-Ledger][3 Principles of Accounting
   with Ledger]]
@@ -348,25 +452,25 @@ accounting based on a text journal. It provides no bells or whistles,
 and returns the user to the days before user interfaces were even a
 twinkling in their fathers' CRTs.
 
-| • [[#Introduction-to-Ledger][Introduction to Ledger]]:                             |    |   |
-| • [[#Ledger-Tutorial][Ledger Tutorial]]:                                           |    |   |
-| • [[#Principles-of-Accounting-with-Ledger][Principles of Accounting with Ledger]]: |    |   |
-| • [[#Keeping-a-Journal][Keeping a Journal]]:                                       |    |   |
-| • [[#Transactions][Transactions]]:                                                 |    |   |
-| • [[#Building-Reports][Building Reports]]:                                         |    |   |
-| • [[#Reporting-Commands][Reporting Commands]]:                                     |    |   |
-| • [[#Command_002dLine-Syntax][Command-Line Syntax]]:                               |    |   |
-| • [[#Budgeting-and-Forecasting][Budgeting and Forecasting]]:                       |    |   |
-| • [[#Time-Keeping][Time Keeping]]:                                                 |    |   |
-| • [[#Value-Expressions][Value Expressions]]:                                       |    |   |
-| • [[#Format-Strings][Format Strings]]:                                             |    |   |
-| • [[#Extending-with-Python][Extending with Python]]:                               |    |   |
-| • [[#Ledger-for-Developers][Ledger for Developers]]:                               |    |   |
-| • [[#Major-Changes-from-version-2_002e6][Major Changes from version 2.6]]:         |    |   |
-| • [[#Example-Journal-File][Example Journal File]]:                                 |    |   |
-| • [[#Miscellaneous-Notes][Miscellaneous Notes]]:                                   |    |   |
-| • [[#Concepts-Index][Concepts Index]]:                                             |    |   |
-| • [[#Commands-_0026-Options-Index][Commands & Options Index]]:                     |    |   |
+ - [[#Introduction-to-Ledger][Introduction to Ledger]]
+ - [[#Ledger-Tutorial][Ledger Tutorial]]
+ - [[#Principles-of-Accounting-with-Ledger][Principles of Accounting with Ledger]]
+ - [[#Keeping-a-Journal][Keeping a Journal]]
+ - [[#Transactions][Transactions]]
+ - [[#Building-Reports][Building Reports]]
+ - [[#Reporting-Commands][Reporting Commands]]
+ - [[#Command_002dLine-Syntax][Command-Line Syntax]]
+ - [[#Budgeting-and-Forecasting][Budgeting and Forecasting]]
+ - [[#Time-Keeping][Time Keeping]]
+ - [[#Value-Expressions][Value Expressions]]
+ - [[#Format-Strings][Format Strings]]
+ - [[#Extending-with-Python][Extending with Python]]
+ - [[#Ledger-for-Developers][Ledger for Developers]]
+ - [[#Major-Changes-from-version-2_002e6][Major Changes from version 2.6]]
+ - [[#Example-Journal-File][Example Journal File]]
+ - [[#Miscellaneous-Notes][Miscellaneous Notes]]
+ - [[#Concepts-Index][Concepts Index]]
+ - [[#Commands-_0026-Options-Index][Commands & Options Index]]
 
 -----
 
