@@ -104,6 +104,7 @@
   - [[#appendix-b-miscellaneous-notes][Appendix B Miscellaneous Notes]]
     - [[#b1-cookbook][B.1 Cookbook]]
   - [[#concepts-index][Concepts Index]]
+    - [[#a][A]]
   - [[#commands--options-index][Commands & Options Index]]
     - [[#1][(1)]]
     - [[#2][(2)]]
@@ -447,59 +448,50 @@ Next: [[#Introduction-to-Ledger][Introduction to Ledger]], Previous:
 <<Overview>>
 
 * Overview
+
 Ledger is a command-line accounting tool that provides double-entry
 accounting based on a text journal. It provides no bells or whistles,
 and returns the user to the days before user interfaces were even a
 twinkling in their fathers' CRTs.
 
- - [[#Introduction-to-Ledger][Introduction to Ledger]]
- - [[#Ledger-Tutorial][Ledger Tutorial]]
- - [[#Principles-of-Accounting-with-Ledger][Principles of Accounting with Ledger]]
- - [[#Keeping-a-Journal][Keeping a Journal]]
- - [[#Transactions][Transactions]]
- - [[#Building-Reports][Building Reports]]
- - [[#Reporting-Commands][Reporting Commands]]
- - [[#Command_002dLine-Syntax][Command-Line Syntax]]
- - [[#Budgeting-and-Forecasting][Budgeting and Forecasting]]
- - [[#Time-Keeping][Time Keeping]]
- - [[#Value-Expressions][Value Expressions]]
- - [[#Format-Strings][Format Strings]]
- - [[#Extending-with-Python][Extending with Python]]
- - [[#Ledger-for-Developers][Ledger for Developers]]
- - [[#Major-Changes-from-version-2_002e6][Major Changes from version 2.6]]
- - [[#Example-Journal-File][Example Journal File]]
- - [[#Miscellaneous-Notes][Miscellaneous Notes]]
- - [[#Concepts-Index][Concepts Index]]
- - [[#Commands-_0026-Options-Index][Commands & Options Index]]
+- [[id:e323c162-113a-4695-a9ec-4c6dbe22fe32][1 Introduction to Ledger]]
+- [[#Ledger-Tutorial][Ledger Tutorial]]
+- [[#Principles-of-Accounting-with-Ledger][Principles of Accounting with Ledger]]
+- [[#Keeping-a-Journal][Keeping a Journal]]
+- [[#Transactions][Transactions]]
+- [[#Building-Reports][Building Reports]]
+- [[#Reporting-Commands][Reporting Commands]]
+- [[#Command_002dLine-Syntax][Command-Line Syntax]]
+- [[#Budgeting-and-Forecasting][Budgeting and Forecasting]]
+- [[#Time-Keeping][Time Keeping]]
+- [[#Value-Expressions][Value Expressions]]
+- [[#Format-Strings][Format Strings]]
+- [[#Extending-with-Python][Extending with Python]]
+- [[#Ledger-for-Developers][Ledger for Developers]]
+- [[#Major-Changes-from-version-2_002e6][Major Changes from version 2.6]]
+- [[#Example-Journal-File][Example Journal File]]
+- [[#Miscellaneous-Notes][Miscellaneous Notes]]
+- [[#Concepts-Index][Concepts Index]]
+- [[#Commands-_0026-Options-Index][Commands & Options Index]]
 
 -----
-
-<<Introduction-to-Ledger>>
-
-Next: [[#Ledger-Tutorial][Ledger Tutorial]], Previous: [[#Top][Top]],
-Up: [[#Top][Top]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Introduction-to-Ledger-1>>
 
 ** 1 Introduction to Ledger
-| • [[#Fat_002dfree-Accounting][Fat-free Accounting]]:                   |    |   |
-| • [[#Building-the-program][Building the program]]:                     |    |   |
-| • [[#Getting-help][Getting help]]:                                     |    |   |
-| • [[#Third_002dParty-Ledger-Tutorials][Third-Party Ledger Tutorials]]: |    |   |
+:PROPERTIES:
+:ID:       e323c162-113a-4695-a9ec-4c6dbe22fe32
+:END:
+- [[id:0f632a3f-af1b-4de1-bb80-91c84feacbb4][1.1 Fat-free Accounting]]
+- [[id:a311de02-9e96-4371-b319-4ba328b02d39][1.2 Building the program]]
+- [[id:cae18ad6-cd95-49b5-bb1a-032e54b71736][1.3 Getting help]]
+- [[id:74a7eef0-b60d-433c-9085-b6235c222ba1][1.4 Third-Party Ledger Tutorials]]
 
 -----
 
-<<Fat_002dfree-Accounting>>
-
-Next: [[#Building-the-program][Building the program]], Previous:
-[[#Introduction-to-Ledger][Introduction to Ledger]], Up:
-[[#Introduction-to-Ledger][Introduction to Ledger]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Fat_002dfree-Accounting-1>>
-
 *** 1.1 Fat-free Accounting
+:PROPERTIES:
+:ID:       0f632a3f-af1b-4de1-bb80-91c84feacbb4
+:END:
+
 Ledger is an accounting tool with the moxie to exist. It provides no
 bells or whistles, and returns the user to the days before user
 interfaces were even a twinkling in their father's CRT.
@@ -519,8 +511,6 @@ checking account. Where the money comes from, and where it goes to, are
 described in the payee field, where you write the person or company's
 name. The ultimate aim of keeping a checkbook journal is to know how
 much money is available to spend. That's really the aim of all journals.
-
-<<index-postings>>
 
 What computers add is the ability to walk through these postings, and
 tell you things about your spending habits; to let you devise budgets
@@ -573,8 +563,6 @@ the other. This makes it easier to write in a “running balance”, since
 you don't have to look back at the last time the account was
 referenced---but it also means having a lot of journal books, if you
 deal with multiple accounts.
-
-<<index-account_002c-meaning-of>> <<index-meaning-of-account>>
 
 Here is a good place for an aside on the use of the word “account”. Most
 private people consider an account to be something that holds money at
@@ -668,6 +656,10 @@ Next: [[#Getting-help][Getting help]], Previous:
 <<Building-the-program-1>>
 
 *** 1.2 Building the program
+:PROPERTIES:
+:ID:       a311de02-9e96-4371-b319-4ba328b02d39
+:END:
+
 Ledger is written in ANSI C++, and should compile on any unix platform.
 The easiest way to build and install ledger is to use the prepared
 acprep script, that does a lot of the footwork:
@@ -699,7 +691,9 @@ Up: [[#Introduction-to-Ledger][Introduction to Ledger]]  
 <<Getting-help-1>>
 
 *** 1.3 Getting help
-<<index-help>>
+:PROPERTIES:
+:ID:       cae18ad6-cd95-49b5-bb1a-032e54b71736
+:END:
 
 Ledger has a complete online help system based on GNU Info. This manual
 can be searched directly from the command-line using =info ledger=,
@@ -725,6 +719,10 @@ Previous: [[#Getting-help][Getting help]], Up:
 <<Third_002dParty-Ledger-Tutorials-1>>
 
 *** 1.4 Third-Party Ledger Tutorials
+:PROPERTIES:
+:ID:       74a7eef0-b60d-433c-9085-b6235c222ba1
+:END:
+
 There are plenty of people using Ledger for accounting applications.
 Some have documented how they use Ledger's features to solve their
 accounting problems.
@@ -752,23 +750,16 @@ Ledger]], Up: [[#Top][Top]]  
 <<Ledger-Tutorial-1>>
 
 ** 2 Ledger Tutorial
-<<index-tutorial>>
 
-| • [[#Start-a-Journal-File][Start a Journal File]]: |    |   |
-| • [[#Run-a-Few-Reports][Run a Few Reports]]:       |    |   |
+- [[id:1036cd66-69e3-43aa-a142-b67fc93120b3][2.1 Start a Journal File]]
+- [[#Run-a-Few-Reports][Run a Few Reports]]
 
 -----
 
-<<Start-a-Journal-File>>
-
-Next: [[#Run-a-Few-Reports][Run a Few Reports]], Previous:
-[[#Ledger-Tutorial][Ledger Tutorial]], Up: [[#Ledger-Tutorial][Ledger
-Tutorial]]   [[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Start-a-Journal-File-1>>
-
 *** 2.1 Start a Journal File
-<<index-journals>>
+:PROPERTIES:
+:ID:       1036cd66-69e3-43aa-a142-b67fc93120b3
+:END:
 
 A journal is a record of your financial transactions and will be central
 to using Ledger. For now we just want to get a taste of what Ledger can
@@ -791,10 +782,11 @@ Previous: [[#Start-a-Journal-File][Start a Journal File]], Up:
 <<Run-a-Few-Reports-1>>
 
 *** 2.2 Run a Few Reports
-| • [[#Balance-Report][Balance Report]]:                                     |    |   |
-| • [[#Register-Report][Register Report]]:                                   |    |   |
-| • [[#Cleared-Report][Cleared Report]]:                                     |    |   |
-| • [[#Using-the-Windows-Command_002dLine][Using the Windows Command-Line]]: |    |   |
+
+- [[id:c701a60f-e4be-4bd5-979e-bb41a46edb81][2.2.1 Balance Report]]
+- [[id:482eae23-450c-48ca-8e98-8f53fc69fb35][2.2.2 Register Report]]
+- [[id:863a3e42-00b2-4bce-9eb8-c0c280b792d0][2.2.3 Cleared Report]]
+- [[id:e1a77dd0-a2fe-4827-a708-52d80a7cce2b][2.2.4 Using the Windows Command-Line]]
 
 Please note that as a command-line program, Ledger is controlled from
 your shell. There are several different command shells that all behave
@@ -806,18 +798,10 @@ expects. In all cases that follow you should take that into account when
 entering the command-line arguments as given. There are too many
 variations between shells to give concrete examples for each.
 
------
-
-<<Balance-Report>>
-
-Next: [[#Register-Report][Register Report]], Previous:
-[[#Run-a-Few-Reports][Run a Few Reports]], Up: [[#Run-a-Few-Reports][Run
-a Few Reports]]  
-[[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
-
-<<Balance-Report-1>>
-
 **** 2.2.1 Balance Report
+:PROPERTIES:
+:ID:       c701a60f-e4be-4bd5-979e-bb41a46edb81
+:END:
 <<index-balance-report>> <<index-balance>>
 
 To find the balances of all of your accounts, run this command:
@@ -884,6 +868,9 @@ Reports]]   [[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
 <<Register-Report-1>>
 
 **** 2.2.2 Register Report
+:PROPERTIES:
+:ID:       482eae23-450c-48ca-8e98-8f53fc69fb35
+:END:
 <<index-register-report>> <<index-register>>
 
 To show all transactions and a running total:
@@ -987,6 +974,9 @@ Command-Line]], Previous: [[#Register-Report][Register Report]], Up:
 <<Cleared-Report-1>>
 
 **** 2.2.3 Cleared Report
+:PROPERTIES:
+:ID:       863a3e42-00b2-4bce-9eb8-c0c280b792d0
+:END:
 <<index-cleared-report>> <<index-cleared>>
 
 A very useful report is to show what your obligations are versus what
@@ -1036,6 +1026,9 @@ Previous: [[#Cleared-Report][Cleared Report]], Up:
 <<Using-the-Windows-Command_002dLine-1>>
 
 **** 2.2.4 Using the Windows Command-Line
+:PROPERTIES:
+:ID:       e1a77dd0-a2fe-4827-a708-52d80a7cce2b
+:END:
 <<index-windows-cmd_002eexe>>
 <<index-currency-symbol-display-on-windows>>
 
@@ -1054,14 +1047,14 @@ Next: [[#Keeping-a-Journal][Keeping a Journal]], Previous:
 <<Principles-of-Accounting-with-Ledger-1>>
 
 ** 3 Principles of Accounting with Ledger
-| • [[#Accounting-with-Ledger][Accounting with Ledger]]:                                     |    |   |
-| • [[#Stating-where-money-goes][Stating where money goes]]:                                 |    |   |
-| • [[#Assets-and-Liabilities][Assets and Liabilities]]:                                     |    |   |
-| • [[#Commodities-and-Currencies][Commodities and Currencies]]:                             |    |   |
-| • [[#Accounts-and-Inventories][Accounts and Inventories]]:                                 |    |   |
-| • [[#Understanding-Equity][Understanding Equity]]:                                         |    |   |
-| • [[#Dealing-with-Petty-Cash][Dealing with Petty Cash]]:                                   |    |   |
-| • [[#Working-with-multiple-funds-and-accounts][Working with multiple funds and accounts]]: |    |   |
+- [[#Accounting-with-Ledger][Accounting with Ledger]]
+- [[#Stating-where-money-goes][Stating where money goes]]
+- [[#Assets-and-Liabilities][Assets and Liabilities]]
+- [[#Commodities-and-Currencies][Commodities and Currencies]]
+- [[#Accounts-and-Inventories][Accounts and Inventories]]
+- [[#Understanding-Equity][Understanding Equity]]
+- [[#Dealing-with-Petty-Cash][Dealing with Petty Cash]]
+- [[#Working-with-multiple-funds-and-accounts][Working with multiple funds and accounts]]
 
 -----
 
@@ -3267,28 +3260,28 @@ Next: [[#Building-Reports][Building Reports]], Previous:
 <<Transactions-1>>
 
 ** 5 Transactions
-| • [[#Basic-format][Basic format]]:                         |    |   |
-| • [[#Eliding-amounts][Eliding amounts]]:                   |    |   |
-| • [[#Auxiliary-dates][Auxiliary dates]]:                   |    |   |
-| • [[#Codes][Codes]]:                                       |    |   |
-| • [[#Transaction-state][Transaction state]]:               |    |   |
-| • [[#Transaction-notes][Transaction notes]]:               |    |   |
-| • [[#Metadata][Metadata]]:                                 |    |   |
-| • [[#Virtual-postings][Virtual postings]]:                 |    |   |
-| • [[#Expression-amounts][Expression amounts]]:             |    |   |
-| • [[#Balance-verification][Balance verification]]:         |    |   |
-| • [[#Posting-cost][Posting cost]]:                         |    |   |
-| • [[#Explicit-posting-costs][Explicit posting costs]]:     |    |   |
-| • [[#Posting-cost-expressions][Posting cost expressions]]: |    |   |
-| • [[#Total-posting-costs][Total posting costs]]:           |    |   |
-| • [[#Virtual-posting-costs][Virtual posting costs]]:       |    |   |
-| • [[#Commodity-prices][Commodity prices]]:                 |    |   |
-| • [[#Prices-versus-costs][Prices versus costs]]:           |    |   |
-| • [[#Fixated-prices-and-costs][Fixated prices and costs]]: |    |   |
-| • [[#Lot-dates][Lot dates]]:                               |    |   |
-| • [[#Lot-notes][Lot notes]]:                               |    |   |
-| • [[#Lot-value-expressions][Lot value expressions]]:       |    |   |
-| • [[#Automated-Transactions][Automated Transactions]]:     |    |   |
+- [[#Basic-format][Basic format]]
+- [[#Eliding-amounts][Eliding amounts]]
+- [[#Auxiliary-dates][Auxiliary dates]]
+- [[#Codes][Codes]]
+- [[#Transaction-state][Transaction state]]
+- [[#Transaction-notes][Transaction notes]]
+- [[#Metadata][Metadata]]
+- [[#Virtual-postings][Virtual postings]]
+- [[#Expression-amounts][Expression amounts]]
+- [[#Balance-verification][Balance verification]]
+- [[#Posting-cost][Posting cost]]
+- [[#Explicit-posting-costs][Explicit posting costs]]
+- [[#Posting-cost-expressions][Posting cost expressions]]
+- [[#Total-posting-costs][Total posting costs]]
+- [[#Virtual-posting-costs][Virtual posting costs]]
+- [[#Commodity-prices][Commodity prices]]
+- [[#Prices-versus-costs][Prices versus costs]]
+- [[#Fixated-prices-and-costs][Fixated prices and costs]]
+- [[#Lot-dates][Lot dates]]
+- [[#Lot-notes][Lot notes]]
+- [[#Lot-value-expressions][Lot value expressions]]
+- [[#Automated-Transactions][Automated Transactions]]
 
 -----
 
@@ -3554,9 +3547,9 @@ used in calculations.
 
 The are two forms of metadata: plain tags, and tag/value pairs.
 
-| • [[#Metadata-tags][Metadata tags]]:     |    |   |
-| • [[#Metadata-values][Metadata values]]: |    |   |
-| • [[#Typed-metadata][Typed metadata]]:   |    |   |
+- [[#Metadata-tags][Metadata tags]]
+- [[#Metadata-values][Metadata values]]
+- [[#Typed-metadata][Typed metadata]]
 
 -----
 
@@ -4967,10 +4960,10 @@ Next: [[#Reporting-Commands][Reporting Commands]], Previous:
 <<Building-Reports-1>>
 
 ** 6 Building Reports
-| • [[#Introduction][Introduction]]:         |    |   |
-| • [[#Balance-Reports][Balance Reports]]:   |    |   |
-| • [[#Typical-queries][Typical queries]]:   |    |   |
-| • [[#Advanced-Reports][Advanced Reports]]: |    |   |
+- [[#Introduction][Introduction]]
+- [[#Balance-Reports][Balance Reports]]
+- [[#Typical-queries][Typical queries]]
+- [[#Advanced-Reports][Advanced Reports]]
 
 -----
 
@@ -5003,8 +4996,8 @@ Reports]]   [[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
 <<Balance-Reports-1>>
 
 *** 6.2 Balance Reports
-| • [[#Controlling-the-Accounts-and-Payees][Controlling the Accounts and Payees]]: |    |   |
-| • [[#Controlling-Formatting][Controlling Formatting]]:                           |    |   |
+- [[#Controlling-the-Accounts-and-Payees][Controlling the Accounts and Payees]]
+- [[#Controlling-Formatting][Controlling Formatting]]
 
 -----
 
@@ -5233,8 +5226,8 @@ Previous: [[#Typical-queries][Typical queries]], Up:
 <<Advanced-Reports-1>>
 
 *** 6.4 Advanced Reports
-| • [[#Asset-Allocation][Asset Allocation]]:                 |    |   |
-| • [[#Visualizing-with-Gnuplot][Visualizing with Gnuplot]]: |    |   |
+- [[#Asset-Allocation][Asset Allocation]]
+- [[#Visualizing-with-Gnuplot][Visualizing with Gnuplot]]
 
 -----
 
@@ -5436,9 +5429,9 @@ Next: [[#Command_002dLine-Syntax][Command-Line Syntax]], Previous:
 <<Reporting-Commands-1>>
 
 ** 7 Reporting Commands
-| • [[#Primary-Financial-Reports][Primary Financial Reports]]:     |    | Reports in other formats:: Reports about |
-| • [[#Reports-in-other-Formats][Reports in other Formats]]:       |    |                                          |
-| • [[#Reports-about-your-Journals][Reports about your Journals]]: |    |                                          |
+- [[#Primary-Financial-Reports][Primary Financial Reports]]
+- [[#Reports-in-other-Formats][Reports in other Formats]]
+- [[#Reports-about-your-Journals][Reports about your Journals]]
 
 -----
 
@@ -5452,10 +5445,10 @@ Next: [[#Reports-in-other-Formats][Reports in other Formats]], Previous:
 <<Primary-Financial-Reports-1>>
 
 *** 7.1 Primary Financial Reports
-| • [[#The-balance-command][The =balance= command]]:   |    |   |
-| • [[#The-equity-command][The =equity= command]]:     |    |   |
-| • [[#The-register-command][The =register= command]]: |    |   |
-| • [[#The-print-command][The =print= command]]:       |    |   |
+- [[#The-balance-command][The =balance= command]]
+- [[#The-equity-command][The =equity= command]]
+- [[#The-register-command][The =register= command]]
+- [[#The-print-command][The =print= command]]
 
 -----
 
@@ -5561,13 +5554,13 @@ Previous: [[#Primary-Financial-Reports][Primary Financial Reports]], Up:
 <<Reports-in-other-Formats-1>>
 
 *** 7.2 Reports in other Formats
-| • [[#Comma-Separated-Values-files][Comma Separated Values files]]:   |    |   |
-| • [[#The-lisp-command][The =lisp= command]]:                         |    |   |
-| • [[#Emacs-org-Mode][Emacs =org= Mode]]:                             |    |   |
-| • [[#Org-mode-with-Babel][Org mode with Babel]]:                     |    |   |
-| • [[#The-pricemap-command][The =pricemap= command]]:                 |    |   |
-| • [[#The-xml-command][The =xml= command]]:                           |    |   |
-| • [[#prices-and-pricedb-commands][=prices= and =pricedb= commands]]: |    |   |
+- [[#Comma-Separated-Values-files][Comma Separated Values files]]
+- [[#The-lisp-command][The =lisp= command]]
+- [[#Emacs-org-Mode][Emacs =org= Mode]]
+- [[#Org-mode-with-Babel][Org mode with Babel]]
+- [[#The-pricemap-command][The =pricemap= command]]
+- [[#The-xml-command][The =xml= command]]
+- [[#prices-and-pricedb-commands][=prices= and =pricedb= commands]]
 
 -----
 
@@ -5581,8 +5574,8 @@ Next: [[#The-lisp-command][The =lisp= command]], Previous:
 <<Comma-Separated-Values-files-1>>
 
 **** 7.2.1 Comma Separated Values files
-| • [[#The-csv-command][The =csv= command]]:         |    |   |
-| • [[#The-convert-command][The =convert= command]]: |    |   |
+- [[#The-csv-command][The =csv= command]]
+- [[#The-convert-command][The =convert= command]]
 
 -----
 
@@ -6424,13 +6417,13 @@ Previous: [[#Reports-in-other-Formats][Reports in other Formats]], Up:
 *** 7.3 Reports about your Journals
 <<index-_002d_002dcount>>
 
-| • [[#accounts][=accounts=]]:       |    |   |
-| • [[#payees][=payees=]]:           |    |   |
-| • [[#commodities][=commodities=]]: |    |   |
-| • [[#tags][=tags=]]:               |    |   |
-| • [[#xact][=xact=]]:               |    |   |
-| • [[#stats][=stats=]]:             |    |   |
-| • [[#select][=select=]]:           |    |   |
+- [[#accounts][=accounts=]]
+- [[#payees][=payees=]]
+- [[#commodities][=commodities=]]
+- [[#tags][=tags=]]
+- [[#xact][=xact=]]
+- [[#stats][=stats=]]
+- [[#select][=select=]]
 
 -----
 
@@ -6622,10 +6615,10 @@ Previous: [[#Reporting-Commands][Reporting Commands]], Up: [[#Top][Top]]
 <<Command_002dLine-Syntax-1>>
 
 ** 8 Command-Line Syntax
-| • [[#Basic-Usage][Basic Usage]]:                                       |    |   |
-| • [[#Command_002dLine-Quick-Reference][Command-Line Quick Reference]]: |    |   |
-| • [[#Detailed-Option-Description][Detailed Option Description]]:       |    |   |
-| • [[#Period-Expressions][Period Expressions]]:                         |    |   |
+- [[#Basic-Usage][Basic Usage]]
+- [[#Command_002dLine-Quick-Reference][Command-Line Quick Reference]]
+- [[#Detailed-Option-Description][Detailed Option Description]]
+- [[#Period-Expressions][Period Expressions]]
 
 -----
 
@@ -6691,13 +6684,13 @@ Previous: [[#Basic-Usage][Basic Usage]], Up:
 <<Command_002dLine-Quick-Reference-1>>
 
 *** 8.2 Command-Line Quick Reference
-| • [[#Basic-Reporting-Commands][Basic Reporting Commands]]:                             |    |   |
-| • [[#Basic-Options][Basic Options]]:                                                   |    |   |
-| • [[#Report-Filtering][Report Filtering]]:                                             |    |   |
-| • [[#Error-Checking-and-Calculation-Options][Error Checking and Calculation Options]]: |    |   |
-| • [[#Output-Customization][Output Customization]]:                                     |    |   |
-| • [[#Grouping-Options][Grouping Options]]:                                             |    |   |
-| • [[#Commodity-Reporting][Commodity Reporting]]:                                       |    |   |
+- [[#Basic-Reporting-Commands][Basic Reporting Commands]]
+- [[#Basic-Options][Basic Options]]
+- [[#Report-Filtering][Report Filtering]]
+- [[#Error-Checking-and-Calculation-Options][Error Checking and Calculation Options]]
+- [[#Output-Customization][Output Customization]]
+- [[#Grouping-Options][Grouping Options]]
+- [[#Commodity-Reporting][Commodity Reporting]]
 
 -----
 
@@ -7068,14 +7061,14 @@ Next: [[#Period-Expressions][Period Expressions]], Previous:
 <<Detailed-Option-Description-1>>
 
 *** 8.3 Detailed Option Description
-| • [[#Global-Options][Global Options]]:               |    |   |
-| • [[#Session-Options][Session Options]]:             |    |   |
-| • [[#Report-Options][Report Options]]:               |    |   |
-| • [[#Basic-options][Basic options]]:                 |    |   |
-| • [[#Report-filtering][Report filtering]]:           |    |   |
-| • [[#Output-customization][Output customization]]:   |    |   |
-| • [[#Commodity-reporting][Commodity reporting]]:     |    |   |
-| • [[#Environment-variables][Environment variables]]: |    |   |
+- [[#Global-Options][Global Options]]
+- [[#Session-Options][Session Options]]
+- [[#Report-Options][Report Options]]
+- [[#Basic-options][Basic options]]
+- [[#Report-filtering][Report filtering]]
+- [[#Output-customization][Output customization]]
+- [[#Commodity-reporting][Commodity reporting]]
+- [[#Environment-variables][Environment variables]]
 
 -----
 
@@ -8799,8 +8792,8 @@ Next: [[#Time-Keeping][Time Keeping]], Previous:
 <<Budgeting-and-Forecasting-1>>
 
 ** 9 Budgeting and Forecasting
-| • [[#Budgeting][Budgeting]]:     |    |   |
-| • [[#Forecasting][Forecasting]]: |    |   |
+- [[#Budgeting][Budgeting]]
+- [[#Forecasting][Forecasting]]
 
 -----
 
@@ -9620,11 +9613,11 @@ Next: [[#Extending-with-Python][Extending with Python]], Previous:
 <<Format-Strings-1>>
 
 ** 12 Format Strings
-| • [[#Format-String-Basics][Format String Basics]]:                     |    |   |
-| • [[#Format-String-Structure][Format String Structure]]:               |    |   |
-| • [[#Format-Expressions][Format Expressions]]:                         |    |   |
-| • [[#Balance-format][Balance format]]:                                 |    |   |
-| • [[#Formatting-Functions-and-Codes][Formatting Functions and Codes]]: |    |   |
+- [[#Format-String-Basics][Format String Basics]]
+- [[#Format-String-Structure][Format String Structure]]
+- [[#Format-Expressions][Format Expressions]]
+- [[#Balance-format][Balance format]]
+- [[#Formatting-Functions-and-Codes][Formatting Functions and Codes]]
 
 -----
 
@@ -9917,13 +9910,13 @@ Previous: [[#Balance-format][Balance format]], Up:
 <<Formatting-Functions-and-Codes-1>>
 
 *** 12.5 Formatting Functions and Codes
-| • [[#Field-Widths][Field Widths]]:                                   |    |   |
-| • [[#Colors][Colors]]:                                               |    |   |
-| • [[#Quantities-and-Calculations][Quantities and Calculations]]:     |    |   |
-| • [[#Date-Functions][Date Functions]]:                               |    |   |
-| • [[#Date-and-Time-Format-Codes][Date and Time Format Codes]]:       |    |   |
-| • [[#Text-Formatting][Text Formatting]]:                             |    |   |
-| • [[#Data-File-Parsing-Information][Data File Parsing Information]]: |    |   |
+- [[#Field-Widths][Field Widths]]
+- [[#Colors][Colors]]
+- [[#Quantities-and-Calculations][Quantities and Calculations]]
+- [[#Date-Functions][Date Functions]]
+- [[#Date-and-Time-Format-Codes][Date and Time Format Codes]]
+- [[#Text-Formatting][Text Formatting]]
+- [[#Data-File-Parsing-Information][Data File Parsing Information]]
 
 -----
 
@@ -10083,10 +10076,10 @@ Date and time format are specified as strings of single letter codes
 preceded by percent signs. Any separator, or no separator can be
 specified.
 
-| • [[#Days][Days]]:                                         |    |   |
-| • [[#Weekdays][Weekdays]]:                                 |    |   |
-| • [[#Month][Month]]:                                       |    |   |
-| • [[#Miscellaneous-Date-Codes][Miscellaneous Date Codes]]: |    |   |
+- [[#Days][Days]]
+- [[#Weekdays][Weekdays]]
+- [[#Month][Month]]
+- [[#Miscellaneous-Date-Codes][Miscellaneous Date Codes]]
 
 -----
 
@@ -10281,11 +10274,11 @@ Python can be used to extend your Ledger experience. But first, a word
 must be said about Ledger's data model, so that other things make sense
 later.
 
-| • [[#Basic-data-traversal][Basic data traversal]]: |    |   |
-| • [[#Raw-versus-Cooked][Raw versus Cooked]]:       |    |   |
-| • [[#Queries][Queries]]:                           |    |   |
-| • [[#Embedded-Python][Embedded Python]]:           |    |   |
-| • [[#Amounts][Amounts]]:                           |    |   |
+- [[#Basic-data-traversal][Basic data traversal]]
+- [[#Raw-versus-Cooked][Raw versus Cooked]]
+- [[#Queries][Queries]]
+- [[#Embedded-Python][Embedded Python]]
+- [[#Amounts][Amounts]]
 
 -----
 
@@ -10483,10 +10476,10 @@ Next: [[#Major-Changes-from-version-2_002e6][Major Changes from version
 <<Ledger-for-Developers-1>>
 
 ** 14 Ledger for Developers
-| • [[#Internal-Design][Internal Design]]:                                       |    |   |
-| • [[#Journal-File-Format-for-Developers][Journal File Format for Developers]]: |    |   |
-| • [[#Developer-Commands][Developer Commands]]:                                 |    |   |
-| • [[#Ledger-Development-Environment][Ledger Development Environment]]:         |    |   |
+- [[#Internal-Design][Internal Design]]
+- [[#Journal-File-Format-for-Developers][Journal File Format for Developers]]
+- [[#Developer-Commands][Developer Commands]]
+- [[#Ledger-Development-Environment][Ledger Development Environment]]
 
 -----
 
@@ -11062,11 +11055,11 @@ Developers]]   [[[#SEC_Contents][Contents]]][[[#Concepts-Index][Index]]]
 <<Developer-Commands-1>>
 
 *** 14.3 Developer Commands
-| • [[#echo][=echo=]]:                   |    |   |
-| • [[#reload][=reload=]]:               |    |   |
-| • [[#source][=source=]]:               |    |   |
-| • [[#Debug-Options][Debug Options]]:   |    |   |
-| • [[#Pre_002dCommands][Pre-Commands]]: |    |   |
+- [[#echo][=echo=]]
+- [[#reload][=reload=]]
+- [[#source][=source=]]
+- [[#Debug-Options][Debug Options]]
+- [[#Pre_002dCommands][Pre-Commands]]
 
 -----
 
@@ -11319,8 +11312,8 @@ Previous: [[#Developer-Commands][Developer Commands]], Up:
 <<Ledger-Development-Environment-1>>
 
 *** 14.4 Ledger Development Environment
-| • [[#acprep-build-configuration-tool][acprep build configuration tool]]: |    |   |
-| • [[#Testing-Framework][Testing Framework]]:                             |    |   |
+- [[#acprep-build-configuration-tool][acprep build configuration tool]]
+- [[#Testing-Framework][Testing Framework]]
 
 -----
 
@@ -11355,8 +11348,8 @@ Once built, the ledger executable resides under the build subdirectory
 in the source tree. Tests are built and stored in the test subdirectory
 for the build. For example, ~/ledger/build/ledger/opt/test.
 
-| • [[#Running-Tests][Running Tests]]: |    |   |
-| • [[#Writing-Tests][Writing Tests]]: |    |   |
+- [[#Running-Tests][Running Tests]]
+- [[#Writing-Tests][Writing Tests]]
 
 -----
 
@@ -11616,7 +11609,7 @@ Next: [[#Concepts-Index][Concepts Index]], Previous:
 Various notes from the discussion list that I haven't incorporated in to
 the main body of the documentation.
 
-| • [[#Cookbook][Cookbook]]: |    |   |
+- [[#Cookbook][Cookbook]]
 
 -----
 
@@ -11629,8 +11622,8 @@ Previous: [[#Miscellaneous-Notes][Miscellaneous Notes]], Up:
 <<Cookbook-1>>
 
 *** B.1 Cookbook
-| • [[#Invoking-Ledger][Invoking Ledger]]: |    |   |
-| • [[#Ledger-Files][Ledger Files]]:       |    |   |
+- [[#Invoking-Ledger][Invoking Ledger]]
+- [[#Ledger-Files][Ledger Files]]
 
 -----
 
@@ -11693,7 +11686,27 @@ Previous: [[#Miscellaneous-Notes][Miscellaneous Notes]], Up:
 <<Concepts-Index-1>>
 
 ** Concepts Index
-| Jump to:   | [[#Concepts-Index_cp_letter-A][*A*]]   [[#Concepts-Index_cp_letter-B][*B*]]   [[#Concepts-Index_cp_letter-C][*C*]]   [[#Concepts-Index_cp_letter-D][*D*]]   [[#Concepts-Index_cp_letter-E][*E*]]   [[#Concepts-Index_cp_letter-F][*F*]]   [[#Concepts-Index_cp_letter-G][*G*]]   [[#Concepts-Index_cp_letter-H][*H*]]   [[#Concepts-Index_cp_letter-I][*I*]]   [[#Concepts-Index_cp_letter-J][*J*]]   [[#Concepts-Index_cp_letter-L][*L*]]   [[#Concepts-Index_cp_letter-M][*M*]]   [[#Concepts-Index_cp_letter-N][*N*]]   [[#Concepts-Index_cp_letter-O][*O*]]   [[#Concepts-Index_cp_letter-P][*P*]]   [[#Concepts-Index_cp_letter-R][*R*]]   [[#Concepts-Index_cp_letter-S][*S*]]   [[#Concepts-Index_cp_letter-T][*T*]]   [[#Concepts-Index_cp_letter-U][*U*]]   [[#Concepts-Index_cp_letter-W][*W*]]   |
+Jump to:
+- [[#Concepts-Index_cp_letter-A][*A*]]
+- [[#Concepts-Index_cp_letter-B][*B*]]
+- [[#Concepts-Index_cp_letter-C][*C*]]
+- [[#Concepts-Index_cp_letter-D][*D*]]
+- [[#Concepts-Index_cp_letter-E][*E*]]
+- [[#Concepts-Index_cp_letter-F][*F*]]
+- [[#Concepts-Index_cp_letter-G][*G*]]
+- [[#Concepts-Index_cp_letter-H][*H*]]
+- [[#Concepts-Index_cp_letter-I][*I*]]
+- [[#Concepts-Index_cp_letter-J][*J*]]
+- [[#Concepts-Index_cp_letter-L][*L*]]
+- [[#Concepts-Index_cp_letter-M][*M*]]
+- [[#Concepts-Index_cp_letter-N][*N*]]
+- [[#Concepts-Index_cp_letter-O][*O*]]
+- [[#Concepts-Index_cp_letter-P][*P*]]
+- [[#Concepts-Index_cp_letter-R][*R*]]
+- [[#Concepts-Index_cp_letter-S][*S*]]
+- [[#Concepts-Index_cp_letter-T][*T*]]
+- [[#Concepts-Index_cp_letter-U][*U*]]
+- [[#Concepts-Index_cp_letter-W][*W*]]
 
 Index Entry
 
@@ -11703,7 +11716,7 @@ Section
 
 -----
 
-A
+*** A
 
 [[#index-account_002c-alias][account, alias]]:
 
