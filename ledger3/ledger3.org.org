@@ -7870,7 +7870,7 @@ More complicated expressions are possible using:
 
 The =query= command can be used to see how Ledger interprets your query.
 This can be useful if you are not getting the results you expect (see
-[[#Pre_002dCommands][Pre-Commands]]
+[[id:9d70b3d8-da6c-4180-a447-88b59c8c6988][14.3.5 Pre-Commands]]).
 
 
 
@@ -9464,7 +9464,7 @@ commodities.
 - [[id:7814b997-ffbd-4bc8-bb9d-91eb8e42f59c][14.3.2 =reload=]]
 - [[id:99bc6181-7be2-46c8-a2b4-c976331ba6e3][14.3.3 =source=]]
 - [[id:4e96823d-216b-4ba6-987d-31368d6cfd2d][14.3.4 Debug Options]]
-- [[id:9d70b3d8-da6c-4180-a447-88b59c8c6988][14.3.5 Pre-Commands]]
+- [[id:1045b06d-e61f-4874-809c-d55844b88b6a][14.3.5 Pre-Commands]]
 
 -----
 
@@ -9580,7 +9580,108 @@ use to a user trying something new.
 
 -----
 
-[[id:9d70b3d8-da6c-4180-a447-88b59c8c6988][14.3.5 Pre-Commands]]).
+*** 14.3.5 Pre-Commands
+:PROPERTIES:
+:ID:       1045b06d-e61f-4874-809c-d55844b88b6a
+:END:
+
+Pre-commands are useful when you aren't sure how a command or option
+will work. The difference between a pre-command and a regular command is
+that pre-commands ignore the journal data file completely, nor is the
+user's init file read.
+
+- =eval VEXPR= <<index-eval-VEXPR>>  :: Evaluate the given value
+     expression against the model transaction.
+
+- =format FORMAT_STRING= <<index-format-FORMAT_005fSTRING>>  :: Print
+     details of how ledger uses the given formatting description and apply
+     it against a model transaction.
+
+- =generate= <<index-generate>>  :: Randomly generates syntactically
+     valid Ledger data from a seed. Used by the ‘GenerateTests' harness for
+     development testing.
+
+- =parse VEXPR= <<index-parse-VEXPR>>\\
+  =expr VEXPR= <<index-expr-VEXPR>>  :: Print details of how ledger uses
+  the given value expression description and apply it against a model
+  transaction.
+
+- =period PERIOD_EXPRESSION= <<index-period-PERIOD_005fEXPRESSION>>
+  :: Evaluate the given period and report how Ledger interprets it:
+
+  #+begin_example
+        $ ledger period "this year"  --now 2011-01-01
+  #+end_example
+
+  #+begin_example
+        --- Period expression tokens ---
+        TOK_THIS: this
+        TOK_YEAR: year
+        END_REACHED: <EOF>
+
+        --- Before stabilization ---
+           range: in year 2011
+
+        --- After stabilization ---
+           range: in year 2011
+           start: 11-Jan-01
+          finish: 12-Jan-01
+
+        --- Sample dates in range (max. 20) ---
+         1: 11-Jan-01
+  #+end_example
+
+- =query= <<index-query>>\\
+  =args= <<index-args>>  :: Evaluate the given arguments and report how
+  Ledger interprets it against the following model transaction:
+
+  #+begin_example
+        $ ledger query "/Book/"
+  #+end_example
+
+  #+begin_example
+        --- Input arguments ---
+        ("/Book/")
+
+        --- Context is first posting of the following transaction ---
+        2004/05/27 Book Store
+            ; This note applies to all postings. :SecondTag:
+            Expenses:Books                 20 BOOK @ $10
+            ; Metadata: Some Value
+            ; Typed:: $100 + $200
+            ; :ExampleTag:
+            ; Here follows a note describing the posting.
+            Liabilities:MasterCard        $-200.00
+
+        --- Input expression ---
+        (account =~ /Book/)
+
+        --- Text as parsed ---
+        (account =~ /Book/)
+
+        --- Expression tree ---
+        0x7fd639c0da40    O_MATCH (1)
+        0x7fd639c10170     IDENT: account (1)
+        0x7fd639c10780     VALUE: /Book/ (1)
+
+        --- Compiled tree ---
+        0x7fd639c10520    O_MATCH (1)
+        0x7fd639c0d6c0     IDENT: account (1)
+        0x7fd639c0d680      FUNCTION (1)
+        0x7fd639c10780     VALUE: /Book/ (1)
+
+        --- Calculated value ---
+        true
+  #+end_example
+
+- =script= <<index-script>>  :: UNDOCUMENTED! Please help by
+     contributing documentation for this feature.
+
+- =template= <<index-template>>  :: Shows the insertion template that
+     the =xact= sub-command generates. This is a debugging command.
+
+-----
+
 ** 14.4 Ledger Development Environment
 - [[id:df76423e-7c8e-4863-9e61-38afbd3e929e][14.4.1 acprep build configuration tool]]
 - [[id:cf41fc09-0863-465d-b9fd-9c3d1e2e65f0][14.4.2 Testing Framework]]
