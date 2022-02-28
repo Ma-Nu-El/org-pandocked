@@ -9581,6 +9581,145 @@ use to a user trying something new.
 -----
 
 [[id:9d70b3d8-da6c-4180-a447-88b59c8c6988][14.3.5 Pre-Commands]]).
+** 14.4 Ledger Development Environment
+- [[id:df76423e-7c8e-4863-9e61-38afbd3e929e][14.4.1 acprep build configuration tool]]
+- [[id:cf41fc09-0863-465d-b9fd-9c3d1e2e65f0][14.4.2 Testing Framework]]
+
+-----
+
+*** 14.4.1 acprep build configuration tool
+:PROPERTIES:
+:ID:       df76423e-7c8e-4863-9e61-38afbd3e929e
+:END:
+-----
+
+*** 14.4.2 Testing Framework
+:PROPERTIES:
+:ID:       cf41fc09-0863-465d-b9fd-9c3d1e2e65f0
+:END:
+
+Ledger source ships with a fairly complete set of tests to verify that
+all is well, and no old errors have resurfaced. Tests are run
+individually with ctest. All tests can be run using =make check= or
+=ninja check= depending on which build tool you prefer.
+
+Once built, the ledger executable resides under the build subdirectory
+in the source tree. Tests are built and stored in the test subdirectory
+for the build. For example, ~/ledger/build/ledger/opt/test.
+
+- [[id:43f09108-bbaa-4e68-959f-c8ef543993a8][14.4.2.1 Running Tests]]
+- [[id:8dee118f-41c8-4b31-b2c5-fd56497e5e88][14.4.2.2 Writing Tests]]
+-----
+
+*** 14.4.2.1 Running Tests
+:PROPERTIES:
+:ID:       43f09108-bbaa-4e68-959f-c8ef543993a8
+:END:
+The complete test suite can be run from the build directory using the
+check option for the build tool you use. For example, =make check=. The
+entire test suit lasts around a minute for the optimized built and many
+times longer for the debug version. While developing and debugging,
+running individual tests can save a great deal of time.
+
+Individual tests can be run from the test subdirectory of the build
+location. To execute a single test use =ctest -V -R regex=, where the
+regex matches the name of the test you want to build.
+
+There are nearly 300 tests stored under the test subdirectory in the
+main source distribution. They are broken into two broad categories,
+baseline and regression. To run the 5FBF2ED8 test, for example, issue
+=ctest -V -R "5FB"=.
+
+-----
+
+*** 14.4.2.2 Writing Tests
+:PROPERTIES:
+:ID:       8dee118f-41c8-4b31-b2c5-fd56497e5e88
+:END:
+To write a new test first decide to which broad category the test
+belongs: baseline or regression. Depending on the category tests are
+named differently baseline tests are prefixed with their type, e.g.
+‘cmd' (see [[#Baseline-Test-Types][Baseline Test Types]] for valid
+types), whereas regressions are either named after the bug id, e.g.
+‘1234.test' or uuid ‘91416D62.test'. In case several test files belong
+to the same bug number the files by appending =_X= where ‘X' is the
+number of the test, e.g. ‘1234_1.test', ‘1234_2.test'.
+
+Baseline Test Types: <<Baseline-Test-Types>>
+
+- =cmd= :: Ledger commands like =register= or =balance=
+
+- =dir= :: Ledger directives like =account= or =alias=
+
+- =feat= :: Ledger features such as balance assertions in journal file
+
+- =opt= :: Ledger options such as --period or --format
+
+A ledger test file contains three sections:
+
+1. the journal data used for the test, this can be empty in certain
+   scenarios
+2. the ledger command-line options used for the test
+3. the expected output
+
+Ledger has a special command directive for tests, everything between
+=test= and =end test= is treated like a comment, so every Ledger test is
+automatically a valid Ledger file. The test scripts take the remainder
+of the =test= line and use it as command-line arguments for ledger, the
+text enclosed in =test= and =end test= is expected output, for example:
+
+#+begin_example
+    ; This is the journal data
+    year 2014
+    12/24 (C0d3) Santa Claus
+      Assets:Bank         ¤ -150,00
+      Expenses:Presents
+
+    ; The following line specifies the ledger command-line options for this test and
+    ; everything between the next line and `end test` specifies the expected output
+    test reg --payee=code
+    14-Dec-24 C0d3                  Assets:Bank               ¤ -150,00    ¤ -150,00
+    14-Dec-24 C0d3                  Expenses:Presents          ¤ 150,00            0
+    end test
+#+end_example
+
+When it is necessary to test for errors printed to =stderr= redirect the
+test output by adding =->= to the =test= line and match the expected
+error text in an =__ERROR__= section:
+
+#+begin_example
+    2014/01/01 * Acme Corporation
+      Assets:Bank:Checking      ¤  1.000,00
+      [Fund:Vacation]           ¤    300,00
+      [Fund:Studies]            ¤    600,00
+      Income:Salary             ¤ -2.000,00
+
+    test reg ->
+    __ERROR__
+    While parsing file "$FILE", line 5:
+    While balancing transaction from "$FILE", lines 1-5:
+    > 2014/01/01 * Acme Corporation
+    >   Assets:Bank:Checking      ¤  1.000,00
+    >   [Fund:Vacation]           ¤    300,00
+    >   [Fund:Studies]            ¤    600,00
+    >   Income:Salary             ¤ -2.000,00
+    Unbalanced remainder is:
+               ¤ -100,00
+    Amount to balance against:
+              ¤ 1.900,00
+    Error: Transaction does not balance
+    end test
+#+end_example
+
+A special =$FILE= variable can be used to match the journal filename
+used during the test.
+
+To add new tests to the test suite use the rebuild_cache option for the
+build tool you use, for example =make rebuild_cache=, now the new tests
+can be run as documented in [[#Running-Tests][Running Tests]].
+
+-----
+
 * 15 Major Changes from version 2.6
 :PROPERTIES:
 :ID:       5a31e4a9-2832-4a53-b239-9e94a883448c
