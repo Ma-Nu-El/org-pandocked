@@ -7870,7 +7870,7 @@ More complicated expressions are possible using:
 
 The =query= command can be used to see how Ledger interprets your query.
 This can be useful if you are not getting the results you expect (see
-[[id:9d70b3d8-da6c-4180-a447-88b59c8c6988][14.3.5 Pre-Commands]]).
+[[id:1045b06d-e61f-4874-809c-d55844b88b6a][14.3.5 Pre-Commands]]).
 
 
 
@@ -8935,7 +8935,7 @@ Balance. For example:
 - [[id:a2416a33-b808-4bf2-89a8-724ad74d4eb4][14.1 Internal Design]]
 - [[id:d91c89a8-c5f7-48e8-93dc-6c29396015f5][14.2 Journal File Format for Developers]]
 - [[id:960c3018-5094-4584-9e6d-52de3951db3d][14.3 Developer Commands]]
-- [[id:1451a790-fa54-450a-8b92-0fcc8aba73b3][14.4 Ledger Development Environment]]
+- [[id:c552eb7e-bd7d-442a-b704-2c7b615fb901][14.4 Ledger Development Environment]]
 
 -----
 
@@ -9683,6 +9683,9 @@ user's init file read.
 -----
 
 ** 14.4 Ledger Development Environment
+:PROPERTIES:
+:ID:       c552eb7e-bd7d-442a-b704-2c7b615fb901
+:END:
 - [[id:df76423e-7c8e-4863-9e61-38afbd3e929e][14.4.1 acprep build configuration tool]]
 - [[id:cf41fc09-0863-465d-b9fd-9c3d1e2e65f0][14.4.2 Testing Framework]]
 
@@ -9740,13 +9743,16 @@ baseline and regression. To run the 5FBF2ED8 test, for example, issue
 To write a new test first decide to which broad category the test
 belongs: baseline or regression. Depending on the category tests are
 named differently baseline tests are prefixed with their type, e.g.
-‘cmd' (see [[#Baseline-Test-Types][Baseline Test Types]] for valid
+‘cmd' (see [[id:e13a453e-9380-40dc-8691-babd1a8f2ce3][Baseline Test Types]] for valid
 types), whereas regressions are either named after the bug id, e.g.
 ‘1234.test' or uuid ‘91416D62.test'. In case several test files belong
 to the same bug number the files by appending =_X= where ‘X' is the
 number of the test, e.g. ‘1234_1.test', ‘1234_2.test'.
 
-Baseline Test Types: <<Baseline-Test-Types>>
+**** Baseline Test Types
+:PROPERTIES:
+:ID:       e13a453e-9380-40dc-8691-babd1a8f2ce3
+:END:
 
 - =cmd= :: Ledger commands like =register= or =balance=
 
@@ -9817,7 +9823,7 @@ used during the test.
 
 To add new tests to the test suite use the rebuild_cache option for the
 build tool you use, for example =make rebuild_cache=, now the new tests
-can be run as documented in [[#Running-Tests][Running Tests]].
+can be run as documented in [[id:43f09108-bbaa-4e68-959f-c8ef543993a8][14.4.2.1 Running Tests]].
 
 -----
 
