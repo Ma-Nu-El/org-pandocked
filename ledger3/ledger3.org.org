@@ -5631,7 +5631,7 @@ to use the basic reporting commands.
 
 -----
 
-  - [[id:247f9ae2-ed04-4106-b5fc-6c2048bf88da][8.2.5 Output Customization]]
+*** 8.2.5 Output Customization
 :PROPERTIES:
 :ID:       247f9ae2-ed04-4106-b5fc-6c2048bf88da
 :END:
