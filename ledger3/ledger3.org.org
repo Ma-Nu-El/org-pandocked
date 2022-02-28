@@ -4,6 +4,16 @@
 :END:
 #+TITLE: Ledger 3 Manual
 #+AUTHOR: Manuel Fuica Morales
+#+OPTIONS: toc:2
+
+* Exported TOC with clearpage :noexport:
+
+Evaluate this first so the initial table of
+contents has a clearpage after it.
+
+#+begin_src elisp :results silent
+(setq org-latex-toc-command "\\tableofcontents \\clearpage")
+#+end_src
 
 * TOC :TOC_1:noexport:
 - [[#overview][Overview]]
