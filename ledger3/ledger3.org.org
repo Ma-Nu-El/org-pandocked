@@ -50,9 +50,6 @@ twinkling in their fathers' CRTs.
 - [[id:5a31e4a9-2832-4a53-b239-9e94a883448c][15 Major Changes from version 2.6]]
 - [[id:0a9e0fbf-878d-4369-9563-5618031e5849][Appendix A Example Journal File]]
 - [[id:50155973-023b-4ecd-8870-837eb05766b5][Appendix B Miscellaneous Notes]]
-- [[id:7fb9b1c5-4428-4161-8c3f-16c2e59ad324][Concepts Index]]
-- [[id:de337107-64a8-46db-b17e-fffce2991f7e][Commands & Options Index]]
-
 -----
 
 * 1 Introduction to Ledger
