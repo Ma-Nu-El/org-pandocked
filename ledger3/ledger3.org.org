@@ -7477,15 +7477,18 @@ Here are a few examples of period expressions:
 :ID:       56a685ce-0d4a-45df-941a-b5a1dcb583a3
 :END:
 
-Keeping a budget allows you to pay closer attention to your income and
-expenses, by reporting how far your actual financial activity is from
-your expectations.
+Keeping a budget allows you to pay closer attention
+to your income and expenses, by reporting how far
+your actual financial activity is from your
+expectations.
 
-To start keeping a budget, put some periodic transactions (see
-[[id:07450b67-742a-4a39-80e8-6a6ce0787665][5.22.8 Periodic Transactions]]) at the top of your
-ledger file. A periodic transaction is almost identical to a regular
-transaction, except that it begins with a tilde and has a period
-expression in place of a payee. For example:
+To start keeping a budget, put some periodic
+transactions (see [[id:07450b67-742a-4a39-80e8-6a6ce0787665][5.22.8 Periodic Transactions]])
+at the top of your ledger file. A periodic
+transaction is almost identical to a regular
+transaction, except that it begins with a tilde
+and has a period expression in place of a payee.
+For example:
 
 #+begin_example
     ~ Monthly
@@ -7504,39 +7507,46 @@ expression in place of a payee. For example:
         Assets
 #+end_example
 
-These two periodic transactions give the usual monthly expenses, as well
-as one typical yearly expense. For help on finding out what your average
-monthly expenses are for any category, use a command like:
+These two periodic transactions give the usual
+monthly expenses, as well as one typical yearly
+expense. For help on finding out what your average
+monthly expenses are for any category, use a
+command like:
 
 #+begin_example
     $ ledger -p "this year" --monthly --average register ^expenses
 #+end_example
 
-The reported totals are the current year's average for each account.
+The reported totals are the current year's
+average for each account.
 
-Once these periodic transactions are defined, creating a budget report
-is as easy as adding --budget to the command-line. For example, a
+Once these periodic transactions are defined,
+creating a budget report is as easy as adding
+--budget to the command-line. For example, a
 typical monthly expense report would be:
 
 #+begin_example
     $ ledger --monthly register ^expenses
 #+end_example
 
-To see the same report balanced against your budget, use:
+To see the same report balanced against your
+budget, use:
 
 #+begin_example
     $ ledger --budget --monthly register ^expenses
 #+end_example
 
-A budget report includes only those accounts that appear in the budget.
-To see all expenses balanced against the budget, use --add-budget. You
-can even see only the unbudgeted expenses using --unbudgeted:
+A budget report includes only those accounts that
+appear in the budget. To see all expenses balanced
+against the budget, use --add-budget. You can even
+see only the unbudgeted expenses using --unbudgeted:
 
 #+begin_example
     $ ledger --unbudgeted --monthly register ^expenses
 #+end_example
 
-You can also use these flags with the =balance= command.
+You can also use these flags with the =balance=
+command.
 
 -----
 
@@ -7545,21 +7555,25 @@ You can also use these flags with the =balance= command.
 :ID:       3c458731-9080-4f26-a6f1-91148fa3110e
 :END:
 
-Sometimes it's useful to know what your finances will look like in the
-future, such as determining when an account will reach zero. Ledger
-makes this easy to do, using the same periodic transactions as are used
-for budgeting. An example forecast report can be generated with:
+Sometimes it's useful to know what your finances
+will look like in the future, such as determining
+when an account will reach zero. Ledger makes this
+easy to do, using the same periodic transactions
+as are used for budgeting. An example forecast
+report can be generated with:
 
 #+begin_example
     $ ledger --file drewr3.dat --forecast "T>{\$-500.00}" register ^assets ^liabilities
 #+end_example
 
-This report continues outputting postings until the running total is
-greater than $-500.00. A final posting is always shown, to inform you
+This report continues outputting postings until
+the running total is greater than $-500.00.
+A final posting is always shown, to inform you
 what the total afterwards would be.
 
-Forecasting can also be used with the =balance= report, but by date
-only, and not against the running total:
+Forecasting can also be used with the =balance=
+report, but by date only, and not against the
+running total:
 
 #+begin_example
     $ ledger --forecast "d<[2010]" bal ^assets ^liabilities
