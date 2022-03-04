@@ -5,6 +5,8 @@
 #+TITLE: Ledger 3 Manual
 #+AUTHOR: Manuel Fuica Morales
 #+OPTIONS: toc:2
+#+LATEX_CLASS: article
+#+LATEX_CLASS_OPTIONS: [legalpaper,14pt]
 
 * Exported TOC with clearpage :noexport:
 
@@ -74,23 +76,62 @@ fathers' CRTs.
 - [[id:34d401d3-ee9d-4e2b-becc-01cddc2da86b][1.4 Third-Party Ledger Tutorials]]
 
 -----
-
 ** 1.1 Fat-free Accounting
 :PROPERTIES:
 :ID:       60974917-fdea-4704-b9dd-6a1f2da478ee
 :END:
 
-Ledger is an accounting tool with the moxie to exist. It provides no bells or whistles, and returns the user to the days before user interfaces were even a twinkling in their father's CRT.
+Ledger is an accounting tool with the moxie to exist.
+It provides no bells or whistles, and returns the
+user to the days before user interfaces were even a
+twinkling in their father's CRT.
 
-What it does offer is a double-entry accounting journal with all the flexibility and muscle of its modern day cousins, without any of the fat. Think of it as the Bran Muffin of accounting tools.
+What it does offer is a double-entry accounting
+journal with all the flexibility and muscle of its
+modern day cousins, without any of the fat.
+Think of it as the Bran Muffin of accounting tools.
 
-To use it, you need to start keeping a journal. This is the basis of all accounting, and if you haven't started yet, now is the time to learn. The little booklet that comes with your checkbook is a journal, so we'll describe double-entry accounting in terms of that.
+To use it, you need to start keeping a journal.
+This is the basis of all accounting, and if you
+haven't started yet, now is the time to learn.
+The little booklet that comes with your checkbook
+is a journal, so we'll describe double-entry
+accounting in terms of that.
 
-A checkbook journal records debits (subtractions, or withdrawals) and credits (additions, or deposits) with reference to a single account: the checking account. Where the money comes from, and where it goes to, are described in the payee field, where you write the person or company's name. The ultimate aim of keeping a checkbook journal is to know how much money is available to spend. That's really the aim of all journals.
+A checkbook journal records debits (subtractions,
+or withdrawals) and credits (additions, or deposits)
+with reference to a single account: the checking
+account. Where the money comes from, and where it
+goes to, are described in the payee field, where
+you write the person or company's name. The ultimate
+aim of keeping a checkbook journal is to know how
+much money is available to spend. That's really
+the aim of all journals.
 
-What computers add is the ability to walk through these postings, and tell you things about your spending habits; to let you devise budgets and get control over your spending; to squirrel away money into virtual savings account without having to physically move money around; etc. As you keep your journal, you are recording information about your life and habits, and sometimes that information can start telling you things you aren't aware of. Such is the aim of all good accounting tools.
+What computers add is the ability to walk through
+these postings, and tell you things about your
+spending habits; to let you devise budgets and
+get control over your spending; to squirrel away
+money into virtual savings account without having
+to physically move money around; etc. As you keep
+your journal, you are recording information about
+your life and habits, and sometimes that information
+can start telling you things you aren't aware of.
+Such is the aim of all good accounting tools.
 
-The next step up from a checkbook journal, is a journal that keeps track of all your accounts, not just checking. In such a journal, you record not only who gets paid---in the case of a debit---but where the money came from. In a checkbook journal, it's assumed that all the money comes from your checking account. But in a general journal, you write postings in two lines: the source account and target account. /There must always be a debit from at least one account for every credit made to another account/. This is what is meant by “double-entry” accounting: the journal must always balance to zero, with an equal number of debits and credits.
+The next step up from a checkbook journal, is a
+journal that keeps track of all your accounts,
+not just checking. In such a journal, you record
+not only who gets paid --- in the case of a debit ---
+but where the money came from. In a checkbook journal,
+it's assumed that all the money comes from your
+checking account. But in a general journal, you
+write postings in two lines: the source account and
+target account. /There must always be a debit from
+at least one account for every credit made to another
+account/. This is what is meant by “double-entry”
+accounting: the journal must always balance to zero,
+with an equal number of debits and credits.
 
 For example, let's say you have a checking account and a brokerage account, and you can write checks from both of them. Rather than keep two checkbooks, you decide to use one journal for both. In this general journal you need to record a payment to Pacific Bell for your monthly phone bill, and a transfer (via check) from your brokerage account to your checking account. The Pacific Bell bill is $23.00, let's say, and you want to pay it from your checking account. In the general journal you need to say where the money came from, in addition to where it's going to. These transactions might look like this:
 
@@ -130,7 +171,8 @@ And just for the sake of example---as a starting point for those who want to div
     Assets:Checking
 #+end_example
 
-The account balances and registers in this file, if saved as ledger.dat, could be reported using:
+The account balances and registers in this file,
+if saved as ledger.dat, could be reported using:
 
 #+begin_example shell
 $ ledger -f ledger.dat balance
@@ -696,17 +738,20 @@ commodities. Here are some valid currency and commodity specifiers:
     50 EUR         ; currency: 50 Euros (or use appropriate symbol)
 #+end_example
 
-Ledger will examine the first use of any commodity to determine how that
-commodity should be printed on reports. It pays attention to whether the
-name of commodity was separated from the amount, whether it came before
-or after, the precision used in specifying the amount, whether thousand
-marks were used, etc. This is done so that printing the commodity looks
-the same as the way you use it.
+Ledger will examine the first use of any commodity
+to determine how that commodity should be printed on
+reports. It pays attention to whether the name of
+commodity was separated from the amount, whether
+it came before or after, the precision used in
+specifying the amount, whether thousand marks
+were used, etc. This is done so that printing
+the commodity looks the same as the way you use it.
 
-An account may contain multiple commodities, in which case it will have
-separate totals for each. For example, if your brokerage account
-contains both cash, gold, and several stock quantities, the balance
-might look like:
+An account may contain multiple commodities, in which
+case it will have separate totals for each.
+For example, if your brokerage account contains
+both cash, gold, and several stock quantities,
+the balance might look like:
 
 #+begin_example
       $200.00
@@ -913,13 +958,17 @@ Sturm Brightblade.
 :PROPERTIES:
 :ID:       07092bee-b69b-4f59-91ed-4c3e1c771067
 :END:
-The most confusing transaction in any ledger will be your equity
-account---because starting balances can't come out of nowhere.
 
-When you first start your ledger, you will likely already have money in
-some of your accounts. Let's say there's $100 in your checking account;
-then add a transaction to your ledger to reflect this amount. Where will
-the money come from? The answer: your equity.
+The most confusing transaction in any ledger will
+be your equity account --- because starting balances
+can't come out of nowhere.
+
+When you first start your ledger, you will likely
+already have money in some of your accounts.
+Let's say there's $100 in your checking account;
+then add a transaction to your ledger to reflect
+this amount. Where will the money come from?
+The answer: your equity.
 
 #+begin_example
     10/2  Opening Balance
@@ -927,27 +976,33 @@ the money come from? The answer: your equity.
         Equity:Opening Balances
 #+end_example
 
-But what is equity? You may have heard of equity when people talked
-about house mortgages, as “the part of the house that you own”.
-Basically, equity is like the value of something. If you own a car worth
-$5000, then you have $5000 in equity in that car. In order to turn that
-car (a commodity) into a cash flow, or a credit to your bank account,
+But what is equity? You may have heard of equity
+when people talked about house mortgages, as
+“the part of the house that you own”. Basically,
+equity is like the value of something. If you own
+a car worth $5000, then you have $5000 in equity
+in that car. In order to turn that car (a commodity)
+into a cash flow, or a credit to your bank account,
 you will have to debit the equity by selling it.
 
-When you start a ledger, you probably already have a net worth. Your net
-worth is your current equity. By transferring the money in the ledger
-from your equity to your bank accounts, you are crediting the ledger
-account based on your prior equity. That is why, when you look at the
-balance report, you will see a large negative number for Equity that
-never changes: Because that is what you were worth (what you debited
-from yourself in order to start the ledger) before the money started
-moving around. If the total positive value of your assets is greater
-than the absolute value of your starting equity, it means you are making
-money.
+When you start a ledger, you probably already have
+a net worth. Your net worth is your current equity.
+By transferring the money in the ledger from your
+equity to your bank accounts, you are crediting
+the ledger account based on your prior equity.
+That is why, when you look at the balance report,
+you will see a large negative number for Equity
+that never changes: Because that is what you were
+worth (what you debited from yourself in order to
+start the ledger) before the money started moving
+around. If the total positive value of your assets
+is greater than the absolute value of your
+starting equity, it means you are making money.
 
-Clear as mud? Keep thinking about it. Until you figure it out, put
-=not Equity= at the end of your balance command, to remove the confusing
-figure from the total.
+Clear as mud? Keep thinking about it. Until you
+figure it out, put =not Equity= at the end of your
+balance command, to remove the confusing figure
+from the total.
 
 -----
 
@@ -955,13 +1010,16 @@ figure from the total.
 :PROPERTIES:
 :ID:       129ded72-2eca-43a3-996b-a0d20af11257
 :END:
-Something that stops many people from keeping a ledger at all is the
-insanity of tracking small cash expenses. They rarely generate a
-receipt, and there are often a lot of small postings, rather than a few
-large ones, as with checks.
 
-One solution is: don't bother. Move your spending to a debit card, but
-in general ignore cash. Once you withdraw it from the ATM, mark it as
+Something that stops many people from keeping a
+ledger at all is the insanity of tracking small
+cash expenses. They rarely generate a receipt,
+and there are often a lot of small postings,
+rather than a few large ones, as with checks.
+
+One solution is: don't bother. Move your spending
+to a debit card, but in general ignore cash.
+Once you withdraw it from the ATM, mark it as
 already spent to an ‘Expenses:Cash' category:
 
 #+begin_example
@@ -970,8 +1028,9 @@ already spent to an ‘Expenses:Cash' category:
         Assets:Checking
 #+end_example
 
-If at some point you make a large cash expense that you want to track,
-just /move/ the amount of the expense from ‘Expenses:Cash' into the
+If at some point you make a large cash expense
+that you want to track, just /move/ the amount
+of the expense from ‘Expenses:Cash' into the
 target account:
 
 #+begin_example
@@ -980,8 +1039,8 @@ target account:
         Expenses:Cash
 #+end_example
 
-This way, you can still track large cash expenses, while ignoring all of
-the smaller ones.
+This way, you can still track large cash expenses,
+while ignoring all of the smaller ones.
 
 -----
 
@@ -989,39 +1048,49 @@ the smaller ones.
 :PROPERTIES:
 :ID:       d1c9aa1b-ad73-4080-90cd-1068014fa68c
 :END:
-There are situations when the accounts you're tracking are different
-between your clients and the financial institutions where money is kept.
-An example of this is working as the treasurer for a religious
-institution. From the secular point of view, you might be working with
-three different accounts:
+
+There are situations when the accounts you're
+tracking are different between your clients
+and the financial institutions where money
+is kept. An example of this is working as
+the treasurer for a religious institution.
+From the secular point of view, you might
+be working with three different accounts:
 
 - Checking
 - Savings
 - Credit Card
 
-From a religious point of view, the community expects to divide its
-resources into multiple “funds”, from which it makes purchases or
+From a religious point of view, the community
+expects to divide its resources into multiple
+“funds”, from which it makes purchases or
 reserves resources for later:
 
 - School fund
 - Building fund
 - Community fund
 
-The problem with this kind of setup is that, when you spend money, it
-comes from two or more places at once: the account and the fund. And
-yet, the correlation of amounts between funds and accounts is rarely
-one-to-one. What if the school fund has ‘$500.00', but ‘$400.00' of that
-comes from Checking, and ‘$100.00' from Savings?
+The problem with this kind of setup is that,
+when you spend money, it comes from two or
+more places at once: the account and the fund.
+And yet, the correlation of amounts between
+funds and accounts is rarely one-to-one.
+What if the school fund has ‘$500.00', but
+‘$400.00' of that comes from Checking, and
+‘$100.00' from Savings?
 
-Traditional finance packages require that the money reside in only one
-place. But there are really two “views” of the data: from the account
-point of view and from the fund point of view---yet both sets should
-reflect the same overall expenses and cash flow. It's simply where the
-money resides that differs.
+Traditional finance packages require that the
+money reside in only one place. But there are
+really two “views” of the data: from the
+account point of view and from the fund point
+of view---yet both sets should reflect the
+same overall expenses and cash flow. It's
+simply where the money resides that differs.
 
-This situation can be handled in one of two ways. The first is using
-virtual postings to represent the fact that money is moving to and from
-two kind of accounts at the same time:
+This situation can be handled in one of two ways.
+The first is using virtual postings to represent
+the fact that money is moving to and from two
+kind of accounts at the same time:
 
 #+begin_example
     2004/03/20 Contributions
@@ -1034,9 +1103,11 @@ two kind of accounts at the same time:
         [Assets:Checking]                 $-500.00
 #+end_example
 
-The use of square brackets in the second transaction ensures that the
-virtual postings balance to zero. Now money can be spent directly from a
-fund at the same time as money is drawn from a physical account:
+The use of square brackets in the second
+transaction ensures that the virtual postings
+balance to zero. Now money can be spent directly
+from a fund at the same time as money is drawn
+from a physical account:
 
 #+begin_example
     2004/03/25 Payment for books (paid from Checking)
@@ -1045,11 +1116,13 @@ fund at the same time as money is drawn from a physical account:
         (Funds:School)                   $-100.00
 #+end_example
 
-The use of round brackets creates a virtual posting without ensuring a
-balance to zero. When reports are generated, by default they'll appear
-in terms of the funds. In this case, you will likely want to mask out
-your ‘Assets' account, because otherwise the balance won't make much
-sense:
+The use of round brackets creates a virtual
+posting without ensuring a balance to zero.
+When reports are generated, by default they'll
+appear in terms of the funds. In this case,
+you will likely want to mask out your
+‘Assets' account, because otherwise the balance
+won't make much sense:
 
 #+begin_example
     $ ledger --no-total bal not ^Assets
@@ -1063,8 +1136,8 @@ sense:
                 $-500.00  Income:Donations
 #+end_example
 
-If the --real option is used, the report will be in terms of the real
-accounts:
+If the --real option is used, the report will
+be in terms of the real accounts:
 
 #+begin_example
     $ ledger --real --no-total bal
@@ -1076,8 +1149,9 @@ accounts:
                 $-500.00  Income:Donations
 #+end_example
 
-If more asset accounts are needed as the source of a posting, just list
-them as you would normally, for example:
+If more asset accounts are needed as the source
+of a posting, just list them as you would
+normally, for example:
 
 #+begin_example
     2004/03/25 Payment for books (paid from Checking)
@@ -1087,11 +1161,14 @@ them as you would normally, for example:
         (Funds:School)                   $-100.00
 #+end_example
 
-The second way of tracking funds is to use transaction codes. In this
-respect the codes become like virtual accounts that embrace the entire
-set of postings. Basically, we are associating a transaction with a fund
-by setting its code. Here are two transactions that deposit money into,
-and spend money from, the ‘Funds:School' fund:
+The second way of tracking funds is to use
+transaction codes. In this respect the codes
+become like virtual accounts that embrace the
+entire set of postings. Basically, we are
+associating a transaction with a fund by setting
+its code. Here are two transactions that deposit
+money into, and spend money from, the
+‘Funds:School' fund:
 
 #+begin_example
     2004/03/25 (Funds:School) Donations
@@ -1107,16 +1184,19 @@ and spend money from, the ‘Funds:School' fund:
         Assets:Checking
 #+end_example
 
-Note how the accounts now relate only to the real accounts, and any
-balance or register reports will reflect this. That the transactions
-relate to a particular fund is kept only in the code.
+Note how the accounts now relate only to the real
+accounts, and any balance or register reports will
+reflect this. That the transactions relate to a
+particular fund is kept only in the code.
 
-How does this become a fund report? By using the --payee=code option,
-you can generate a register report where the payee for each posting
-shows the code. Alone, this is not terribly interesting; but when
-combined with the --by-payee (-P) option, you will now see account
-subtotals for any postings related to a specific fund. So, to see the
-current monetary balances of all funds, the command would be:
+How does this become a fund report? By using the
+--payee=code option, you can generate a register
+report where the payee for each posting shows the
+code. Alone, this is not terribly interesting; but
+when combined with the --by-payee (-P) option, you
+will now see account subtotals for any postings
+related to a specific fund. So, to see the current
+monetary balances of all funds, the command would be:
 
 #+begin_example
     $ ledger --payee=code -P reg ^Assets
@@ -1127,7 +1207,8 @@ current monetary balances of all funds, the command would be:
     04-Mar-25 Funds:School          Assets:Checking              $50.00       $70.00
 #+end_example
 
-Or to see a particular fund's expenses, the ‘School' fund in this case:
+Or to see a particular fund's expenses, the ‘School'
+fund in this case:
 
 #+begin_example
     $ ledger --payee=code -P reg ^Expenses and code School
@@ -1137,9 +1218,10 @@ Or to see a particular fund's expenses, the ‘School' fund in this case:
     04-Apr-25 Funds:School          Expenses:Books               $50.00       $50.00
 #+end_example
 
-Both approaches yield different kinds of flexibility, depending on how
-you prefer to think of your funds: as virtual accounts, or as tags
-associated with particular transactions. Your own tastes will decide
+Both approaches yield different kinds of flexibility,
+depending on how you prefer to think of your funds:
+as virtual accounts, or as tags associated with
+particular transactions. Your own tastes will decide
 which is best for your situation.
 
 -----
@@ -1148,29 +1230,14 @@ which is best for your situation.
 :PROPERTIES:
 :ID:       c7460141-3a7f-47e4-848f-4115bb7b376c
 :END:
-The most important part of accounting is keeping a good journal. If you
-have a good journal, tools can be written to work whatever mathematical
-tricks you need to better understand your spending patterns. Without a
-good journal, no tool, however smart, can help you.
 
-The Ledger program aims at making journal transactions as simple as
-possible. Since it is a command-line tool, it does not provide a user
-interface for keeping a journal. If you require an user interface to
-maintain journal transactions GnuCash is a good alternative.
+The most important part of accounting is keeping a good journal. If you have a good journal, tools can be written to work whatever mathematical tricks you need to better understand your spending patterns. Without a good journal, no tool, however smart, can help you.
 
-If you are not using GnuCash, but a text editor to maintain your
-journal, read on. Ledger has been designed to make data transactions as
-simple as possible, by keeping the journal format easy, and also by
-automagically determining as much information as possible based on the
-nature of your transactions.
+The Ledger program aims at making journal transactions as simple as possible. Since it is a command-line tool, it does not provide a user interface for keeping a journal. If you require an user interface to maintain journal transactions GnuCash is a good alternative.
 
-For example, you do not need to tell Ledger about the accounts you use.
-Any time Ledger sees a posting involving an account it knows nothing
-about, it will create it[fn:2]. If you use a commodity that is
-new to Ledger, it will create that commodity, and determine its display
-characteristics (placement of the symbol before or after the amount,
-display precision, etc.) based on how you used the commodity in the
-posting.
+If you are not using GnuCash, but a text editor to maintain your journal, read on. Ledger has been designed to make data transactions as simple as possible, by keeping the journal format easy, and also by automagically determining as much information as possible based on the nature of your transactions.
+
+For example, you do not need to tell Ledger about the accounts you use. Any time Ledger sees a posting involving an account it knows nothing about, it will create it[fn:2]. If you use a commodity that is new to Ledger, it will create that commodity, and determine its display characteristics (placement of the symbol before or after the amount, display precision, etc.) based on how you used the commodity in the posting.
 
 - [[id:a1a74aa8-ed98-43e5-8806-8587ee35a508][4.1 The Most Basic Entry]]
 - [[id:f8ea4578-2071-4fac-b4cc-af0013dab0c9][4.2 Starting up]]
@@ -1188,8 +1255,10 @@ posting.
 :PROPERTIES:
 :ID:       a1a74aa8-ed98-43e5-8806-8587ee35a508
 :END:
-Here is the Pacific Bell example from above, given as a Ledger posting,
-with the addition of a check number:
+
+Here is the Pacific Bell example from above,
+given as a Ledger posting, with the addition
+of a check number:
 
 #+begin_example
     9/29 (1023) Pacific Bell
@@ -1214,7 +1283,7 @@ For this transaction, Ledger will figure out that $-23.00 must come from
 
 Also note the structure of the account entries. There is an implied
 hierarchy established by separating with colons (see
-[[id:bf0662e1-d6ce-4453-9037-cfaa19ec2cc5][4.3 Structuring your Accounts]] ).
+[[id:bf0662e1-d6ce-4453-9037-cfaa19ec2cc5][4.3 Structuring your Accounts]]).
 
 *The format is very flexible and it isn't necessary that you indent and
 space out things exactly as shown. The only requirements are that the
@@ -1532,14 +1601,18 @@ amount is null.
 :ID:       245da3c5-fb16-4f0e-afe8-d68d18fd44dc
 :END:
 
-Ledger allows you to have very detailed control over how your
-commodities are valued. You can fine tune the results given using the
---market or --exchange COMMODITY options. There are now several points
-of interception; you can specify the valuation method:
+Ledger allows you to have very detailed control
+over how your commodities are valued. You can fine
+tune the results given using the --market or
+--exchange COMMODITY options. There are now
+several points of interception; you can specify
+the valuation method:
 
 1. on a commodity itself,
-2. on a posting, via metadata (effect is largely the same as #1),
-3. on an xact, which then applies to all postings in that xact,
+2. on a posting, via metadata (effect is largely
+   the same as #1),
+3. on an xact, which then applies to all postings
+   in that xact,
 4. on any posting via an automated transaction,
 5. on a per-account basis,
 6. on a per-commodity basis,
@@ -2298,39 +2371,49 @@ function.
 :ID:       b097bfd7-8c31-4b62-b614-c961ed154d16
 :END:
 
-After a while, your journal can get to be pretty large. While this will
-not slow down Ledger---it's designed to process journals very
-quickly---things can start to feel “messy”; and it's a universal
-complaint that when finances feel messy, people avoid them.
+After a while, your journal can get to be pretty
+large. While this will not slow down Ledger ---
+it's designed to process journals very quickly ---
+things can start to feel “messy”; and it's a
+universal complaint that when finances feel messy,
+people avoid them.
 
-Thus, archiving the data from previous years into their own files can
-offer a sense of completion, and freedom from the past. But how to best
-accomplish this with the ledger program? There are two commands that
-make it very simple: =print=, and =equity=.
+Thus, archiving the data from previous years into
+their own files can offer a sense of completion,
+and freedom from the past. But how to best
+accomplish this with the ledger program?
+There are two commands that make it very simple:
+=print=, and =equity=.
 
-Let's take an example file, with data ranging from year 2000 until 2004.
-We want to archive years 2000 and 2001 to their own file, leaving
-2002--2004 in the current file. So, use =print= to output all the
-earlier transactions to a file called ledger-old.dat:
+Let's take an example file, with data ranging
+from year 2000 until 2004. We want to archive
+years 2000 and 2001 to their own file, leaving
+2002--2004 in the current file. So, use =print=
+to output all the earlier transactions to a file
+called ledger-old.dat:
 
 #+begin_example
     $ ledger -f ledger.dat -b 2000 -e 2002 print > ledger-old.dat
 #+end_example
 
-Note that -e limits output to transactions /before/ the date specified.
+Note that -e limits output to transactions /before/
+the date specified.
 
-To delete older data from the current ledger file, use =print= again,
-this time specifying year 2002 as the starting date:
+To delete older data from the current ledger file,
+use =print= again, this time specifying year 2002
+as the starting date:
 
 #+begin_example
     $ ledger -f ledger.dat -b 2002 print > x
     $ mv x ledger.dat
 #+end_example
 
-However, now the current file contains /only/ postings from 2002 onward,
-which will not yield accurate present-day balances, because the net
-income from previous years is no longer being tallied. To compensate for
-this, we must append an equity report for the old ledger at the
+However, now the current file contains /only/
+postings from 2002 onward, which will not yield
+accurate present-day balances, because the net
+income from previous years is no longer being
+tallied. To compensate for this, we must append
+an equity report for the old ledger at the
 beginning of the new one:
 
 #+begin_example
@@ -2340,19 +2423,23 @@ beginning of the new one:
     $ rm equity.dat
 #+end_example
 
-Now the balances reported from ledger.dat are identical to what they
-were before the data was split.
+Now the balances reported from ledger.dat are
+identical to what they were before the data was split.
 
-How often should you split your ledger? You never need to, if you don't
-want to. Even eighty years of data will not slow down ledger much, and
-that's just using present day hardware! Or, you can keep the previous
-and current year in one file, and each year before that in its own file.
-It's really up to you, and how you want to organize your finances. For
-those who also keep an accurate paper trail, it might be useful to
-archive the older years to their own files, then burn those files to a
-CD to keep with the paper records---along with any electronic statements
-received during the year. In the arena of organization, just keep in
-mind this maxim: Do whatever keeps you doing it.
+How often should you split your ledger? You
+never need to, if you don't want to. Even eighty
+years of data will not slow down ledger much, and
+that's just using present day hardware! Or, you can
+keep the previous and current year in one file, and
+each year before that in its own file. It's really
+up to you, and how you want to organize your
+finances. For those who also keep an accurate paper
+trail, it might be useful to archive the older years
+to their own files, then burn those files to a CD to
+keep with the paper records---along with any
+electronic statements received during the year.
+In the arena of organization, just keep in mind
+this maxim: Do whatever keeps you doing it.
 
 -----
 
@@ -2397,9 +2484,10 @@ The most basic form of transaction is:
         Assets:Cash                 $-20.00
 #+end_example
 
-This transaction has a date, a payee or description, a target account
-(the first posting), and a source account (the second posting). Each
-posting specifies what action is taken related to that account.
+This transaction has a date, a payee or description,
+a target account (the first posting), and a source
+account (the second posting). Each posting specifies
+what action is taken related to that account.
 
 A transaction can have any number of postings:
 
@@ -2416,41 +2504,43 @@ A transaction can have any number of postings:
 :PROPERTIES:
 :ID:       5a6f972b-00e9-4964-90df-b585663b0499
 :END:
-The first thing you can do to make things easier is elide amounts. That
-is, if exactly one posting has no amount specified, Ledger will infer
-the inverse of the other postings' amounts:
 
-#+begin_example
-    2012-03-10 KFC
-        Expenses:Food                $20.00
-        Assets:Cash                 $-10.00
-        Liabilities:Credit                   ; same as specifying $-10
+The first thing you can do to make things easier
+is elide amounts. That is, if exactly one posting
+has no amount specified, Ledger will infer the
+inverse of the other postings' amounts:
+
+#+begin_example ledger
+  2012-03-10 KFC
+      Expenses:Food                $20.00
+      Assets:Cash                 $-10.00
+      Liabilities:Credit                   ; same as specifying $-10
 #+end_example
 
-If the other postings use multiple commodities, Ledger will copy the
-empty posting N times and fill in the negated values of the various
-commodities:
+If the other postings use multiple commodities,
+Ledger will copy the empty posting N times and
+fill in the negated values of the various commodities:
 
-#+begin_example
-    2012-03-10 KFC
-        Expenses:Food                $20.00
-        Expenses:Tips                 $2.00
-        Assets:Cash              EUR -10.00
-        Assets:Cash              GBP -10.00
-        Liabilities:Credit
+#+begin_example ledger
+  2012-03-10 KFC
+      Expenses:Food                $20.00
+      Expenses:Tips                 $2.00
+      Assets:Cash              EUR -10.00
+      Assets:Cash              GBP -10.00
+      Liabilities:Credit
 #+end_example
 
 This transaction is identical to writing:
 
 #+begin_example
-    2012-03-10 KFC
-        Expenses:Food                $20.00
-        Expenses:Tips                 $2.00
-        Assets:Cash              EUR -10.00
-        Assets:Cash              GBP -10.00
-        Liabilities:Credit          $-22.00
-        Liabilities:Credit        EUR 10.00
-        Liabilities:Credit        GBP 10.00
+  2012-03-10 KFC
+      Expenses:Food                $20.00
+      Expenses:Tips                 $2.00
+      Assets:Cash              EUR -10.00
+      Assets:Cash              GBP -10.00
+      Liabilities:Credit          $-22.00
+      Liabilities:Credit        EUR 10.00
+      Liabilities:Credit        GBP 10.00
 #+end_example
 
 -----
@@ -2460,8 +2550,8 @@ This transaction is identical to writing:
 :ID:       211efdae-4f70-4dd2-b2fb-1f0232ed1374
 :END:
 
-You can associate a second date with a transaction by following the
-primary date with an equals sign:
+You can associate a second date with a transaction
+by following the primary date with an equals sign:
 
 #+begin_example
     2012-03-10=2012-03-08 KFC
@@ -2556,8 +2646,10 @@ You can mark individual postings as cleared or pending, in case one
 :PROPERTIES:
 :ID:       853b438f-64de-4e1d-971c-5370d27c7bf8
 :END:
-After the payee, and after at least one tab or two spaces (or a space
-and a tab), which Ledger calls a “hard separator”, you may introduce a
+
+After the payee, and after at least one tab or two
+spaces (or a space and a tab), which Ledger calls
+a “hard separator”, you may introduce a
 note about the transaction using the ‘;' character:
 
 #+begin_example
@@ -2581,9 +2673,10 @@ whitespace:
         Assets:Cash
 #+end_example
 
-A transaction's note is shared by all its postings. This becomes
-significant when querying for metadata (see below). To specify that a
-note belongs only to one posting, place it after a hard separator after
+A transaction's note is shared by all its postings.
+This becomes significant when querying for metadata
+(see below). To specify that a note belongs only to
+one posting, place it after a hard separator after
 the amount, or on its own line preceded by whitespace:
 
 #+begin_example
@@ -3268,10 +3361,12 @@ found in [[id:0ae9731d-1a74-46f8-bf36-d5bebe9e3bfb][5.17 Prices versus costs]].
 :ID:       97125bf9-7f59-482e-8bf4-4af307ee641e
 :END:
 
-In addition to lot prices, you can specify lot dates and reveal them
-with --lot-dates. Other than that, however, they have no special meaning
-to Ledger. They are specified after the amount in square brackets (the
-same way that dates are parsed in value expressions):
+In addition to lot prices, you can specify lot dates
+and reveal them with --lot-dates. Other than that,
+however, they have no special meaning to Ledger.
+They are specified after the amount in square
+brackets (the same way that dates are parsed in
+value expressions):
 
 #+begin_example
     2012-04-10 My Broker
@@ -3606,13 +3701,15 @@ account name, and that state flag gets carried to the generated posting.
 :ID:       bf01d6e6-7ac1-4f6c-a924-ae4097db9634
 :END:
 
-In the real world, transactions do not take place instantaneously.
-Purchases can take several days to post to a bank account. And you may
-pay ahead for something for which you want to distribute costs. With
-Ledger you can control every aspect of the timing of a transaction.
+In the real world, transactions do not take
+place instantaneously. Purchases can take several
+days to post to a bank account. And you may pay
+ahead for something for which you want to
+distribute costs. With Ledger you can control
+every aspect of the timing of a transaction.
 
-Say you're in business. If you bill a customer, you can enter something
-like
+Say you're in business. If you bill a customer,
+you can enter something like
 
 
 #+begin_example
@@ -4209,9 +4306,10 @@ commodities, each commodity's total is reported separately.
 :ID:       81fa60ae-70c9-46db-9b0e-09d9388ce335
 :END:
 
-The =equity= command prints out account balances as if they were
-transactions. This makes it easy to establish the starting balances for
-an account, such as when [[id:b097bfd7-8c31-4b62-b614-c961ed154d16][4.9 Archiving Previous Years]].
+The =equity= command prints out account balances as
+if they were transactions. This makes it easy to
+establish the starting balances for an account,
+such as when [[id:b097bfd7-8c31-4b62-b614-c961ed154d16][4.9 Archiving Previous Years]].
 
 -----
 
@@ -8352,7 +8450,6 @@ terminal character colors and font highlights in a normal TTY session.
 :PROPERTIES:
 :ID:       9e0fa5b3-1d79-42cd-b09e-8191127b3947
 :END:
-<<index-_002d_002dnow-DATE-2>>
 
 The following functions allow you to manipulate and format dates.
 
