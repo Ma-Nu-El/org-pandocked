@@ -1,3 +1,4 @@
+# -*- buffer-read-only: t -*-
 # Created 2021-07-21 Wed 22:27
 :PROPERTIES:
 :ID:       8d5c95de-132b-4bed-bca4-07a0437d5299
@@ -722,13 +723,16 @@ $-100.00  Liabilities:MasterCard
 :ID:       2fbeb880-4374-48e7-9aef-1dedb9bee273
 :END:
 
-Ledger makes no assumptions about the commodities you use; it only
-requires that you specify a commodity. The commodity may be any
-non-numeric string that does not contain a period, comma, forward slash
-or at-sign. It may appear before or after the amount, although it is
-assumed that symbols appearing before the amount refer to currencies,
-while non-joined symbols appearing after the amount refer to
-commodities. Here are some valid currency and commodity specifiers:
+Ledger makes no assumptions about the commodities
+you use; it only requires that you specify a
+commodity. The commodity may be any non-numeric
+string that does not contain a period, comma,
+forward slash or at-sign. It may appear before or
+after the amount, although it is assumed that
+symbols appearing before the amount refer to
+currencies, while non-joined symbols appearing
+after the amount refer to commodities. Here are
+some valid currency and commodity specifiers:
 
 #+begin_example
     $20.00         ; currency: twenty US dollars
@@ -739,18 +743,18 @@ commodities. Here are some valid currency and commodity specifiers:
 #+end_example
 
 Ledger will examine the first use of any commodity
-to determine how that commodity should be printed on
-reports. It pays attention to whether the name of
-commodity was separated from the amount, whether
+to determine how that commodity should be printed
+on reports. It pays attention to whether the name
+of commodity was separated from the amount, whether
 it came before or after, the precision used in
 specifying the amount, whether thousand marks
-were used, etc. This is done so that printing
-the commodity looks the same as the way you use it.
+were used, etc. This is done so that printing the
+commodity looks the same as the way you use it.
 
-An account may contain multiple commodities, in which
-case it will have separate totals for each.
-For example, if your brokerage account contains
-both cash, gold, and several stock quantities,
+An account may contain multiple commodities,
+in which case it will have separate totals for each.
+For example, if your brokerage account contains both
+cash, gold, and several stock quantities,
 the balance might look like:
 
 #+begin_example
@@ -761,15 +765,19 @@ the balance might look like:
      FEQTX 50  Assets:Brokerage
 #+end_example
 
-This balance report shows how much of each commodity is in your
-brokerage account.
+This balance report shows how much of each
+commodity is in your brokerage account.
 
-Sometimes, you will want to know the current street value of your
-balance, and not the commodity totals. For this to happen, you must
-specify what the current price is for each commodity. The price can be
-any commodity, in which case the balance will be computed in terms of
-that commodity. The usual way to specify prices is with a price history
-file, which might look like this:
+<<2fbeb880-4374-48e7-9aef-1dedb9bee273-custom1>>
+
+Sometimes, you will want to know the current street
+value of your balance, and not the commodity totals.
+For this to happen, you must specify what the current
+price is for each commodity. The price can be any
+commodity, in which case the balance will be computed
+in terms of that commodity. The usual way to specify
+prices is with a price history file, which might look
+like this:
 
 #+begin_example
     P 2004/06/21 02:18:01 FEQTX $22.49
@@ -778,35 +786,41 @@ file, which might look like this:
     P 2004/06/21 02:18:02 AU $400.00
 #+end_example
 
-Specify the price history to use with the --price-db FILE option, with
-the --market (-V) option to report in terms of current market value:
+Specify the price history to use with the --price-db
+FILE option, with the --market (-V) option to report
+in terms of current market value:
 
 #+begin_example
     $ ledger --price-db prices.db -V balance brokerage
 #+end_example
 
-The balance for your brokerage account will be reported in US dollars,
-since the prices database uses that currency.
+The balance for your brokerage account will be
+reported in US dollars, since the prices database
+uses that currency.
 
 #+begin_example
     $40880.00  Assets:Brokerage
 #+end_example
 
-You can convert from any commodity to any other commodity. Let's say you
-had $5000 in your checking account, and for whatever reason you wanted
-to know how many ounces of gold that would buy, in terms of the current
-price of gold:
+You can convert from any commodity to any other
+commodity. Let's say you had $5000 in your checking
+account, and for whatever reason you wanted to know
+how many ounces of gold that would buy, in terms of
+the current price of gold:
 
 #+begin_example
     $ ledger -T "{1 AU}*(O/P{1 AU})" balance checking
 #+end_example
 
-Although the total expression appears complex, it is simply saying that
-the reported total should be in multiples of AU units, where the
-quantity is the account total divided by the price of one AU. Without
-the initial multiplication, the reported total would still use the
-dollars commodity, since multiplying or dividing amounts always keeps
-the left value's commodity. The result of this command might be:
+Although the total expression appears complex,
+it is simply saying that the reported total should
+be in multiples of AU units, where the quantity is
+the account total divided by the price of one AU.
+Without the initial multiplication, the reported
+total would still use the dollars commodity,
+since multiplying or dividing amounts always keeps
+the left value's commodity. The result of this
+command might be:
 
 #+begin_example
     14.01 AU  Assets:Checking
@@ -821,11 +835,14 @@ the left value's commodity. The result of this command might be:
 :PROPERTIES:
 :ID:       3192b78b-0cad-429e-9304-56688d79eb43
 :END:
-Whenever a commodity is purchased using a different commodity (such as a
-share of common stock using dollars), it establishes a price for that
-commodity on that day. It is also possible, by recording price details
-in a ledger file, to specify other prices for commodities at any given
-time. Such price transactions might look like those below:
+
+Whenever a commodity is purchased using a different
+commodity (such as a share of common stock using
+dollars), it establishes a price for that commodity
+on that day. It is also possible, by recording price
+details in a ledger file, to specify other prices
+for commodities at any given time. Such price
+transactions might look like those below:
 
 #+begin_example
     P 2004/06/21 02:17:58 TWCUX $27.76
@@ -835,26 +852,31 @@ time. Such price transactions might look like those below:
     P 2004/06/21 02:18:02 AAPL $32.91
 #+end_example
 
-By default, ledger will not consider commodity prices when generating
-its various reports. It will always report balances in terms of the
-commodity total, rather than the current value of those commodities. To
-enable pricing reports, use one of the commodity reporting options.
+By default, ledger will not consider commodity
+prices when generating its various reports.
+It will always report balances in terms of the
+commodity total, rather than the current value
+of those commodities. To enable pricing reports,
+use one of the commodity reporting options.
 
 -----
-
 *** 3.4.2 Commodity equivalences
 :PROPERTIES:
 :ID:       72ecac7b-f09d-43ce-beb5-9f9eed744d26
 :END:
-Sometimes a commodity has several forms which are all equivalent. An
-example of this is time. Whether tracked in terms of minutes, hours or
-days, it should be possible to convert between the various forms. Doing
-this requires the use of commodity equivalences.
 
-For example, you might have the following two postings, one which
-transfers an hour of time into a ‘Billable' account, and another which
-decreases the same account by ten minutes. The resulting report will
-indicate that fifty minutes remain:
+Sometimes a commodity has several forms which are
+all equivalent. An example of this is time.
+Whether tracked in terms of minutes, hours or days,
+it should be possible to convert between the various
+forms. Doing this requires the use of commodity
+equivalences.
+
+For example, you might have the following two
+postings, one which transfers an hour of time into
+a ‘Billable' account, and another which decreases
+the same account by ten minutes. The resulting
+report will indicate that fifty minutes remain:
 
 #+begin_example
     2005/10/01 Work done for company
@@ -877,11 +899,12 @@ Reporting the balance for this ledger file produces:
                   -50.0m  Project:XYZ
 #+end_example
 
-This example works because ledger already knows how to handle seconds,
-minutes and hours, as part of its time tracking support. Defining other
-equivalences is simple. The following is an example that creates data
-equivalences, helpful for tracking bytes, kilobytes, megabytes, and
-more:
+This example works because ledger already knows
+how to handle seconds, minutes and hours, as part
+of its time tracking support. Defining other
+equivalences is simple. The following is an example
+that creates data equivalences, helpful for tracking
+bytes, kilobytes, megabytes, and more:
 
 #+begin_example
     C 1.00 Kb = 1024 b
@@ -890,29 +913,35 @@ more:
     C 1.00 Tb = 1024 Gb
 #+end_example
 
-Each of these definitions correlates a commodity (such as ‘Kb') and a
-default precision, with a certain quantity of another commodity. In the
-above example, kilobytes are reported with two decimal places of
-precision and each kilobyte is equal to 1024 bytes.
+Each of these definitions correlates a commodity
+(such as ‘Kb') and a default precision, with a
+certain quantity of another commodity. In the above
+example, kilobytes are reported with two decimal
+places of precision and each kilobyte is equal to
+1024 bytes.
 
-Equivalence chains can be as long as desired. Whenever a commodity would
-report as a decimal amount (less than ‘1.00'), the next smallest
-commodity is used. If a commodity could be reported in terms of a higher
-commodity without resulting to a partial fraction, then the larger
-commodity is used.
+Equivalence chains can be as long as desired.
+Whenever a commodity would report as a decimal
+amount (less than ‘1.00'), the next smallest
+commodity is used. If a commodity could be reported
+in terms of a higher commodity without resulting
+to a partial fraction, then the larger commodity
+is used.
 
 -----
-
 ** 3.5 Accounts and Inventories
 :PROPERTIES:
 :ID:       e9d2b1c8-d40c-4f70-9eef-338c5526c440
 :END:
-Since Ledger's accounts and commodity system is so flexible, you can
-have accounts that don't really exist, and use commodities that no one
-else recognizes. For example, let's say you are buying and selling
-various items in EverQuest, and want to keep track of them using a
-ledger. Just add items of whatever quantity you wish into your EverQuest
-account:
+
+Since Ledger's accounts and commodity system is
+so flexible, you can have accounts that don't
+really exist, and use commodities that no one
+else recognizes. For example, let's say you are
+buying and selling various items in EverQuest,
+and want to keep track of them using a ledger.
+Just add items of whatever quantity you wish into
+your EverQuest account:
 
 #+begin_example
     9/29  Get some stuff at the Inn
@@ -921,17 +950,20 @@ account:
         EverQuest:Inventory
 #+end_example
 
-Now your EverQuest:Inventory has 3 apples and 5 steaks in it. The
-amounts are negative, because you are taking /from/ Black's Tavern in
-order to add to your Inventory account. Note that you don't have to use
-‘Places:Black's Tavern' as the source account. You could use
-‘EverQuest:System' to represent the fact that you acquired them online.
-The only purpose for choosing one kind of source account over another is
-to generate more informative reports later on. The more you know, the
-better the analysis you can perform.
+Now your EverQuest:Inventory has 3 apples and 5
+steaks in it. The amounts are negative, because
+you are taking /from/ Black's Tavern in order to
+add to your Inventory account. Note that you don't
+have to use ‘Places:Black's Tavern' as the source
+account. You could use ‘EverQuest:System' to
+represent the fact that you acquired them online.
+The only purpose for choosing one kind of source
+account over another is to generate more informative
+reports later on. The more you know, the better the
+analysis you can perform.
 
-If you later sell some of these items to another player, the transaction
-would look like:
+If you later sell some of these items to another
+player, the transaction would look like:
 
 #+begin_example
     10/2  Sturm Brightblade
@@ -939,8 +971,8 @@ would look like:
         EverQuest:Inventory                     15 Gold
 #+end_example
 
-Now you've turned 2 steaks into 15 gold, courtesy of your customer,
-Sturm Brightblade.
+Now you've turned 2 steaks into 15 gold,
+courtesy of your customer, Sturm Brightblade.
 
 #+begin_example
     $ ledger balance EverQuest
@@ -953,7 +985,6 @@ Sturm Brightblade.
 #+end_example
 
 -----
-
 ** 3.6 Understanding Equity
 :PROPERTIES:
 :ID:       07092bee-b69b-4f59-91ed-4c3e1c771067
@@ -1054,6 +1085,7 @@ tracking are different between your clients
 and the financial institutions where money
 is kept. An example of this is working as
 the treasurer for a religious institution.
+
 From the secular point of view, you might
 be working with three different accounts:
 
@@ -3471,10 +3503,11 @@ modifying them to suit your needs.
 :ID:       31a6f999-1c00-41f9-b5f7-24a093f9e31b
 :END:
 
-An automated transaction is a special kind of transaction which adds its
-postings to other transactions any time one of that other transactions'
-postings matches its predicate. The predicate uses the same query syntax
-as the Ledger command-line.
+An automated transaction is a special kind of
+transaction which adds its postings to other
+transactions any time one of that other transactions'
+postings matches its predicate. The predicate uses the
+same query syntax as the Ledger command-line.
 
 Consider this posting:
 
@@ -3484,7 +3517,8 @@ Consider this posting:
         Assets:Cash
 #+end_example
 
-If I write this automated transaction before it in the file:
+If I write this automated transaction before it in
+the file:
 
 #+begin_example
     = expr true
@@ -3492,8 +3526,8 @@ If I write this automated transaction before it in the file:
         Bar                         $-50.00
 #+end_example
 
-Then the first transaction will be modified during parsing as if I'd
-written this:
+Then the first transaction will be modified during
+parsing as if I'd written this:
 
 #+begin_example
     2012-03-10 KFC
@@ -3505,12 +3539,13 @@ written this:
         Bar                         $-50.00
 #+end_example
 
-Despite this fancy logic, automated transactions themselves follow most
-of the same rules as regular transactions: their postings must balance
-(unless you use a virtual posting), you can have metadata, etc.
+Despite this fancy logic, automated transactions
+themselves follow most of the same rules as regular
+transactions: their postings must balance (unless you
+use a virtual posting), you can have metadata, etc.
 
-One thing you cannot do, however, is elide amounts in an automated
-transaction.
+One thing you cannot do, however, is elide amounts in
+an automated transaction.
 
 - [[id:aedc275a-36f2-4606-8fb9-de819f56acb4][5.22.1 Amount multipliers]]
 - [[id:4b036715-24b4-4337-ba85-9486bfa8c04d][5.22.2 Accessing the matching posting's amount]]
